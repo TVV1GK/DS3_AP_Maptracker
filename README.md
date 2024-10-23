@@ -1,6 +1,6 @@
 # Dark Souls III Map Tracker Pack for PopTracker
 
-This is a Dark Souls III Map Tracker for PopTracker. Designed around the Archipelago version of the randomizer, setup for auto-tracking as well. 
+This is a Dark Souls III Map Tracker for PopTracker. Designed around [nex3's Dark-Souls-III-Archipelago-client](https://github.com/nex3/Dark-Souls-III-Archipelago-client), setup for auto-tracking as well. 
 
 ## Installation
 
@@ -12,7 +12,11 @@ To connect to the AP server for auto-tracking, click on the `AP` button at the t
 
 ## More Notes
 
-__Iudex Gundyr__, __Coiled Sword__, and __Path of the Dragon__ are not randomized nor auto-tracked at this time. There are also two __Tower Keys__ at the moment; one being in the pool and one being in the shop, if you purchase the __Tower Key__ from the shop, it will not auto-track and you will have to select the __Tower Key__ on the item tracker yourself
+Blue check means "There's no certainty you're going to get the item in 1 playthrough":
+
+    * Shops (except Shrine Handmaids in FS and UG), Questline items, and Invaders are blue because I can't guarantee you've progressed or completed any questlines.
+    * You can only get 1 item per playthrough from Ludleth. (With Archipelago, you're locked to 1, afaik.)
+    * Shrine Handmaid in UG: I know she can be killed and will not respawn, but I decided to keep it this way.
 
 ## More Info
 
@@ -22,4 +26,4 @@ Still having trouble realizing your pack and looking for help or just want more 
 
 ## License
 
-If youre gonna use this tracker as a base for a new DS3 tracker, please have that repo be a Fork of this, and give credit.
+If you're gonna use this tracker as a base for a new DS3 tracker, please have that repo be a Fork of this, and give credit.
