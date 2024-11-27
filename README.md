@@ -1,6 +1,6 @@
 # Dark Souls III Archipelago Map Tracker Pack for PopTracker
 
-This is a Dark Souls III AP Map Tracker for [PopTracker](https://github.com/black-sliver/PopTracker). Designed around [nex3's Dark-Souls-III-Archipelago-client (v3.0.0)](https://github.com/nex3/Dark-Souls-III-Archipelago-client) , setup for auto-tracking as well for [Archipelago](https://archipelago.gg/).
+This is a Dark Souls III AP Map Tracker for [PopTracker](https://github.com/black-sliver/PopTracker). Designed around [nex3's Dark-Souls-III-Archipelago-client (v3.0.0)](https://github.com/nex3/Dark-Souls-III-Archipelago-client), setup for auto-tracking as well for [Archipelago 0.5.1](https://archipelago.gg/).
 
 ## Installation
 
