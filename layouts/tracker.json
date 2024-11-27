@@ -1,227 +1,231 @@
-﻿{
-  "tracker_horizontal": {
-    "type": "container",
-    "background": "#000000",
-    "content": {
-      "type": "dock",
-      "dropshadow": true,
-      "content": [
-        {
-          "type": "dock",
-          "dock": "bottom",
-          "content": [
-            {
-              "type": "group",
-              "header": "Items",
-              "dock": "left",
-              "margin": "0,0,3,0",
-              "content": {
-                "type": "layout",
-                "h_alignment": "center",
-                "v_alignment": "center",
-                "key": "shared_item_grid"
-              }
-            },
-            {
-              "type": "group",
-              "header": "Settings",
-              "dock": "left",
-              "margin": "0,0,3,0",
-              "content": {
-                "type": "layout",
-                "h_alignment": "center",
-                "v_alignment": "center",
-                "key": "settings_grid"
-              }
-            }             
-          ]
-        },
-        {
-          "type": "tabbed",
-          "tabs": [
-            {
-              "title": "Firelink Shrine",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "FS"
-                ]
-              }
-            },
-            {
-              "title": "High Wall of Lothric",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "HWL"
-                ]
-              }
-            },
-            {
-              "title": "Undead Settlement",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "US"
-                ]
-              }
-            },
-            {
-              "title": "Road of Sacrifices",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "RS"
-                ]
-              }
-            },
-            {
-              "title": "Cathedral of the Deep",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "CD"
-                ]
-              }
-            },
-            {
-              "title": "Farron Keep",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "FK"
-                ]
-              }
-            },
-            {
-              "title": "Catacombs of Carthus",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "CC"
-                ]
-              }
-            },
-            {
-              "title": "Smouldering Lake",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "SL"
-                ]
-              }
-            },
-            {
-              "title": "Irithyll of the Boreal Valley",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "IBV"
-                ]
-              }
-            },
-            {
-              "title": "Anor Londo",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "AL"
-                ]
-              }
-            },
-            {
-              "title": "Irithyll Dungeon",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "ID"
-                ]
-              }
-            },
-            {
-              "title": "Profaned Capital",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "PC"
-                ]
-              }
-            },
-            {
-              "title": "Consumed King's Garden",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "CKG"
-                ]
-              }
-            },
-            {
-              "title": "Untended Graves",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "UG"
-                ]
-              }
-            },
-            {
-              "title": "Lothric Castle",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "LC"
-                ]
-              }
-            },
-            {
-              "title": "Grand Archives",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "GA"
-                ]
-              }
-            },
-            {
-              "title": "Archdragon Peak",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "AP"
-                ]
-              }
-            },
-            {
-              "title": "Painted World of Ariandel",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "PWA"
-                ]
-              }
-            },
-            {
-              "title": "Dreg Heap",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "DH"
-                ]
-              }
-            },
-            {
-              "title": "The Ringed City",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "RC"
-                ]
-              }
-            }
-          ]
+{
+    "tracker_horizontal": {
+        "type": "container",
+        "background": "#000000",
+        "content": {
+            "type": "dock",
+            "dropshadow": true,
+            "content": [
+                {
+                    "type": "dock",
+                    "dock": "bottom",
+                    "background": "#FF999999",
+                    "content": [
+                        {
+                            "type": "group",
+                            "header": "Location Keys",
+                            "dock": "left",
+                            "content": {
+                                "type": "layout",
+                                "key": "location_keys_grid"
+                            }
+                        },
+                        {
+                            "type": "group",
+                            "header": "Shop keys",
+                            "dock": "left",
+                            "content": {
+                                "type": "layout",
+                                "key": "shop_keys_grid"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": " CA ",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CA"
+                                ]
+                            }
+                        },
+                        {
+                            "title": " FS ",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "FS"
+                                ]
+                            }
+                        },
+                        {
+                            "title": " HWL ",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "HWL"
+                                ]
+                            }
+                        },
+                        {
+                            "title": " US ",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "US"
+                                ]
+                            }
+                        },
+                        {
+                            "title": " RS ",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RS"
+                                ]
+                            }
+                        },
+                        {
+                            "title": " CD ",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CD"
+                                ]
+                            }
+                        },
+                        {
+                            "title": " FK ",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "FK"
+                                ]
+                            }
+                        },
+                        {
+                            "title": " CC ",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CC"
+                                ]
+                            }
+                        },
+                        {
+                            "title": " SL ",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "SL"
+                                ]
+                            }
+                        },
+                        {
+                            "title": " IBV ",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "IBV"
+                                ]
+                            }
+                        },
+                        {
+                            "title": " AL ",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "AL"
+                                ]
+                            }
+                        },
+                        {
+                            "title": " ID ",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "ID"
+                                ]
+                            }
+                        },
+                        {
+                            "title": " PC ",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "PC"
+                                ]
+                            }
+                        },
+                        {
+                            "title": " CKG ",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "CKG"
+                                ]
+                            }
+                        },
+                        {
+                            "title": " UG ",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "UG"
+                                ]
+                            }
+                        },
+                        {
+                            "title": " LC ",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "LC"
+                                ]
+                            }
+                        },
+                        {
+                            "title": " GA ",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "GA"
+                                ]
+                            }
+                        },
+                        {
+                            "title": " AP ",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "AP"
+                                ]
+                            }
+                        },
+                        {
+                            "title": " PWA ",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "PWA"
+                                ]
+                            }
+                        },
+                        {
+                            "title": " DH ",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "DH"
+                                ]
+                            }
+                        },
+                        {
+                            "title": " RC ",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "RC"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
         }
-      ]
     }
-  }
 }

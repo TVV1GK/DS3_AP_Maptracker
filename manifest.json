@@ -1,13 +1,13 @@
 ﻿{
-  "name": "Dark Souls III Randomizer",
+  "name": "Dark Souls III AP Map Tracker (for v3.0.0)",
   "game_name": "Dark Souls III",
-  "package_version": "4.1.1",
-  "package_uid": "ds3_br00ty",
+  "package_version": "0.1.0",
+  "package_uid": "ds3_tvv1gk",
   "platform": "PC",
-  "author": "Br00ty",
+  "author": "TVV1GK",
   "variants": {
     "standard": {
-      "display_name": "Map Tracker",
+      "display_name": "AP Map Tracker",
       "flags": [
         "ap"
       ]
@@ -19,5 +19,5 @@
      ]
     }
   },
-  "versions_url": "https://raw.githubusercontent.com/Br00ty/DS3_AP_Maptracker/master/versions.json"
+  "versions_url": "https://raw.githubusercontent.com/TVV1GK/DS3_AP_Maptracker/master/versions.json"
 }

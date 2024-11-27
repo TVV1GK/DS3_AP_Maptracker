@@ -1,0 +1,64 @@
+{
+	"settings_popup": {
+		"type": "array",
+		
+		"orientation": "vertical",
+		"margin": "0,4",
+		"content": [
+			{
+				"type": "itemgrid",
+				"margin": "4,0",
+				"item_margin": "3,0",
+				"item_size": "794,102",
+				"rows": [ [ "location_groups" ] ]
+			},
+			{
+				"type": "array",
+				"orientation": "horizontal",
+				"margin": "0,0",
+				"content": [
+					{
+						"type": "itemgrid",
+						"margin": "4,0",
+						"item_margin": "3,3",
+						"item_size": "192,24",
+						"rows": [
+							[ "everywhere", 		"unique"],
+							[ "prominent", 			"healingUpgrade" ],
+							[ "progression", 		"misc" ],
+							[ "bossReward", 		"hidden" ],
+							[ "minibossReward", 	"weapon" ],
+							[ "mimicReward", 		"shield" ],
+							[ "hostileNPCReward", 	"armor" ],
+							[ "friendlyNPCReward", 	"ring" ],
+							[ "smallCrystalLizard", "spell" ],
+							[ "weaponUpgrade", 		"missable_dis" ],
+							[ "smallSoul", 			"ng+" ],
+							[ "bossSoul", "_" ]
+						]
+					},
+					{
+						"type": "itemgrid",
+						"margin": "4,0",
+						"item_margin": "3,3",
+						"item_size": "192,24",
+						"rows": [
+							[ "ca", 	"pc" ],
+							[ "fs", 	"al" ],
+							[ "fsbt", 	"lc" ],
+							[ "hwl", 	"ckg" ],
+							[ "us", 	"ga"],
+							[ "rs", 	"ug" ],
+							[ "cd", 	"ap" ],
+							[ "fk", 	"kff" ],
+							[ "cc", 	"dlc" ],
+							[ "sl", 	"pwa" ],
+							[ "ibv", 	"dh" ],
+							[ "id", 	"rc" ]
+						]
+					}
+				]
+			}
+		]
+	}
+}

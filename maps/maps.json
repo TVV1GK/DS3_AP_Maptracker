@@ -1,44 +1,50 @@
 [
   {
-    "name": "FS",
+    "name": "CA",
     "location_size": 28,
+    "location_border_thickness": 4,
+    "img": "images/maps/CA.jpg"
+  },
+  {
+    "name": "FS",
+    "location_size": 29,
     "location_border_thickness": 4,
     "img": "images/maps/FS.jpg"
   },
   {
     "name": "HWL",
-    "location_size": 28,
-    "location_border_thickness": 4,
+    "location_size": 24,
+    "location_border_thickness": 3,
     "img": "images/maps/HWL.jpg"
   },
   {
     "name": "US",
-    "location_size": 28,
-    "location_border_thickness": 4,
+    "location_size": 20,
+    "location_border_thickness": 2,
     "img": "images/maps/US.jpg"
   },
   {
     "name": "RS",
-    "location_size": 28,
-    "location_border_thickness": 4,
+    "location_size": 24,
+    "location_border_thickness": 3,
     "img": "images/maps/RS.jpg"
   },
   {
     "name": "CD",
-    "location_size": 39,
-    "location_border_thickness": 5,
+    "location_size": 30,
+    "location_border_thickness": 4,
     "img": "images/maps/CD.jpg"
   },
   {
     "name": "FK",
-    "location_size": 34,
+    "location_size": 30,
     "location_border_thickness": 4,
     "img": "images/maps/FK.jpg"
   },
   {
     "name": "CC",
-    "location_size": 28,
-    "location_border_thickness": 4,
+    "location_size": 26,
+    "location_border_thickness": 3,
     "img": "images/maps/CC.jpg"
   },
   {
@@ -49,8 +55,8 @@
   },
   {
     "name": "IBV",
-    "location_size": 39,
-    "location_border_thickness": 5,
+    "location_size": 28,
+    "location_border_thickness": 4,
     "img": "images/maps/IBV.jpg"
   },
   {
@@ -61,8 +67,8 @@
   },
   {
     "name": "ID",
-    "location_size": 38,
-    "location_border_thickness": 5,
+    "location_size": 28,
+    "location_border_thickness": 4,
     "img": "images/maps/ID.jpg"
   },
   {
@@ -73,25 +79,25 @@
   },
   {
     "name": "CKG",
-    "location_size": 28,
-    "location_border_thickness": 4,
+    "location_size": 26,
+    "location_border_thickness": 3,
     "img": "images/maps/CKG.jpg"
   },
   {
     "name": "UG",
-    "location_size": 28,
-    "location_border_thickness": 4,
+    "location_size": 26,
+    "location_border_thickness": 3,
     "img": "images/maps/UG.jpg"
   },
   {
     "name": "LC",
-    "location_size": 38,
-    "location_border_thickness": 5,
+    "location_size": 28,
+    "location_border_thickness": 4,
     "img": "images/maps/LC.jpg"
   },
   {
     "name": "GA",
-    "location_size": 38,
+    "location_size": 30,
     "location_border_thickness": 5,
     "img": "images/maps/GA.jpg"
   },
@@ -103,20 +109,20 @@
   },
   {
     "name": "PWA",
-    "location_size": 34,
-    "location_border_thickness": 5,
+    "location_size": 28,
+    "location_border_thickness": 4,
     "img": "images/maps/PWA.jpg"
   },
   {
     "name": "DH",
-    "location_size": 34,
+    "location_size": 30,
     "location_border_thickness": 5,
     "img": "images/maps/DH.jpg"
   },
   {
     "name": "RC",
-    "location_size": 34,
-    "location_border_thickness": 4,
+    "location_size": 26,
+    "location_border_thickness": 3,
     "img": "images/maps/RC.jpg"
   }
 ]

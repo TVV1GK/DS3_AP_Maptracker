@@ -1,0 +1,345 @@
+[
+    {
+        "type": "static",
+        "name": "Location Groups",
+        "codes": "location_groups",
+        "img": "images/settings/setting_header.png"
+    },
+    // Item Locations
+    {
+        "type": "toggle",
+        "name": "Everywhere",
+        "codes": "everywhere",
+        "initial_active_state": true,
+        "img": "images/settings/setting_everywhere.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Prominent",
+        "codes": "prominent",
+        "initial_active_state": true,
+        "img": "images/settings/setting_prominent.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Progression",
+        "codes": "progression",
+        "initial_active_state": true,
+        "img": "images/settings/setting_progression.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Boss Rewards",
+        "codes": "bossReward",
+        "initial_active_state": true,
+        "img": "images/settings/setting_bossReward.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Miniboss Rewards",
+        "codes": "minibossReward",
+        "initial_active_state": true,
+        "img": "images/settings/setting_minibossReward.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Mimic Rewards",
+        "codes": "mimicReward",
+        "initial_active_state": true,
+        "img": "images/settings/setting_mimicReward.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Hostile NPC Rewards",
+        "codes": "hostileNPCReward",
+        "initial_active_state": true,
+        "img": "images/settings/setting_hostileNPCReward.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Friendly NPC Rewards",
+        "codes": "friendlyNPCReward",
+        "initial_active_state": true,
+        "img": "images/settings/setting_friendlyNPCReward.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Small Crystal Lizards",
+        "codes": "smallCrystalLizard",
+        "initial_active_state": true,
+        "img": "images/settings/setting_smallCrystalLizard.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Upgrade",
+        "codes": "weaponUpgrade",
+        "initial_active_state": true,
+        "img": "images/settings/setting_weaponUpgrade.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Small Souls",
+        "codes": "smallSoul",
+        "initial_active_state": true,
+        "img": "images/settings/setting_smallSoul.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Boss Souls",
+        "codes": "bossSoul",
+        "initial_active_state": true,
+        "img": "images/settings/setting_bossSoul.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Unique",
+        "codes": "unique",
+        "initial_active_state": true,
+        "img": "images/settings/setting_unique.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Healing",
+        "codes": "healingUpgrade",
+        "initial_active_state": true,
+        "img": "images/settings/setting_healingUpgrade.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Miscellaneous",
+        "codes": "misc",
+        "initial_active_state": true,
+        "img": "images/settings/setting_misc.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Hidden",
+        "codes": "hidden",
+        "initial_active_state": true,
+        "img": "images/settings/setting_hidden.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Weapons",
+        "codes": "weapon",
+        "initial_active_state": true,
+        "img": "images/settings/setting_weapon.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Shields",
+        "codes": "shield",
+        "initial_active_state": true,
+        "img": "images/settings/setting_shield.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Armor",
+        "codes": "armor",
+        "initial_active_state": true,
+        "img": "images/settings/setting_armor.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Rings",
+        "codes": "ring",
+        "initial_active_state": true,
+        "img": "images/settings/setting_ring.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Spells",
+        "codes": "spell",
+        "initial_active_state": true,
+        "img": "images/settings/setting_spell.png"
+    },
+    {
+        "type": "toggle",
+        "name": "missable_location_behavior\nis NOT do_not_randomize",
+        "codes": "missable_dis", // change layouts/settings.json ; scripts/logic.lua
+        "initial_active_state": false,
+        "img": "images/settings/setting_missable_true.png",
+        "disabled_img": "images/settings/setting_missable_false.png",
+        "disabled_img_mods": "none"
+    },
+    {
+        "type": "toggle",
+        "name": "enable_ngp: true",
+        "codes": "ng+",
+        "initial_active_state": false,
+        "img": "images/settings/setting_ng+_true.png",
+        "disabled_img": "images/settings/setting_ng+_false.png",
+        "disabled_img_mods": "none"
+    },
+    // Maps
+    {
+        "type": "toggle",
+        "name": "Cemetery of Ash",
+        "codes": "ca",
+        "initial_active_state": true,
+        "img": "images/settings/setting_ca.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Firelink Shrine",
+        "codes": "fs",
+        "initial_active_state": true,
+        "img": "images/settings/setting_fs.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Firelink Shrine Bell Tower",
+        "codes": "fsbt",
+        "initial_active_state": true,
+        "img": "images/settings/setting_fsbt.png"
+    },
+    {
+        "type": "toggle",
+        "name": "High Wall of Lothric",
+        "codes": "hwl",
+        "initial_active_state": true,
+        "img": "images/settings/setting_hwl.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Undead Settlement",
+        "codes": "us",
+        "initial_active_state": true,
+        "img": "images/settings/setting_us.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Road of Sacrifices",
+        "codes": "rs",
+        "initial_active_state": true,
+        "img": "images/settings/setting_rs.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Cathedral of the Deep",
+        "codes": "cd",
+        "initial_active_state": true,
+        "img": "images/settings/setting_cd.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Farron Keep",
+        "codes": "fk",
+        "initial_active_state": true,
+        "img": "images/settings/setting_fk.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Catacombs of Carthus",
+        "codes": "cc",
+        "initial_active_state": true,
+        "img": "images/settings/setting_cc.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Smouldering Lake",
+        "codes": "sl",
+        "initial_active_state": true,
+        "img": "images/settings/setting_sl.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Irithyll of the Boreal Valley",
+        "codes": "ibv",
+        "initial_active_state": true,
+        "img": "images/settings/setting_ibv.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Irithyll Dungeon",
+        "codes": "id",
+        "initial_active_state": true,
+        "img": "images/settings/setting_id.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Profaned Capital",
+        "codes": "pc",
+        "initial_active_state": true,
+        "img": "images/settings/setting_pc.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Anor Londo",
+        "codes": "al",
+        "initial_active_state": true,
+        "img": "images/settings/setting_al.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Lothric Castle",
+        "codes": "lc",
+        "initial_active_state": true,
+        "img": "images/settings/setting_lc.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Consumed King's Garden",
+        "codes": "ckg",
+        "initial_active_state": true,
+        "img": "images/settings/setting_ckg.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Grand Archives",
+        "codes": "ga",
+        "initial_active_state": true,
+        "img": "images/settings/setting_ga.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Untended Graves",
+        "codes": "ug",
+        "initial_active_state": true,
+        "img": "images/settings/setting_ug.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Archdragon Peak",
+        "codes": "ap",
+        "initial_active_state": true,
+        "img": "images/settings/setting_ap.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Kiln of the First Flame",
+        "codes": "kff",
+        "initial_active_state": true,
+        "img": "images/settings/setting_kff.png"
+    },
+    {
+        "type": "toggle",
+        "name": "DLC / enable_dlc: true",
+        "codes": "dlc",
+        "initial_active_state": false,
+        "img": "images/settings/setting_dlc_true.png",
+        "disabled_img": "images/settings/setting_dlc_false.png",
+        "disabled_img_mods": "none"
+    },
+    {
+        "type": "toggle",
+        "name": "Painted World of Ariandel",
+        "codes": "pwa",
+        "initial_active_state": false,
+        "img": "images/settings/setting_pwa.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Dreg Heap",
+        "codes": "dh",
+        "initial_active_state": false,
+        "img": "images/settings/setting_dh.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Ringed City",
+        "codes": "rc",
+        "initial_active_state": false,
+        "img": "images/settings/setting_rc.png"
+    }
+]

@@ -1,245 +1,123 @@
 [
+    // Keys
     {
         "type": "toggle",
         "name": "Coiled Sword",
-        "codes": "coiledsword",
-        "img": "images/items/coiled_sword.png"
-    },
-    {
-        "type": "toggle",
-        "name": "Fire Keeper's Eyes",
-        "codes": "eyes",
-        "img": "images/items/firekeeper_eyes.png"
+        "codes": "key_coiledSword",
+        "img": "images/items/key_coiledSword.png"
     },
     {
         "type": "toggle",
         "name": "Tower Key",
-        "codes": "towerkey",
+        "codes": "key_tower",
         "img": "images/items/key_tower.png"
     },
     {
         "type": "toggle",
         "name": "Cell Key",
-        "codes": "cellkey",
+        "codes": "key_cell",
         "img": "images/items/key_cell.png"
     },
     {
         "type": "toggle",
         "name": "Lift Chamber Key",
-        "codes": "liftkey",
-        "img": "images/items/key_lift.png"
+        "codes": "key_liftChamber",
+        "img": "images/items/key_liftChamber.png"
     },
     {
         "type": "toggle",
         "name": "Small Lothric Banner",
-        "codes": "banner",
-        "img": "images/items/banner_lothric.png"
+        "codes": "key_lothricBanner",
+        "img": "images/items/key_lothricBanner.png"
     },
     {
         "type": "toggle",
         "name": "Grave Key",
-        "codes": "grave",
+        "codes": "key_grave",
         "img": "images/items/key_grave.png"
     },
     {
         "type": "toggle",
-        "name": "Basin of Vows",
-        "codes": "basin",
-        "img": "images/items/basinofvows.png"
-    },
-    {
-        "type": "toggle",
         "name": "Small Doll",
-        "codes": "doll",
-        "img": "images/items/doll.png"
+        "codes": "key_doll",
+        "img": "images/items/key_doll.png"
     },
     {
         "type": "toggle",
         "name": "Jailbreaker's Key",
-        "codes": "jailbreaker",
+        "codes": "key_jailbreaker",
         "img": "images/items/key_jailbreaker.png"
     },
     {
         "type": "toggle",
         "name": "Old Cell Key",
-        "codes": "oldcell",
-        "img": "images/items/key_oldcell.png"
+        "codes": "key_oldCell",
+        "img": "images/items/key_oldCell.png"
     },
     {
         "type": "toggle",
-        "name": "Jailer's Keyring",
-        "codes": "jailring",
-        "img": "images/items/key_jailersring.png"
+        "name": "Jailer's Key Ring",
+        "codes": "key_jailersRing",
+        "img": "images/items/key_jailersRing.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Basin of Vows",
+        "codes": "key_basinOfVows",
+        "img": "images/items/key_basinOfVows.png"
     },
     {
         "type": "toggle",
         "name": "Grand Archives Key",
-        "codes": "archives",
-        "img": "images/items/key_grandarchives.png"
+        "codes": "key_grandArchives",
+        "img": "images/items/key_grandArchives.png"
     },
     {
         "type": "toggle",
         "name": "Path of the Dragon",
-        "codes": "dragon",
-        "img": "images/items/pathofthedragon.png"
-    },
-    {
-        "type": "toggle",
-        "name": "Storm Ruler",
-        "codes": "storm",
-        "img": "images/items/storm_ruler.png"
+        "codes": "key_pathOfTheDragon",
+        "img": "images/items/key_pathOfTheDragon.png"
     },
     {
         "type": "toggle",
         "name": "Contraption Key",
-        "codes": "contraption",
+        "codes": "key_contraption",
         "img": "images/items/key_contraption.png"
     },
     {
         "type": "toggle",
         "name": "Small Envoy Banner",
-        "codes": "envoy",
-        "img": "images/items/banner_envoy.png"
+        "codes": "key_envoyBanner",
+        "img": "images/items/key_envoyBanner.png"
+    },
+
+    // Cinders
+    {
+        "type": "toggle",
+        "name": "Cinders of a Lord - Abyss Watcher",
+        "codes": "cinders,cinders_abyssWatcher",
+        "img": "images/items/cinders_abyssWatcher.png"
     },
     {
         "type": "toggle",
-        "name": "Cinders of the Abyss Watchers",
-        "codes": "cinders,abyss",
-        "img": "images/items/cinders_abyss.png"
-    },
-    {
-        "type": "toggle",
-        "name": "Cinders of Yhorm",
-        "codes": "cinders,yhorm",
-        "img": "images/items/cinders_yhorm.png"
-    },
-    {
-        "type": "toggle",
-        "name": "Cinders of Aldrich",
-        "codes": "cinders,aldrich",
+        "name": "Cinders of a Lord - Aldrich",
+        "codes": "cinders,cinders_aldrich",
         "img": "images/items/cinders_aldrich.png"
     },
     {
         "type": "toggle",
-        "name": "Cinders of Prince Lothric",
-        "codes": "cinders,lothric",
-        "img": "images/items/cinders_lothric.png"
+        "name": "Cinders of a Lord - Yhorm the Giant",
+        "codes": "cinders,cinders_yhormTheGiant",
+        "img": "images/items/cinders_yhormTheGiant.png"
     },
     {
         "type": "toggle",
-        "name": "Transposition Kiln",
-        "codes": "kiln",
-        "img": "images/items/kiln.png"
+        "name": "Cinders of a Lord - Lothric Prince",
+        "codes": "cinders,cinders_lothricPrince",
+        "img": "images/items/cinders_lothricPrince.png"
     },
-    {
-        "type": "toggle",
-        "name": "Loretta's Bone",
-        "codes": "loretta",
-        "img": "images/items/loretta.png"
-    },
-    {
-        "type": "consumable",
-        "name": "Dark Sigil",
-        "codes": "sigil",
-        "img": "images/items/dark_sigil.png",
-        "max_quantity": 8
-    },
-    {
-        "type": "toggle",
-        "name": "Fire Keeper Soul",
-        "codes": "soul",
-        "img": "images/items/firekeeper_soul.png"
-    },
-    {
-        "type": "toggle",
-        "name": "Sword of Avowal",
-        "codes": "avowal",
-        "img": "images/items/swordavowal.png"
-    },
-    {
-        "type": "toggle",
-        "name": "Hawkwood's Swordgrass",
-        "codes": "swordgrass",
-        "img": "images/items/swordgrass.png"
-    },
-    {
-        "type": "toggle",
-        "name": "Braille Divine Tome of Carim",
-        "codes": "braille_carim",
-        "img": "images/items/braille_carim.png"
-    },
-    {
-        "type": "toggle",
-        "name": "Braille Divine Tome of Londor",
-        "codes": "braille_londor",
-        "img": "images/items/braille_londor.png"
-    },
-    {
-        "type": "toggle",
-        "name": "Deep Braille Divine Tome",
-        "codes": "braille_deep",
-        "img": "images/items/braille_deep.png"
-    },
-    {
-        "type": "toggle",
-        "name": "Braille Divine Tome of Lothric",
-        "codes": "braille_lothric",
-        "img": "images/items/braille_lothric.png"
-    },
-    {
-        "type": "toggle",
-        "name": "Great Swamp Pyromancy Tome",
-        "codes": "pyro_swamp",
-        "img": "images/items/pyro_swamp.png"
-    },
-    {
-        "type": "toggle",
-        "name": "Carthus Pyromancy Tome",
-        "codes": "pyro_carthus",
-        "img": "images/items/pyro_carthus.png"
-    },
-    {
-        "type": "toggle",
-        "name": "Izalith Pyromancy Tome",
-        "codes": "pyro_izalith",
-        "img": "images/items/pyro_izalith.png"
-    },
-    {
-        "type": "toggle",
-        "name": "Quelana Pyromancy Tome",
-        "codes": "pyro_quelana",
-        "img": "images/items/pyro_quelana.png"
-    },
-    {
-        "type": "toggle",
-        "name": "Grave Warden Pyromancy Tome",
-        "codes": "pyro_gravewarden",
-        "img": "images/items/pyro_gravewarden.png"
-    },
-    {
-        "type": "toggle",
-        "name": "Sage's Scroll",
-        "codes": "scroll_sage",
-        "img": "images/items/scroll_sage.png"
-    },
-    {
-        "type": "toggle",
-        "name": "Golden Scroll",
-        "codes": "scroll_golden",
-        "img": "images/items/scroll_golden.png"
-    },
-    {
-        "type": "toggle",
-        "name": "Logan's Scroll",
-        "codes": "scroll_logan",
-        "img": "images/items/scroll_logan.png"
-    },
-    {
-        "type": "toggle",
-        "name": "Crystal Scroll",
-        "codes": "scroll_crystal",
-        "img": "images/items/scroll_crystal.png"
-    },
+
+    // Ashes
     {
         "type": "toggle",
         "name": "Greirat's Ashes",
@@ -291,8 +169,8 @@
     {
         "type": "toggle",
         "name": "Old Woman's Ashes",
-        "codes": "ashes_oldwoman",
-        "img": "images/items/ashes_oldwoman.png"
+        "codes": "ashes_oldWoman",
+        "img": "images/items/ashes_oldWoman.png"
     },
     {
         "type": "toggle",
@@ -303,8 +181,8 @@
     {
         "type": "toggle",
         "name": "Grave Warden's Ashes",
-        "codes": "ashes_gravewarden",
-        "img": "images/items/ashes_gravewarden.png"
+        "codes": "ashes_graveWarden",
+        "img": "images/items/ashes_graveWarden.png"
     },
     {
         "type": "toggle",
@@ -315,8 +193,8 @@
     {
         "type": "toggle",
         "name": "Excrement-covered Ashes",
-        "codes": "ashes_excrement",
-        "img": "images/items/ashes_excrement.png"
+        "codes": "ashes_excrementCovered",
+        "img": "images/items/ashes_excrementCovered.png"
     },
     {
         "type": "toggle",
@@ -333,14 +211,14 @@
     {
         "type": "toggle",
         "name": "Prisoner Chief's Ashes",
-        "codes": "ashes_prisoner",
-        "img": "images/items/ashes_prisoner.png"
+        "codes": "ashes_prisonerChief",
+        "img": "images/items/ashes_prisonerChief.png"
     },
     {
         "type": "toggle",
         "name": "Dragon Chaser's Ashes",
-        "codes": "ashes_dragonchaser",
-        "img": "images/items/ashes_dragonchaser.png"
+        "codes": "ashes_dragonChaser",
+        "img": "images/items/ashes_dragonChaser.png"
     },
     {
         "type": "toggle",
@@ -354,100 +232,110 @@
         "codes": "ashes_captain",
         "img": "images/items/ashes_captain.png"
     },
+
+    // Transposing Kiln
     {
         "type": "toggle",
-        "name": "Soul of Aldrich",
-        "codes": "aldrich_s",
-        "img": "images/items/soul_of_aldrich.png"
+        "name": "Transposing Kiln",
+        "codes": "transposingKiln",
+        "img": "images/items/transposingKiln.png"
+    },
+
+    // Braille Tomes
+    {
+        "type": "toggle",
+        "name": "Braille Divine Tome of Carim",
+        "codes": "braille_carim",
+        "img": "images/items/braille_carim.png"
     },
     {
         "type": "toggle",
-        "name": "Soul of Yhorm the Giant",
-        "codes": "yhorm_s",
-        "img": "images/items/soul_of_yhorm_the_giant.png"
-    },
-    // DLC
-    {
-        "type": "toggle",
-        "name": "Contraption Key",
-        "codes": "contraptionkey",
-        "img": "images/items/key_contraption.png"
+        "name": "Braille Divine Tome of Londor",
+        "codes": "braille_londor",
+        "img": "images/items/braille_londor.png"
     },
     {
         "type": "toggle",
-        "name": "Small Envoy Banner",
-        "codes": "envoybanner",
-        "img": "images/items/banner_envoy.png"
-    },
-    // NPC Event Triggers
-    {
-        "type": "toggle",
-        "name": "Shira",
-        "codes": "shira",
-        "img": "images/items/shira.png"
-    },
-    // Settings
-    {
-        "type": "toggle",
-        "name": "Shuffle Weapons",
-        "codes": "weapons",
-        "img": "images/items/weapons.png",
-        "inherit_codes": false
+        "name": "Deep Braille Divine Tome",
+        "codes": "braille_deep",
+        "img": "images/items/braille_deep.png"
     },
     {
         "type": "toggle",
-        "name": "Shuffle Shields",
-        "codes": "shields",
-        "img": "images/items/shields.png",
-        "inherit_codes": false
+        "name": "Braille Divine Tome of Lothric",
+        "codes": "braille_lothric",
+        "img": "images/items/braille_lothric.png"
+    },
+
+    // Pyromancy Tomes
+    {
+        "type": "toggle",
+        "name": "Great Swamp Pyromancy Tome",
+        "codes": "pyro_greatSwamp",
+        "img": "images/items/pyro_greatSwamp.png"
     },
     {
         "type": "toggle",
-        "name": "Shuffle Armors",
-        "codes": "armors",
-        "img": "images/items/armors.png",
-        "inherit_codes": false
+        "name": "Carthus Pyromancy Tome",
+        "codes": "pyro_carthus",
+        "img": "images/items/pyro_carthus.png"
     },
     {
         "type": "toggle",
-        "name": "Shuffle Rings",
-        "codes": "rings",
-        "img": "images/items/rings.png",
-        "inherit_codes": false
+        "name": "Izalith Pyromancy Tome",
+        "codes": "pyro_izalith",
+        "img": "images/items/pyro_izalith.png"
     },
     {
         "type": "toggle",
-        "name": "Shuffle Spells",
-        "codes": "spells",
-        "img": "images/items/spells.png",
-        "inherit_codes": false
+        "name": "Quelana Pyromancy Tome",
+        "codes": "pyro_quelana",
+        "img": "images/items/pyro_quelana.png"
     },
     {
         "type": "toggle",
-        "name": "Shuffle NPCs",
-        "codes": "npcs",
-        "img": "images/items/npcs.png",
-        "inherit_codes": false
+        "name": "Grave Warden Pyromancy Tome",
+        "codes": "pyro_graveWarden",
+        "img": "images/items/pyro_graveWarden.png"
+    },
+
+    // Scrolls
+    {
+        "type": "toggle",
+        "name": "Sage's Scroll",
+        "codes": "scroll_sage",
+        "img": "images/items/scroll_sage.png"
     },
     {
         "type": "toggle",
-        "name": "Shuffle Miscellaneous",
-        "codes": "misc",
-        "img": "images/items/misc.png",
-        "inherit_codes": false
+        "name": "Golden Scroll",
+        "codes": "scroll_golden",
+        "img": "images/items/scroll_golden.png"
     },
     {
         "type": "toggle",
-        "name": "Shuffle Key Items",
-        "codes": "keyitem",
-        "img": "images/items/banner_lothric.png",
-        "inherit_codes": false
+        "name": "Logan's Scroll",
+        "codes": "scroll_logan",
+        "img": "images/items/scroll_logan.png"
     },
     {
         "type": "toggle",
-        "name": "Shuffle Bosses",
-        "codes": "boss",
-        "img": "images/items/soul_of_aldrich.png",
-        "inherit_codes": false
+        "name": "Crystal Scroll",
+        "codes": "scroll_crystal",
+        "img": "images/items/scroll_crystal.png"
+    },
+
+    // Todo
+    {
+        "type": "toggle",
+        "name": "Shops",
+        "codes": "shop",
+        "img": "images/items/shop.png"
+    },
+    {
+        "type": "static",
+        "name": "Goal",
+        "codes": "goal",
+        "img": "images/items/goal.png"
     }
 ]

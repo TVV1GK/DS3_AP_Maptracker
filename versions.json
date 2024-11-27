@@ -1,55 +1,7 @@
 {
     "versions": [
         {
-            "package_version": "4.1.1",
-            "download_url": "https://github.com/Br00ty/DS3_AP_Maptracker/releases/download/v4.1.1/ds3_br00ty.zip",
-            "sha256": "5EC785D04FB57234FCAA2F9AA6C302CD328A682AB20F554C156C36C7B1CA6F46",
-            "changelog": [
-                "added settings auto-tracking",
-                "fixed 'LC: Soul of Dragonslayer Armour' location showing 'LC: Irithyll Rapier' instead",
-                "moved 'Ring of Steel Protection' to Dreg Heap",
-                "fixed Yhorm's soul and cinder not being autotracked"
-            ]
-        },
-        {
-            "package_version": "4.1",
-            "download_url": "https://github.com/Br00ty/DS3_AP_Maptracker/releases/download/v4.1/ds3_br00ty.zip",
-            "sha256": "6DB29250B25B435CB780A39F3734CBAF3488CB1C28AFC11A77FD2C65589F49C9",
-            "changelog": [
-                "fixed multiple settings issues with items not toggling on with the correct setting"
-            ]
-        },
-        {
-            "package_version": "4.0",
-            "download_url": "https://github.com/Br00ty/DS3_AP_Maptracker/releases/download/v4.0/ds3_br00ty.zip",
-            "sha256": "4C5761363D11D69EACF2F052C3FC5CA8CC8A2393998379D791FEEB72E55EE25A",
-            "changelog": [
-                "Added Cornyx's Locations",
-                "Added Karla's Locations",
-                "Added multiple ring locations in the DLC",
-                "update some location ids",
-                "new toggleable settings to match new YAML settings",
-                "Autotracking Updated",
-                "fixed some location cords"
-            ]
-        },
-        {
-            "package_version": "3.1",
-            "download_url": "https://github.com/Br00ty/DS3_AP_Maptracker/releases/download/v3.1/ds3_br00ty.zip",
-            "sha256": "7B83EFF1D3548B3EEAE3AB4FA8DEB6F9CBEAC2AA8869B54AD9E7C78A0B60D9A9",
-            "changelog": [
-                "Update Testing",
-                "Autotracking Updated"
-            ]
-        },
-        {
-            "package_version": "3.0",
-            "download_url": "https://github.com/Br00ty/DS3_AP_Maptracker/releases/download/v3.0/ds3_br00ty.zip",
-            "sha256": "096E1543F33E47BEACB81A60D5C2E9CAC766F24D8FACBAA47F5E8349D7976919",
-            "changelog": [
-                "Added DLC Maps",
-                "Added `Contraption Key` and `Small Envoy Banner` to item tracker"
-            ]
+            
         }
     ]
 }

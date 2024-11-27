@@ -1,98 +1,99 @@
 {
-    "shared_item_grid": {
+    "location_keys_grid": {
         "type": "array",
-        "orientation": "vertical",
-        "margin": "0,0",
-        "content": [
-            {
-                "type": "array",
-                "orientation": "vertical",
-                "margin": "0,0",
-                "content": [
-                    {
-                        "type": "itemgrid",
-                        "item_margin": "-1,2",
-                        "h_alignment": "center",
-                        "item_size": 40,
-                        "rows": [
-                            [
-                                "coiledsword",
-                                "banner",
-                                "basin",
-                                "doll",
-                                "storm",
-                                "dragon",
-                                "envoybanner"
-                            ]
-                        ]
-                    },
-                    {
-                        "type": "itemgrid",
-                        "item_margin": "-1,-5",
-                        "h_alignment": "center",
-                        "item_size": 40,
-                        "rows": [
-                            [
-                                "towerkey",
-                                "cellkey",
-                                "jailbreaker",
-                                "jailring",
-                                "oldcell",
-                                "archives",
-                                "contraptionkey"
-                            ]
-                        ]
-                    },
-                    {
-                        "type": "itemgrid",
-                        "item_margin": "3,0",
-                        "h_alignment": "center",
-                        "item_size": 62,
-                        "rows": [
-                            [
-                                "abyss",
-                                "yhorm",
-                                "aldrich",
-                                "lothric"
-                            ]
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    "settings_grid": {
-        "type": "array",
-        "orientation": "vertical",
-        "margin": "0,2",
+        "margin": "0",
+        "orientation": "horizontal",
         "content": [
             {
                 "type": "itemgrid",
-                "item_margin": "2,0",
-                "h_alignment": "center",
-                "item_size": 62,
+                "margin": "0,0",
+                "item_margin": "0,0",
+                "item_size": 44,
                 "rows": [
                     [
-                        "weapons",
-                        "shields",
-                        "armors",
-                        "rings",
-                        "spells"
+                        "key_coiledSword",
+                        "key_lothricBanner",
+                        "key_basinOfVows",
+                        "key_doll",
+                        "key_pathOfTheDragon"                        
+                    ],
+                    [
+                        "key_envoyBanner",
+                        "key_tower",
+                        "key_cell",
+                        "key_liftChamber",
+                        "key_grave"                        
+                    ],
+                    [
+                        "key_jailbreaker",
+                        "key_jailersRing",
+                        "key_oldCell",
+                        "key_grandArchives",
+                        "key_contraption"
                     ]
                 ]
             },
             {
                 "type": "itemgrid",
-                "margin": "25,10",
-                "item_margin": "2,0",
-                "h_alignment": "center",
-                "item_size": 62,
+                "margin": "10,0",
+                "item_margin": "0,0",
+                "item_size": 66,
                 "rows": [
                     [
-                        "keyitem",
-                        "npcs",
-                        "boss",
-                        "misc"
+                        "cinders_abyssWatcher",
+                        "cinders_aldrich"
+                    ],
+                    [
+                        "cinders_yhormTheGiant",
+                        "cinders_lothricPrince"
+                    ]
+                ]
+            }
+        ]
+    },
+    "shop_keys_grid": {
+        "type": "array",
+        "margin": "0",
+        "orientation": "vertical",
+        "content": [
+            {
+                "type": "itemgrid",
+                "margin": "0,0",
+                "item_margin": "0,0",
+                "item_size": 33,
+                "rows": [
+                    [
+                        "transposingKiln",
+                        "ashes_mortician",
+                        "ashes_dreamchaser",
+                        "ashes_paladin",
+                        "ashes_graveWarden",
+                        "ashes_excrementCovered"
+                    ],
+                    [
+                        "ashes_prisonerChief",
+                        "ashes_xanthous",
+                        "ashes_dragonChaser",
+                        "ashes_easterner",
+                        "ashes_captain",
+                        "pyro_greatSwamp"
+                        
+                    ],
+                    [
+                        "braille_carim",
+                        "braille_londor",
+                        "scroll_sage",
+                        "scroll_golden",
+                        "pyro_carthus",
+                        "pyro_izalith"
+                    ],
+                    [
+                        "braille_deep",
+                        "braille_lothric",
+                        "scroll_logan",
+                        "scroll_crystal",                        
+                        "pyro_quelana",
+                        "pyro_graveWarden"
                     ]
                 ]
             }
