@@ -358,7 +358,7 @@
             {
                 "name": "FS: Soul Transposing",
                 "visibility_rules": [
-                    "fs,bossReward,missable"
+                    "fs,missable,bossReward"
                 ],
                 "sections": [
                     {
@@ -1118,44 +1118,72 @@
                 "access_rules": [
                     "key_lothricBanner,@HWL/HWL: Vordt of the Boreal Valley - boss/HWL: Soul of Boreal Valley Vordt"
                 ],
+                "visibility_rules": [
+                    "armor"
+                ],
                 "sections": [
                     {
                         "name": "FS: Exile Mask - shop after killing NPCs in RS",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "rs,hostileNPCReward,hidden"
+                        ]
                     },
                     {
                         "name": "FS: Exile Armor - shop after killing NPCs in RS",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "rs,hostileNPCReward,hidden"
+                        ]
                     },
                     {
                         "name": "FS: Exile Gauntlets - shop after killing NPCs in RS",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "rs,hostileNPCReward,hidden"
+                        ]
                     },
                     {
                         "name": "FS: Exile Leggings - shop after killing NPCs in RS",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "rs,hostileNPCReward,hidden"
+                        ]
                     },
-
                     {
                         "name": "FS: Sage's Big Hat - shop after killing RS boss",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "rs,bossReward"
+                        ]
                     },
-
                     {
                         "name": "FS: Undead Legion Helm - shop after killing FK boss",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "fk,bossReward"
+                        ]
                     },
                     {
                         "name": "FS: Undead Legion Armor - shop after killing FK boss",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "fk,bossReward"
+                        ]
                     },
                     {
                         "name": "FS: Undead Legion Gauntlet - shop after killing FK boss",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "fk,bossReward"
+                        ]
                     },
                     {
                         "name": "FS: Undead Legion Leggings - shop after killing FK boss",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "fk,bossReward"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -1171,44 +1199,72 @@
                 "access_rules": [
                     "@FK/FK: Abyss Watchers - boss/FK: Soul of the Blood of the Wolf"
                 ],
+                "visibility_rules": [
+                    "armor"
+                ],
                 "sections": [
                     {
                         "name": "FS: Wolnir's Crown - shop after killing CC boss",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "cc,bossReward"
+                        ]
                     },
-
                     {
                         "name": "FS: Executioner Helm - shop after killing Horace",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "sl,hostileNPCReward,friendlyNPCReward,hidden"
+                        ]
                     },
                     {
                         "name": "FS: Executioner Armor - shop after killing Horace",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "sl,hostileNPCReward,friendlyNPCReward,hidden"
+                        ]
                     },
                     {
                         "name": "FS: Executioner Gauntlets - shop after killing Horace",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "sl,hostileNPCReward,friendlyNPCReward,hidden"
+                        ]
                     },
                     {
                         "name": "FS: Executioner Leggings - shop after killing Horace",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "sl,hostileNPCReward,friendlyNPCReward,hidden"
+                        ]
                     },
-
                     {
                         "name": "FS: Black Iron Helm - shop after killing Tsorig",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "sl,hostileNPCReward,hidden"
+                        ]
                     },
                     {
                         "name": "FS: Black Iron Armor - shop after killing Tsorig",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "sl,hostileNPCReward,hidden"
+                        ]
                     },
                     {
                         "name": "FS: Black Iron Gauntlets - shop after killing Tsorig",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "sl,hostileNPCReward,hidden"
+                        ]
                     },
                     {
                         "name": "FS: Black Iron Leggings - shop after killing Tsorig",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "sl,hostileNPCReward,hidden"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -1243,39 +1299,65 @@
                 "access_rules": [
                     "@IBV/IBV: Pontiff Sulyvahn - boss/IBV: Soul of Pontiff Sulyvahn"
                 ],
+                "visibility_rules": [
+                    "al,armor"
+                ],
                 "sections": [
                     {
                         "name": "FS: Helm of Favor - shop after killing water reserve minibosses",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "minibossReward,hidden"
+                        ]
                     },
                     {
                         "name": "FS: Embraced Armor of Favor - shop after killing water reserve minibosses",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "minibossReward,hidden"
+                        ]
                     },
                     {
                         "name": "FS: Gauntlets of Favor - shop after killing water reserve minibosses",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "minibossReward,hidden"
+                        ]
                     },
                     {
                         "name": "FS: Leggings of Favor - shop after killing water reserve minibosses",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "minibossReward,hidden"
+                        ]
                     },
-
                     {
                         "name": "FS: Smough's Helm - shop after killing AL boss",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "bossReward"
+                        ]
                     },
                     {
                         "name": "FS: Smough's Armor - shop after killing AL boss",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "bossReward"
+                        ]
                     },
                     {
                         "name": "FS: Smough's Gauntlets - shop after killing AL boss",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "bossReward"
+                        ]
                     },
                     {
                         "name": "FS: Smough's Leggings - shop after killing AL boss",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "bossReward"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -1289,7 +1371,7 @@
             {
                 "name": "FS: Shop after killing Leonhard",
                 "visibility_rules": [
-                    "friendlyNPCReward,missable,hidden,al,armor"
+                    "missable,friendlyNPCReward,hidden,al,armor"
                 ],
                 "sections": [
                     {
@@ -1315,65 +1397,89 @@
             },
             {
                 "name": "FS: Shop after Anri quest + Eygon or LC boss",
+                "visibility_rules": [
+                    "armor"
+                ],
                 "sections": [
                     {
                         "name": "FS: Elite Knight Helm - shop after Anri quest",
                         "access_rules": [
                             "@IBV/IBV: Pontiff Sulyvahn - boss/IBV: Soul of Pontiff Sulyvahn"
                         ],
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "al,friendlyNPCReward"
+                        ]
                     },
                     {
                         "name": "FS: Elite Knight Armor - shop after Anri quest",
                         "access_rules": [
                             "@IBV/IBV: Pontiff Sulyvahn - boss/IBV: Soul of Pontiff Sulyvahn"
                         ],
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "al,friendlyNPCReward"
+                        ]
                     },
                     {
                         "name": "FS: Elite Knight Gauntlets - shop after Anri quest",
                         "access_rules": [
                             "@IBV/IBV: Pontiff Sulyvahn - boss/IBV: Soul of Pontiff Sulyvahn"
                         ],
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "al,friendlyNPCReward"
+                        ]
                     },
                     {
                         "name": "FS: Elite Knight Leggings - shop after Anri quest",
                         "access_rules": [
                             "@IBV/IBV: Pontiff Sulyvahn - boss/IBV: Soul of Pontiff Sulyvahn"
                         ],
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "al,friendlyNPCReward"
+                        ]
                     },
-
                     {
                         "name": "FS: Morne's Helm - shop after killing Eygon or LC boss",
                         "access_rules": [
                             "@HWL/HWL: Dancer of the Boreal Valley - boss/HWL: Soul of the Dancer"
                         ],
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "lc,bossReward"
+                        ]
                     },
                     {
                         "name": "FS: Morne's Armor - shop after killing Eygon or LC boss",
-                        
                         "access_rules": [
                             "@HWL/HWL: Dancer of the Boreal Valley - boss/HWL: Soul of the Dancer"
                         ],
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "lc,bossReward"
+                        ]
                     },
                     {
                         "name": "FS: Morne's Gauntlets - shop after killing Eygon or LC boss",
-                        
                         "access_rules": [
                             "@HWL/HWL: Dancer of the Boreal Valley - boss/HWL: Soul of the Dancer"
                         ],
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "lc,bossReward"
+                        ]
                     },
                     {
                         "name": "FS: Morne's Leggings - shop after killing Eygon or LC boss",
                         "access_rules": [
                             "@HWL/HWL: Dancer of the Boreal Valley - boss/HWL: Soul of the Dancer"
                         ],
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "lc,bossReward"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -1386,63 +1492,97 @@
             },
             {
                 "name": "FS: Shop after killing LC entry boss + UG boss",
+                "visibility_rules": [
+                    "bossReward,armor"
+                ],
                 "sections": [
                     {
                         "name": "FS: Dancer's Crown - shop after killing LC entry boss",
                         "access_rules": [
                             "@HWL/HWL: Dancer of the Boreal Valley - boss/HWL: Soul of the Dancer"
                         ],
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "lc"
+                        ]
                     },
                     {
                         "name": "FS: Dancer's Armor - shop after killing LC entry boss",
                         "access_rules": [
                             "@HWL/HWL: Dancer of the Boreal Valley - boss/HWL: Soul of the Dancer"
                         ],
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "lc"
+                        ]
                     },
                     {
                         "name": "FS: Dancer's Gauntlets - shop after killing LC entry boss",
                         "access_rules": [
                             "@HWL/HWL: Dancer of the Boreal Valley - boss/HWL: Soul of the Dancer"
                         ],
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "lc"
+                        ]
                     },
                     {
                         "name": "FS: Dancer's Leggings - shop after killing LC entry boss",
                         "access_rules": [
                             "@HWL/HWL: Dancer of the Boreal Valley - boss/HWL: Soul of the Dancer"
                         ],
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "lc"
+                        ]
                     },
-
                     {
                         "name": "FS: Gundyr's Helm - shop after killing UG boss",
                         "access_rules": [
-                            ["@CKG/CKG: Oceiros, the Consumed King - boss/CKG: Soul of Consumed Oceiros"]
+                            [
+                                "@CKG/CKG: Oceiros, the Consumed King - boss/CKG: Soul of Consumed Oceiros"
+                            ]
                         ],
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "ug"
+                        ]
                     },
                     {
                         "name": "FS: Gundyr's Armor - shop after killing UG boss",
                         "access_rules": [
-                            ["@CKG/CKG: Oceiros, the Consumed King - boss/CKG: Soul of Consumed Oceiros"]
+                            [
+                                "@CKG/CKG: Oceiros, the Consumed King - boss/CKG: Soul of Consumed Oceiros"
+                            ]
                         ],
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "ug"
+                        ]
                     },
                     {
                         "name": "FS: Gundyr's Gauntlets - shop after killing UG boss",
                         "access_rules": [
-                            ["@CKG/CKG: Oceiros, the Consumed King - boss/CKG: Soul of Consumed Oceiros"]
+                            [
+                                "@CKG/CKG: Oceiros, the Consumed King - boss/CKG: Soul of Consumed Oceiros"
+                            ]
                         ],
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "ug"
+                        ]
                     },
                     {
                         "name": "FS: Gundyr's Leggings - shop after killing UG boss",
                         "access_rules": [
-                            ["@CKG/CKG: Oceiros, the Consumed King - boss/CKG: Soul of Consumed Oceiros"]
+                            [
+                                "@CKG/CKG: Oceiros, the Consumed King - boss/CKG: Soul of Consumed Oceiros"
+                            ]
                         ],
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "ug"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -1457,6 +1597,9 @@
                 "name": "FS: Shop after killing GA NPCs",
                 "access_rules": [
                     "key_grandArchives,@LC/LC: Dragonslayer Armour - boss/LC: Soul of Dragonslayer Armour"
+                ],
+                "visibility_rules": [
+                    "hostileNPCReward,ga,armor,hidden"
                 ],
                 "sections": [
                     {
@@ -1475,7 +1618,6 @@
                         "name": "FS: Faraam Boots - shop after killing GA NPC",
                         "item_count": 1
                     },
-
                     {
                         "name": "FS: Black Hand Hat - shop after killing GA NPC",
                         "item_count": 1
@@ -1495,63 +1637,89 @@
             },
             {
                 "name": "FS: Shop after killing GA boss + AP boss",
+                "visibility_rules": [
+                    "bossReward,armor"
+                ],
                 "sections": [
                     {
                         "name": "FS: Lorian's Helm - shop after killing GA boss",
                         "access_rules": [
                             "key_grandArchives,@LC/LC: Dragonslayer Armour - boss/LC: Soul of Dragonslayer Armour"
                         ],
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "ga"
+                        ]
                     },
                     {
                         "name": "FS: Lorian's Armor - shop after killing GA boss",
                         "access_rules": [
                             "key_grandArchives,@LC/LC: Dragonslayer Armour - boss/LC: Soul of Dragonslayer Armour"
                         ],
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "ga"
+                        ]
                     },
                     {
                         "name": "FS: Lorian's Gauntlets - shop after killing GA boss",
                         "access_rules": [
                             "key_grandArchives,@LC/LC: Dragonslayer Armour - boss/LC: Soul of Dragonslayer Armour"
                         ],
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "ga"
+                        ]
                     },
                     {
                         "name": "FS: Lorian's Leggings - shop after killing GA boss",
                         "access_rules": [
                             "key_grandArchives,@LC/LC: Dragonslayer Armour - boss/LC: Soul of Dragonslayer Armour"
                         ],
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "ga"
+                        ]
                     },
-
                     {
                         "name": "FS: Golden Crown - shop after killing AP boss",
                         "access_rules": [
                             "key_pathOfTheDragon,key_doll,@CC/CC: High Lord Wolnir - boss/CC: Soul of High Lord Wolnir"
                         ],
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "ap"
+                        ]
                     },
                     {
                         "name": "FS: Dragonscale Armor - shop after killing AP boss",
                         "access_rules": [
                             "key_pathOfTheDragon,key_doll,@CC/CC: High Lord Wolnir - boss/CC: Soul of High Lord Wolnir"
                         ],
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "ap"
+                        ]
                     },
                     {
                         "name": "FS: Golden Bracelets - shop after killing AP boss",
                         "access_rules": [
                             "key_pathOfTheDragon,key_doll,@CC/CC: High Lord Wolnir - boss/CC: Soul of High Lord Wolnir"
                         ],
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "ap"
+                        ]
                     },
                     {
                         "name": "FS: Dragonscale Waistcloth - shop after killing AP boss",
                         "access_rules": [
                             "key_pathOfTheDragon,key_doll,@CC/CC: High Lord Wolnir - boss/CC: Soul of High Lord Wolnir"
                         ],
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "ap"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -1565,7 +1733,7 @@
             {
                 "name": "FS: Sunless Set - shop, Sirris quest, kill GA boss",
                 "visibility_rules": [
-                    "ga,friendlyNPCReward,missable,armor"
+                    "friendlyNPCReward,missable,armor,ga"
                 ],
                 "sections": [
                     {
@@ -1601,57 +1769,80 @@
                         "access_rules": [
                             "cinders_abyssWatcher,cinders_aldrich,cinders_yhormTheGiant,cinders_lothricPrince"
                         ],
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "kff,weaponUpgrade,hidden"
+                        ]
                     },
                     {
                         "name": "FS: Firelink Helm - shop after placing all Cinders",
                         "access_rules": [
                             "cinders_abyssWatcher,cinders_aldrich,cinders_yhormTheGiant,cinders_lothricPrince"
                         ],
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "kff,bossReward,armor"
+                        ]
                     },
                     {
                         "name": "FS: Firelink Armor - shop after placing all Cinders",
                         "access_rules": [
                             "cinders_abyssWatcher,cinders_aldrich,cinders_yhormTheGiant,cinders_lothricPrince"
                         ],
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "kff,bossReward,armor"
+                        ]
                     },
                     {
                         "name": "FS: Firelink Gauntlets - shop after placing all Cinders",
                         "access_rules": [
                             "cinders_abyssWatcher,cinders_aldrich,cinders_yhormTheGiant,cinders_lothricPrince"
                         ],
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "kff,bossReward,armor"
+                        ]
                     },
                     {
                         "name": "FS: Firelink Leggings - shop after placing all Cinders",
                         "access_rules": [
                             "cinders_abyssWatcher,cinders_aldrich,cinders_yhormTheGiant,cinders_lothricPrince"
                         ],
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "kff,bossReward,armor"
+                        ]
                     },
-
                     {
                         "name": "FS: Ordained Hood - shop after killing PW2 boss",
                         "access_rules": [
                             "key_contraption,@RS/RS: Crystal Sage - boss/RS: Soul of a Crystal Sage"
                         ],
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "pwa,bossReward,armor"
+                        ]
                     },
                     {
                         "name": "FS: Ordained Dress - shop after killing PW2 boss",
                         "access_rules": [
                             "key_contraption,@RS/RS: Crystal Sage - boss/RS: Soul of a Crystal Sage"
                         ],
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "pwa,bossReward,armor"
+                        ]
                     },
                     {
                         "name": "FS: Ordained Trousers - shop after killing PW2 boss",
                         "access_rules": [
                             "key_contraption,@RS/RS: Crystal Sage - boss/RS: Soul of a Crystal Sage"
                         ],
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "pwa,bossReward,armor"
+                        ]
                     }
                 ],
                 "map_locations": [
@@ -1769,7 +1960,7 @@
             {
                 "name": "FS: Pale Shade Set - Yoel's room, kill Londor Pale Shade twice",
                 "visibility_rules": [
-                    "armor,ibv,hostileNPCReward,missable"
+                    "hostileNPCReward,armor,missable,ibv"
                 ],
                 "sections": [
                     {
@@ -1800,7 +1991,11 @@
             {
                 "name": "FS: Yuria's shop",
                 "access_rules": [
-                    ["key_lothricBanner","@HWL/HWL: Vordt of the Boreal Valley - boss/HWL: Soul of Boreal Valley Vordt","[@CKG/CKG: Oceiros, the Consumed King - boss/CKG: Soul of Consumed Oceiros]"]
+                    [
+                        "key_lothricBanner",
+                        "@HWL/HWL: Vordt of the Boreal Valley - boss/HWL: Soul of Boreal Valley Vordt",
+                        "[@CKG/CKG: Oceiros, the Consumed King - boss/CKG: Soul of Consumed Oceiros]"
+                    ]
                 ],
                 "visibility_rules": [
                     "ug,friendlyNPCReward,ring"
@@ -1822,7 +2017,7 @@
             {
                 "name": "FS: Black Set - Yuria after killing KFF boss",
                 "visibility_rules": [
-                    "armor,friendlyNPCReward,missable,kff"
+                    "kff,friendlyNPCReward,missable,armor"
                 ],
                 "sections": [
                     {
@@ -1856,7 +2051,7 @@
                     "key_lothricBanner,@HWL/HWL: Vordt of the Boreal Valley - boss/HWL: Soul of Boreal Valley Vordt"
                 ],
                 "visibility_rules": [
-                    "us,friendlyNPCReward,spell"
+                    "us,spell,friendlyNPCReward"
                 ],
                 "sections": [
                     {
@@ -1890,7 +2085,7 @@
                     "pyro_greatSwamp"
                 ],
                 "visibility_rules": [
-                    "us,friendlyNPCReward,spell,missable"
+                    "us,spell,friendlyNPCReward,missable"
                 ],
                 "sections": [
                     {
@@ -1924,7 +2119,7 @@
                     "pyro_carthus"
                 ],
                 "visibility_rules": [
-                    "us,friendlyNPCReward,spell,missable"
+                    "us,spell,friendlyNPCReward,missable"
                 ],
                 "sections": [
                     {
@@ -1954,7 +2149,7 @@
                     "pyro_izalith"
                 ],
                 "visibility_rules": [
-                    "us,friendlyNPCReward,spell,missable"
+                    "us,spell,friendlyNPCReward,missable"
                 ],
                 "sections": [
                     {
@@ -1999,7 +2194,7 @@
                     "pyro_greatSwamp,pyro_carthus,pyro_izalith,@FS/FS: Cornyx's shop/FS: Fireball - Cornyx"
                 ],
                 "visibility_rules": [
-                    "friendlyNPCReward,armor"
+                    "us,friendlyNPCReward,armor"
                 ],
                 "sections": [
                     {
@@ -2086,7 +2281,7 @@
                     "braille_carim"
                 ],
                 "visibility_rules": [
-                    "us,friendlyNPCReward,spell,missable"
+                    "us,spell,friendlyNPCReward,missable"
                 ],
                 "sections": [
                     {
@@ -2116,7 +2311,7 @@
                     "braille_lothric"
                 ],
                 "visibility_rules": [
-                    "us,friendlyNPCReward,spell,missable"
+                    "us,spell,friendlyNPCReward,missable"
                 ],
                 "sections": [
                     {
@@ -2143,7 +2338,7 @@
             {
                 "name": "FS: Orbeck",
                 "visibility_rules": [
-                    "rs,friendlyNPCReward,spell,missable"
+                    "spell,rs,friendlyNPCReward,missable"
                 ],
                 "sections": [
                     {
@@ -2224,7 +2419,7 @@
                     "scroll_sage"
                 ],
                 "visibility_rules": [
-                    "rs,friendlyNPCReward,spell,missable"
+                    "spell,rs,friendlyNPCReward,missable"
                 ],
                 "sections": [
                     {
@@ -2250,7 +2445,7 @@
                     "scroll_logan"
                 ],
                 "visibility_rules": [
-                    "rs,friendlyNPCReward,spell,missable"
+                    "spell,rs,friendlyNPCReward,missable"
                 ],
                 "sections": [
                     {
@@ -2276,7 +2471,7 @@
                     "scroll_crystal"
                 ],
                 "visibility_rules": [
-                    "rs,friendlyNPCReward,spell,missable"
+                    "spell,rs,friendlyNPCReward,missable"
                 ],
                 "sections": [
                     {
@@ -2306,7 +2501,7 @@
                     "scroll_golden"
                 ],
                 "visibility_rules": [
-                    "rs,friendlyNPCReward,spell,missable"
+                    "spell,rs,friendlyNPCReward,missable"
                 ],
                 "sections": [
                     {
@@ -2446,7 +2641,7 @@
             {
                 "name": "CD: Patches",
                 "visibility_rules": [
-                    "friendlyNPCReward,cd,missable"
+                    "cd,friendlyNPCReward,missable"
                 ],
                 "sections": [
                     {
@@ -2532,7 +2727,7 @@
             {
                 "name": "FS: Mail Breaker - Sirris for killing Creighton",
                 "visibility_rules": [
-                    "hostileNPCReward,ibv,friendlyNPCReward,missable"
+                    "hostileNPCReward,friendlyNPCReward,missable,ibv"
                 ],
                 "sections": [
                     {
@@ -3338,7 +3533,7 @@
             {
                 "name": "HWL: Emma",
                 "visibility_rules": [
-                    "unique,hwl"
+                    "hwl,unique"
                 ],
                 "sections": [
                     {
@@ -4198,7 +4393,7 @@
             {
                 "name": "HWL: Fort roof, transforming hollow",
                 "visibility_rules": [
-                    "hidden,hwl"
+                    "hwl,hidden"
                 ],
                 "sections": [
                     {
@@ -4227,7 +4422,7 @@
             {
                 "name": "HWL: Back tower, transforming hollow",
                 "visibility_rules": [
-                    "hidden,hwl"
+                    "hwl,hidden"
                 ],
                 "sections": [
                     {
@@ -4349,7 +4544,7 @@
             {
                 "name": "US: Curse-Rotted Greatwood - boss",
                 "visibility_rules": [
-                    "bossReward,progression"
+                    "progression,bossReward"
                 ],
                 "sections": [
                     {
@@ -5166,7 +5361,7 @@
             {
                 "name": "US: Mirrah Set - tower village, jump from roof",
                 "visibility_rules": [
-                    "hidden,armor"
+                    "armor,hidden"
                 ],
                 "sections": [
                     {
@@ -5944,7 +6139,7 @@
             {
                 "name": "RS: Exile Greatsword - NPC drop by Farron Keep",
                 "visibility_rules": [
-                    "weapon,hostileNPCReward"
+                    "hostileNPCReward,weapon"
                 ],
                 "sections": [
                     {
@@ -5967,7 +6162,7 @@
             {
                 "name": "RS: Heysel drop [Embered]",
                 "visibility_rules": [
-                    "missable,hostileNPCReward"
+                    "hostileNPCReward,missable"
                 ],
                 "sections": [
                     {
@@ -6343,7 +6538,7 @@
             {
                 "name": "RS: Sorcerer Set - water beneath stronghold",
                 "visibility_rules": [
-                    "hidden,armor"
+                    "armor,hidden"
                 ],
                 "sections": [
                     {
@@ -6846,7 +7041,7 @@
             {
                 "name": "CD: Deacons of the Deep - boss",
                 "visibility_rules": [
-                    "bossReward,progression"
+                    "progression,bossReward"
                 ],
                 "sections": [
                     {
@@ -7951,7 +8146,7 @@
             {
                 "name": "CD: Archdeacon Set - boss room after killing boss",
                 "visibility_rules": [
-                    "hidden,bossReward,armor"
+                    "bossReward,armor,hidden"
                 ],
                 "sections": [
                     {
@@ -8169,7 +8364,7 @@
             {
                 "name": "CD: Kirk drop [Embered]",
                 "visibility_rules": [
-                    "missable,hostileNPCReward"
+                    "hostileNPCReward,missable"
                 ],
                 "sections": [
                     {
@@ -8198,7 +8393,7 @@
             {
                 "name": "CD: Helm of Thorns - Rosaria's Bed Chamber after killing Kirk",
                 "visibility_rules": [
-                    "armor,hostileNPCReward,missable"
+                    "hostileNPCReward,missable,armor"
                 ],
                 "sections": [
                     {
@@ -8351,7 +8546,7 @@
             {
                 "name": "FK: Abyss Watchers - boss",
                 "visibility_rules": [
-                    "bossReward,progression"
+                    "progression,bossReward"
                 ],
                 "sections": [
                     {
@@ -9531,7 +9726,7 @@
                     "key_pathOfTheDragon,key_doll,@CC/CC: High Lord Wolnir - boss/CC: Soul of High Lord Wolnir"
                 ],
                 "visibility_rules": [
-                    "hidden,armor,hostileNPCReward"
+                    "hostileNPCReward,hidden,armor"
                 ],
                 "sections": [
                     {
@@ -12353,7 +12548,7 @@
             {
                 "name": "IBV: Mirrah Chain Set - bridge after killing Creighton",
                 "visibility_rules": [
-                    "friendlyNPCReward,missable,hostileNPCReward,armor"
+                    "missable,friendlyNPCReward,hostileNPCReward,armor"
                 ],
                 "sections": [
                     {
@@ -12395,7 +12590,7 @@
             {
                 "name": "AL: Aldrich, Devourer of Gods - boss",
                 "visibility_rules": [
-                    "bossReward,progression"
+                    "progression,bossReward"
                 ],
                 "sections": [
                     {
@@ -12612,7 +12807,7 @@
             {
                 "name": "US: Sunset Set - Pit of Hollows after killing Hodrick with Sirris",
                 "visibility_rules": [
-                    "friendlyNPCReward,missable,hostileNPCReward,armor"
+                    "missable,friendlyNPCReward,hostileNPCReward,armor"
                 ],
                 "sections": [
                     {
@@ -12681,7 +12876,7 @@
             {
                 "name": "AL: Brass Set - tomb",
                 "visibility_rules": [
-                    "hidden,armor"
+                    "armor,hidden"
                 ],
                 "sections": [
                     {
@@ -12988,7 +13183,7 @@
             {
                 "name": "AL: Painting Guardian Set - prison tower, rafters",
                 "visibility_rules": [
-                    "hidden,armor"
+                    "armor,hidden"
                 ],
                 "sections": [
                     {
@@ -15306,7 +15501,7 @@
                     "key_pathOfTheDragon,key_doll,@CC/CC: High Lord Wolnir - boss/CC: Soul of High Lord Wolnir"
                 ],
                 "visibility_rules": [
-                    "hidden,hostileNPCReward,armor"
+                    "hostileNPCReward,armor,hidden"
                 ],
                 "sections": [
                     {
@@ -15339,7 +15534,9 @@
     {
         "name": "UG",
         "access_rules": [
-            ["@CKG/CKG: Oceiros, the Consumed King - boss/CKG: Soul of Consumed Oceiros"]
+            [
+                "@CKG/CKG: Oceiros, the Consumed King - boss/CKG: Soul of Consumed Oceiros"
+            ]
         ],
         "visibility_rules": [
             "ug"
@@ -15366,13 +15563,13 @@
             },
             {
                 "name": "UG: Shrine Handmaid's shop",
-                "visibility_rules": [
-                    "ring"
-                ],
                 "sections": [
                     {
                         "name": "UG: Priestess Ring - shop",
-                        "item_count": 1
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "ring"
+                        ]
                     },
                     {
                         "name": "UG: Ember - shop",
@@ -15388,7 +15585,7 @@
                             "@FK/FK: Abyss Watchers - boss/FK: Cinders of a Lord - Abyss Watcher"
                         ],
                         "visibility_rules": [
-                            "bossReward,missable,armor"
+                            "missable,bossReward,armor"
                         ]
                     },
                     {
@@ -15398,7 +15595,7 @@
                             "@FK/FK: Abyss Watchers - boss/FK: Cinders of a Lord - Abyss Watcher"
                         ],
                         "visibility_rules": [
-                            "bossReward,missable,armor"
+                            "missable,bossReward,armor"
                         ]
                     },
                     {
@@ -15408,7 +15605,7 @@
                             "@FK/FK: Abyss Watchers - boss/FK: Cinders of a Lord - Abyss Watcher"
                         ],
                         "visibility_rules": [
-                            "bossReward,missable,armor"
+                            "missable,bossReward,armor"
                         ]
                     },
                     {
@@ -15418,7 +15615,7 @@
                             "@FK/FK: Abyss Watchers - boss/FK: Cinders of a Lord - Abyss Watcher"
                         ],
                         "visibility_rules": [
-                            "bossReward,missable,armor"
+                            "missable,bossReward,armor"
                         ]
                     }
                 ],
@@ -16416,7 +16613,7 @@
             {
                 "name": "LC: Winged Knight Set - ascent, behind illusory wall",
                 "visibility_rules": [
-                    "hidden,armor"
+                    "armor,hidden"
                 ],
                 "sections": [
                     {
@@ -16854,7 +17051,10 @@
             {
                 "name": "LC: By Grand Archives door, after PC and AL bosses",
                 "access_rules": [
-                    ["@AL/AL: Aldrich, Devourer of Gods - boss/AL: Cinders of a Lord - Aldrich", "@PC/PC: Yhorm the Giant - boss/PC: Cinders of a Lord - Yhorm the Giant"]
+                    [
+                        "@AL/AL: Aldrich, Devourer of Gods - boss/AL: Cinders of a Lord - Aldrich",
+                        "@PC/PC: Yhorm the Giant - boss/PC: Cinders of a Lord - Yhorm the Giant"
+                    ]
                 ],
                 "sections": [
                     {
@@ -16913,7 +17113,7 @@
             {
                 "name": "GA: Twin Princes - boss",
                 "visibility_rules": [
-                    "bossReward,progression"
+                    "progression,bossReward"
                 ],
                 "sections": [
                     {
@@ -17803,7 +18003,7 @@
             {
                 "name": "GA: Outrider Knight Set - 3F, behind illusory wall, miniboss drop",
                 "visibility_rules": [
-                    "hidden,minibossReward,armor"
+                    "minibossReward,armor,hidden"
                 ],
                 "sections": [
                     {
@@ -20599,7 +20799,7 @@
             {
                 "name": "DH: Demon Prince - boss",
                 "visibility_rules": [
-                    "bossReward,progression"
+                    "progression,bossReward"
                 ],
                 "sections": [
                     {
@@ -22129,7 +22329,7 @@
             {
                 "name": "RC: Shira's Set - Shira's room after killing ashes NPC",
                 "visibility_rules": [
-                    "hidden,armor"
+                    "armor,hidden"
                 ],
                 "sections": [
                     {
@@ -22217,7 +22417,7 @@
             {
                 "name": "RC: Black Witch Set - streets garden",
                 "visibility_rules": [
-                    "armor,hostileNPCReward"
+                    "hostileNPCReward,armor"
                 ],
                 "sections": [
                     {
