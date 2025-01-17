@@ -1,6 +1,14 @@
 {
 	"versions": [
 		{
+			"package_version": "1.0.1",
+			"download_url": "https://github.com/TVV1GK/DS3_AP_Maptracker/releases/download/v1.0.1/ds3_tvv1gk.zip",
+			"sha256": "889553e22d269ab6f23ea557c9704e1dec128ddfccca86892ff5b1d7fc52cb4c",
+			"changelog": [
+				"Updated some location visibilities"
+			]
+		},
+		{
 			"package_version": "1.0.0",
 			"download_url": "https://github.com/TVV1GK/DS3_AP_Maptracker/releases/download/v1.0.0/ds3_tvv1gk.zip",
 			"sha256": "75651a81356bf5bd6b11fca35acfe1849840e3c0e0f002f79ae99dc7ce00cd99",

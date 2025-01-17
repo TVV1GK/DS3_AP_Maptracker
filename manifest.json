@@ -1,7 +1,7 @@
 ﻿{
 	"name": "Dark Souls III AP Map Tracker (for v3.0.0)",
 	"game_name": "Dark Souls III",
-	"package_version": "1.0.0",
+	"package_version": "1.0.1",
 	"package_uid": "ds3_tvv1gk",
 	"platform": "PC",
 	"author": "TVV1GK",
@@ -19,5 +19,6 @@
 			]
 		}
 	},
-	"versions_url": "https://raw.githubusercontent.com/TVV1GK/DS3_AP_Maptracker/master/versions.json"
+	"versions_url": "https://raw.githubusercontent.com/TVV1GK/DS3_AP_Maptracker/master/versions.json",
+	"min_poptracker_version": "0.27.0"
 }
