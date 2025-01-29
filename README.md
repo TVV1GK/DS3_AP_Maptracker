@@ -29,6 +29,7 @@ The auto-tracker isn't able to get `exclude_locations`, `excluded_location_behav
     - i.e. `FS: Skull Ring - kill Ludleth` will be on the map if `Everywhere`, `Friendly NPC Rewards`, `Hidden`, `Rings` and `Firelink Shrine` is ON at the same time
 - Filters with red asterisk (**<span style="color:red">*</span>**) are for grabbing your attention, because they're important
 - `missable_location_behavior` is not implemented yet!
+    - Every location that can have a progression/key item is implemented
 
 ## Credits
 - [DS3_AP_Maptracker](https://github.com/Br00ty/DS3_AP_Maptracker) by Br00ty

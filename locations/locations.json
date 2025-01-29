@@ -5538,7 +5538,7 @@
                 ]
             },
             {
-                "name": "US: Homeward Bones - foot, drop overlook",
+                "name": "US: Homeward Bone - foot, drop overlook",
                 "visibility_rules": [
                     "misc"
                 ],
@@ -5546,17 +5546,13 @@
                     {
                         "name": "US: Homeward Bone - foot, drop overlook",
                         "item_count": 1
-                    },
-                    {
-                        "name": "US: Homeward Bone - tower village, right at start",
-                        "item_count": 1
                     }
                 ],
                 "map_locations": [
                     {
                         "map": "US",
-                        "x": 875,
-                        "y": 603
+                        "x": 1590,
+                        "y": 287
                     }
                 ]
             },
