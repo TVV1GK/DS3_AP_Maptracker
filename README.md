@@ -20,7 +20,7 @@ The auto-tracker isn't able to get `exclude_locations`, `excluded_location_behav
 
 ### How to use it?
 
-- **<span style="color:red">Only use this if in your yaml `excluded_location_behavior` is set to `do_not_randomize`</span>**
+- **<span style="color:red">Only use this if in your setting/yaml `excluded_location_behavior` is set to `do_not_randomize`</span>**
 - Grayed: OFF / Bright: ON -> ON means it isn't included in `exclude_locations`
 - The auto-tracker can only set automatically `enable_ngp` and `enable_dlc`
 - A location will be available on the map if its every trait is ON:
