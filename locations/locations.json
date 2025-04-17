@@ -709,7 +709,7 @@
             {
                 "name": "FS: Leonhard",
                 "visibility_rules": [
-                    "fs,friendlyNPCReward,missable"
+                    "fs,missable,friendlyNPCReward"
                 ],
                 "sections": [
                     {
@@ -1371,7 +1371,7 @@
             {
                 "name": "FS: Shop after killing Leonhard",
                 "visibility_rules": [
-                    "missable,friendlyNPCReward,hidden,al,armor"
+                    "al,missable,hidden,friendlyNPCReward,armor"
                 ],
                 "sections": [
                     {
@@ -1493,7 +1493,7 @@
             {
                 "name": "FS: Shop after killing LC entry boss + UG boss",
                 "visibility_rules": [
-                    "bossReward,armor"
+                    "armor,bossReward"
                 ],
                 "sections": [
                     {
@@ -1599,7 +1599,7 @@
                     "key_grandArchives,@LC/LC: Dragonslayer Armour - boss/LC: Soul of Dragonslayer Armour"
                 ],
                 "visibility_rules": [
-                    "hostileNPCReward,ga,armor,hidden"
+                    "hidden,hostileNPCReward,armor,ga"
                 ],
                 "sections": [
                     {
@@ -1638,7 +1638,7 @@
             {
                 "name": "FS: Shop after killing GA boss + AP boss",
                 "visibility_rules": [
-                    "bossReward,armor"
+                    "armor,bossReward"
                 ],
                 "sections": [
                     {
@@ -1733,7 +1733,7 @@
             {
                 "name": "FS: Sunless Set - shop, Sirris quest, kill GA boss",
                 "visibility_rules": [
-                    "friendlyNPCReward,missable,armor,ga"
+                    "missable,friendlyNPCReward,armor,ga"
                 ],
                 "sections": [
                     {
@@ -1856,74 +1856,74 @@
             {
                 "name": "FS: Yoel or Yuria shop",
                 "visibility_rules": [
-                    "us,friendlyNPCReward,missable"
+                    "missable,us,friendlyNPCReward"
                 ],
                 "sections": [
                     {
-                        "name": "FS: Soul Arrow - Yoel or Yuria",
+                        "name": "FS: Soul Arrow - Yoel or Yuria shop",
                         "item_count": 1,
                         "visibility_rules": [
                             "spell"
                         ]
                     },
                     {
-                        "name": "FS: Heavy Soul Arrow - Yoel or Yuria",
+                        "name": "FS: Heavy Soul Arrow - Yoel or Yuria shop",
                         "item_count": 1,
                         "visibility_rules": [
                             "spell"
                         ]
                     },
                     {
-                        "name": "FS: Magic Weapon - Yoel or Yuria",
+                        "name": "FS: Magic Weapon - Yoel or Yuria shop",
                         "item_count": 1,
                         "visibility_rules": [
                             "spell"
                         ]
                     },
                     {
-                        "name": "FS: Magic Shield - Yoel or Yuria",
+                        "name": "FS: Magic Shield - Yoel or Yuria shop",
                         "item_count": 1,
                         "visibility_rules": [
                             "spell"
                         ]
                     },
                     {
-                        "name": "FS: Soul Greatsword - Yoel or Yuria",
+                        "name": "FS: Soul Greatsword - Yoel or Yuria shop",
                         "item_count": 1,
                         "visibility_rules": [
                             "spell"
                         ]
                     },
                     {
-                        "name": "FS: Dark Hand - Yoel or Yuria",
+                        "name": "FS: Dark Hand - Yuria shop",
                         "item_count": 1,
                         "visibility_rules": [
                             "weapon"
                         ]
                     },
                     {
-                        "name": "FS: Untrue White Ring - Yoel or Yuria",
+                        "name": "FS: Untrue White Ring - Yuria shop",
                         "item_count": 1,
                         "visibility_rules": [
                             "ring"
                         ]
                     },
                     {
-                        "name": "FS: Untrue Dark Ring - Yoel or Yuria",
+                        "name": "FS: Untrue Dark Ring - Yuria shop",
                         "item_count": 1,
                         "visibility_rules": [
                             "ring"
                         ]
                     },
                     {
-                        "name": "FS: Londor Braille Divine Tome - Yoel or Yuria",
+                        "name": "FS: Londor Braille Divine Tome - Yuria shop",
                         "item_count": 1,
                         "visibility_rules": [
                             "progression,unique"
                         ]
                     },
                     {
-                        "name": "FS: Darkdrift - Yoel or Yuria",
+                        "name": "FS: Darkdrift - kill Yuria",
                         "item_count": 1,
                         "visibility_rules": [
                             "weapon"
@@ -1960,7 +1960,7 @@
             {
                 "name": "FS: Pale Shade Set - Yoel's room, kill Londor Pale Shade twice",
                 "visibility_rules": [
-                    "hostileNPCReward,armor,missable,ibv"
+                    "missable,ibv,hostileNPCReward,armor"
                 ],
                 "sections": [
                     {
@@ -2015,25 +2015,25 @@
                 ]
             },
             {
-                "name": "FS: Black Set - Yuria after killing KFF boss",
+                "name": "FS: Black Set - shop after killing Yuria",
                 "visibility_rules": [
-                    "kff,friendlyNPCReward,missable,armor"
+                    "missable,friendlyNPCReward,kff,armor"
                 ],
                 "sections": [
                     {
-                        "name": "FS: Billed Mask - Yuria after killing KFF boss",
+                        "name": "FS: Billed Mask - shop after killing Yuria",
                         "item_count": 1
                     },
                     {
-                        "name": "FS: Black Dress - Yuria after killing KFF boss",
+                        "name": "FS: Black Dress - shop after killing Yuria",
                         "item_count": 1
                     },
                     {
-                        "name": "FS: Black Gauntlets - Yuria after killing KFF boss",
+                        "name": "FS: Black Gauntlets - shop after killing Yuria",
                         "item_count": 1
                     },
                     {
-                        "name": "FS: Black Leggings - Yuria after killing KFF boss",
+                        "name": "FS: Black Leggings - shop after killing Yuria",
                         "item_count": 1
                     }
                 ],
@@ -2051,7 +2051,7 @@
                     "key_lothricBanner,@HWL/HWL: Vordt of the Boreal Valley - boss/HWL: Soul of Boreal Valley Vordt"
                 ],
                 "visibility_rules": [
-                    "us,spell,friendlyNPCReward"
+                    "us,friendlyNPCReward,spell"
                 ],
                 "sections": [
                     {
@@ -2085,7 +2085,7 @@
                     "pyro_greatSwamp"
                 ],
                 "visibility_rules": [
-                    "us,spell,friendlyNPCReward,missable"
+                    "missable,us,friendlyNPCReward,spell"
                 ],
                 "sections": [
                     {
@@ -2119,7 +2119,7 @@
                     "pyro_carthus"
                 ],
                 "visibility_rules": [
-                    "us,spell,friendlyNPCReward,missable"
+                    "missable,us,friendlyNPCReward,spell"
                 ],
                 "sections": [
                     {
@@ -2149,7 +2149,7 @@
                     "pyro_izalith"
                 ],
                 "visibility_rules": [
-                    "us,spell,friendlyNPCReward,missable"
+                    "missable,us,friendlyNPCReward,spell"
                 ],
                 "sections": [
                     {
@@ -2194,7 +2194,7 @@
                     "pyro_greatSwamp,pyro_carthus,pyro_izalith,@FS/FS: Cornyx's shop/FS: Fireball - Cornyx"
                 ],
                 "visibility_rules": [
-                    "us,friendlyNPCReward,armor"
+                    "friendlyNPCReward,us,armor"
                 ],
                 "sections": [
                     {
@@ -2281,7 +2281,7 @@
                     "braille_carim"
                 ],
                 "visibility_rules": [
-                    "us,spell,friendlyNPCReward,missable"
+                    "missable,us,friendlyNPCReward,spell"
                 ],
                 "sections": [
                     {
@@ -2311,7 +2311,7 @@
                     "braille_lothric"
                 ],
                 "visibility_rules": [
-                    "us,spell,friendlyNPCReward,missable"
+                    "missable,us,friendlyNPCReward,spell"
                 ],
                 "sections": [
                     {
@@ -2338,7 +2338,7 @@
             {
                 "name": "FS: Orbeck",
                 "visibility_rules": [
-                    "spell,rs,friendlyNPCReward,missable"
+                    "missable,friendlyNPCReward,spell,rs"
                 ],
                 "sections": [
                     {
@@ -2419,7 +2419,7 @@
                     "scroll_sage"
                 ],
                 "visibility_rules": [
-                    "spell,rs,friendlyNPCReward,missable"
+                    "missable,friendlyNPCReward,spell,rs"
                 ],
                 "sections": [
                     {
@@ -2445,7 +2445,7 @@
                     "scroll_logan"
                 ],
                 "visibility_rules": [
-                    "spell,rs,friendlyNPCReward,missable"
+                    "missable,friendlyNPCReward,spell,rs"
                 ],
                 "sections": [
                     {
@@ -2471,7 +2471,7 @@
                     "scroll_crystal"
                 ],
                 "visibility_rules": [
-                    "spell,rs,friendlyNPCReward,missable"
+                    "missable,friendlyNPCReward,spell,rs"
                 ],
                 "sections": [
                     {
@@ -2501,7 +2501,7 @@
                     "scroll_golden"
                 ],
                 "visibility_rules": [
-                    "spell,rs,friendlyNPCReward,missable"
+                    "missable,friendlyNPCReward,spell,rs"
                 ],
                 "sections": [
                     {
@@ -2612,7 +2612,7 @@
             {
                 "name": "FS: Patches' shop after events",
                 "visibility_rules": [
-                    "friendlyNPCReward,missable"
+                    "missable,friendlyNPCReward"
                 ],
                 "sections": [
                     {
@@ -2641,7 +2641,7 @@
             {
                 "name": "CD: Patches",
                 "visibility_rules": [
-                    "cd,friendlyNPCReward,missable"
+                    "missable,cd,friendlyNPCReward"
                 ],
                 "sections": [
                     {
@@ -2727,7 +2727,7 @@
             {
                 "name": "FS: Mail Breaker - Sirris for killing Creighton",
                 "visibility_rules": [
-                    "hostileNPCReward,friendlyNPCReward,missable,ibv"
+                    "missable,ibv,hostileNPCReward,friendlyNPCReward"
                 ],
                 "sections": [
                     {
@@ -2797,7 +2797,7 @@
                     "@LC/LC: Dragonslayer Armour - boss/LC: Soul of Dragonslayer Armour,@FK/FK: Abyss Watchers - boss/FK: Soul of the Blood of the Wolf"
                 ],
                 "visibility_rules": [
-                    "friendlyNPCReward,lc"
+                    "lc,friendlyNPCReward"
                 ],
                 "sections": [
                     {
@@ -2873,7 +2873,7 @@
                     "key_cell"
                 ],
                 "visibility_rules": [
-                    "friendlyNPCReward,misc,missable"
+                    "missable,friendlyNPCReward,misc"
                 ],
                 "sections": [
                     {
@@ -2899,7 +2899,7 @@
                     "key_cell"
                 ],
                 "visibility_rules": [
-                    "friendlyNPCReward,missable"
+                    "missable,friendlyNPCReward"
                 ],
                 "sections": [
                     {
@@ -2967,7 +2967,7 @@
                     "key_jailersRing,key_doll,@CC/CC: High Lord Wolnir - boss/CC: Soul of High Lord Wolnir"
                 ],
                 "visibility_rules": [
-                    "spell,friendlyNPCReward"
+                    "friendlyNPCReward,spell"
                 ],
                 "sections": [
                     {
@@ -2993,7 +2993,7 @@
                     "pyro_quelana,key_jailersRing"
                 ],
                 "visibility_rules": [
-                    "spell,friendlyNPCReward,missable"
+                    "missable,friendlyNPCReward,spell"
                 ],
                 "sections": [
                     {
@@ -3023,7 +3023,7 @@
                     "pyro_graveWarden,key_jailersRing"
                 ],
                 "visibility_rules": [
-                    "spell,friendlyNPCReward,missable"
+                    "missable,friendlyNPCReward,spell"
                 ],
                 "sections": [
                     {
@@ -3049,7 +3049,7 @@
                     "braille_deep,key_jailersRing"
                 ],
                 "visibility_rules": [
-                    "spell,friendlyNPCReward,missable"
+                    "missable,friendlyNPCReward,spell"
                 ],
                 "sections": [
                     {
@@ -3075,7 +3075,7 @@
                     "braille_londor,key_jailersRing"
                 ],
                 "visibility_rules": [
-                    "spell,friendlyNPCReward,missable"
+                    "missable,friendlyNPCReward,spell"
                 ],
                 "sections": [
                     {
@@ -3105,7 +3105,7 @@
                     "key_jailersRing"
                 ],
                 "visibility_rules": [
-                    "friendlyNPCReward,missable,armor"
+                    "missable,friendlyNPCReward,armor"
                 ],
                 "sections": [
                     {
@@ -5361,7 +5361,7 @@
             {
                 "name": "US: Mirrah Set - tower village, jump from roof",
                 "visibility_rules": [
-                    "armor,hidden"
+                    "hidden,armor"
                 ],
                 "sections": [
                     {
@@ -6135,7 +6135,7 @@
             {
                 "name": "RS: Exile Greatsword - NPC drop by Farron Keep",
                 "visibility_rules": [
-                    "hostileNPCReward,weapon"
+                    "weapon,hostileNPCReward"
                 ],
                 "sections": [
                     {
@@ -6158,7 +6158,7 @@
             {
                 "name": "RS: Heysel drop [Embered]",
                 "visibility_rules": [
-                    "hostileNPCReward,missable"
+                    "missable,hostileNPCReward"
                 ],
                 "sections": [
                     {
@@ -6534,7 +6534,7 @@
             {
                 "name": "RS: Sorcerer Set - water beneath stronghold",
                 "visibility_rules": [
-                    "armor,hidden"
+                    "hidden,armor"
                 ],
                 "sections": [
                     {
@@ -8142,7 +8142,7 @@
             {
                 "name": "CD: Archdeacon Set - boss room after killing boss",
                 "visibility_rules": [
-                    "bossReward,armor,hidden"
+                    "hidden,armor,bossReward"
                 ],
                 "sections": [
                     {
@@ -8360,7 +8360,7 @@
             {
                 "name": "CD: Kirk drop [Embered]",
                 "visibility_rules": [
-                    "hostileNPCReward,missable"
+                    "missable,hostileNPCReward"
                 ],
                 "sections": [
                     {
@@ -8389,7 +8389,7 @@
             {
                 "name": "CD: Helm of Thorns - Rosaria's Bed Chamber after killing Kirk",
                 "visibility_rules": [
-                    "hostileNPCReward,missable,armor"
+                    "missable,hostileNPCReward,armor"
                 ],
                 "sections": [
                     {
@@ -9483,7 +9483,7 @@
             {
                 "name": "FK: Antiquated Set - hidden cave",
                 "visibility_rules": [
-                    "hidden,armor"
+                    "armor,hidden"
                 ],
                 "sections": [
                     {
@@ -9722,7 +9722,7 @@
                     "key_pathOfTheDragon,key_doll,@CC/CC: High Lord Wolnir - boss/CC: Soul of High Lord Wolnir"
                 ],
                 "visibility_rules": [
-                    "hostileNPCReward,hidden,armor"
+                    "hostileNPCReward,armor,hidden"
                 ],
                 "sections": [
                     {
@@ -11272,7 +11272,7 @@
             {
                 "name": "US: By Cornyx's cage after Cuculus quest",
                 "visibility_rules": [
-                    "bossReward,friendlyNPCReward,missable"
+                    "missable,friendlyNPCReward,bossReward"
                 ],
                 "sections": [
                     {
@@ -12477,7 +12477,7 @@
             {
                 "name": "IBV: Siegward",
                 "visibility_rules": [
-                    "friendlyNPCReward,missable"
+                    "missable,friendlyNPCReward"
                 ],
                 "sections": [
                     {
@@ -12544,7 +12544,7 @@
             {
                 "name": "IBV: Mirrah Chain Set - bridge after killing Creighton",
                 "visibility_rules": [
-                    "missable,friendlyNPCReward,hostileNPCReward,armor"
+                    "missable,hostileNPCReward,friendlyNPCReward,armor"
                 ],
                 "sections": [
                     {
@@ -12767,7 +12767,7 @@
             {
                 "name": "AL: Leonhard drop",
                 "visibility_rules": [
-                    "friendlyNPCReward,missable"
+                    "missable,friendlyNPCReward"
                 ],
                 "sections": [
                     {
@@ -12803,7 +12803,7 @@
             {
                 "name": "US: Sunset Set - Pit of Hollows after killing Hodrick with Sirris",
                 "visibility_rules": [
-                    "missable,friendlyNPCReward,hostileNPCReward,armor"
+                    "missable,hostileNPCReward,friendlyNPCReward,armor"
                 ],
                 "sections": [
                     {
@@ -14327,7 +14327,7 @@
             {
                 "name": "ID: Alva Set - B3 near, by Karla's cell, after killing Alva",
                 "visibility_rules": [
-                    "friendlyNPCReward,missable,armor"
+                    "missable,friendlyNPCReward,armor"
                 ],
                 "sections": [
                     {
@@ -14388,7 +14388,7 @@
             {
                 "name": "PC: Yhorm the Giant - boss",
                 "visibility_rules": [
-                    "bossReward,progression"
+                    "progression,bossReward"
                 ],
                 "sections": [
                     {
@@ -15497,7 +15497,7 @@
                     "key_pathOfTheDragon,key_doll,@CC/CC: High Lord Wolnir - boss/CC: Soul of High Lord Wolnir"
                 ],
                 "visibility_rules": [
-                    "hostileNPCReward,armor,hidden"
+                    "hidden,hostileNPCReward,armor"
                 ],
                 "sections": [
                     {
@@ -16609,7 +16609,7 @@
             {
                 "name": "LC: Winged Knight Set - ascent, behind illusory wall",
                 "visibility_rules": [
-                    "armor,hidden"
+                    "hidden,armor"
                 ],
                 "sections": [
                     {
@@ -17999,7 +17999,7 @@
             {
                 "name": "GA: Outrider Knight Set - 3F, behind illusory wall, miniboss drop",
                 "visibility_rules": [
-                    "minibossReward,armor,hidden"
+                    "minibossReward,hidden,armor"
                 ],
                 "sections": [
                     {
@@ -18049,7 +18049,7 @@
             {
                 "name": "GA: Dark room, lizard #1",
                 "visibility_rules": [
-                    "weaponUpgrade,smallCrystalLizard"
+                    "smallCrystalLizard,weaponUpgrade"
                 ],
                 "sections": [
                     {
@@ -18072,7 +18072,7 @@
             {
                 "name": "GA: 1F, lizard by drop",
                 "visibility_rules": [
-                    "weaponUpgrade,smallCrystalLizard"
+                    "smallCrystalLizard,weaponUpgrade"
                 ],
                 "sections": [
                     {
@@ -18133,7 +18133,7 @@
             {
                 "name": "GA: Rooftops, lizards",
                 "visibility_rules": [
-                    "weaponUpgrade,smallCrystalLizard"
+                    "smallCrystalLizard,weaponUpgrade"
                 ],
                 "sections": [
                     {
@@ -18164,7 +18164,7 @@
             {
                 "name": "GA: Up stairs from 4F, lizard",
                 "visibility_rules": [
-                    "weaponUpgrade,smallCrystalLizard"
+                    "smallCrystalLizard,weaponUpgrade"
                 ],
                 "sections": [
                     {
@@ -19150,7 +19150,7 @@
             {
                 "name": "AP: Walkway, miniboss drop",
                 "visibility_rules": [
-                    "weaponUpgrade,minibossReward"
+                    "minibossReward,weaponUpgrade"
                 ],
                 "sections": [
                     {
@@ -22325,7 +22325,7 @@
             {
                 "name": "RC: Shira's Set - Shira's room after killing ashes NPC",
                 "visibility_rules": [
-                    "armor,hidden"
+                    "hidden,armor"
                 ],
                 "sections": [
                     {
@@ -22413,7 +22413,7 @@
             {
                 "name": "RC: Black Witch Set - streets garden",
                 "visibility_rules": [
-                    "hostileNPCReward,armor"
+                    "armor,hostileNPCReward"
                 ],
                 "sections": [
                     {
