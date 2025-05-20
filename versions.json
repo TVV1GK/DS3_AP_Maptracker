@@ -1,6 +1,14 @@
 {
 	"versions": [
 		{
+			"package_version": "1.0.4",
+			"download_url": "https://github.com/TVV1GK/DS3_AP_Maptracker/releases/download/v1.0.4/ds3_tvv1gk.zip",
+			"sha256": "9ced4c7333f3abbefe6564fc00d755f1a098379d8e7cfbc13804e2ae1b45397b",
+			"changelog": [
+				"Fixed SL: Chaos Gem locations"
+			]
+		},
+		{
 			"package_version": "1.0.3",
 			"download_url": "https://github.com/TVV1GK/DS3_AP_Maptracker/releases/download/v1.0.3/ds3_tvv1gk.zip",
 			"sha256": "281781F9446AD8EA4C760D05028320B68466F1C54D299B6DF976B13DD7509118",
