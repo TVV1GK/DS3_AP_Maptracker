@@ -697,13 +697,6 @@
                             "weapon"
                         ]
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": 161,
-                        "y": 170
-                    }
                 ]
             },
             {
@@ -725,13 +718,6 @@
                         "visibility_rules": [
                             "progression,unique"
                         ]
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
                     }
                 ]
             },
@@ -1285,13 +1271,6 @@
                         "name": "FS: Budding Green Blossom - shop after killing Creighton and AL boss",
                         "item_count": 1
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
-                    }
                 ]
             },
             {
@@ -1385,13 +1364,6 @@
                     {
                         "name": "FS: Leonhard's Trousers - shop after killing Leonhard",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
                     }
                 ]
             },
@@ -1752,13 +1724,6 @@
                         "name": "FS: Sunless Leggings - shop, Sirris quest, kill GA boss",
                         "item_count": 1
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
-                    }
                 ]
             },
             {
@@ -1929,13 +1894,6 @@
                             "weapon"
                         ]
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
-                    }
                 ]
             },
             {
@@ -1947,13 +1905,6 @@
                     {
                         "name": "FS: Morion Blade - Yuria for Orbeck's Ashes",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
                     }
                 ]
             },
@@ -1978,13 +1929,6 @@
                     {
                         "name": "FS: Pale Shade Trousers - Yoel's room, kill Londor Pale Shade twice",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
                     }
                 ]
             },
@@ -2035,13 +1979,6 @@
                     {
                         "name": "FS: Black Leggings - shop after killing Yuria",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
                     }
                 ]
             },
@@ -2104,13 +2041,6 @@
                         "name": "FS: Bursting Fireball - Cornyx for Great Swamp Tome",
                         "item_count": 1
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
-                    }
                 ]
             },
             {
@@ -2134,13 +2064,6 @@
                         "name": "FS: Carthus Beacon - Cornyx for Carthus Tome",
                         "item_count": 1
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
-                    }
                 ]
             },
             {
@@ -2160,13 +2083,6 @@
                         "name": "FS: Chaos Storm - Cornyx for Izalith Tome",
                         "item_count": 1
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
-                    }
                 ]
             },
             {
@@ -2178,13 +2094,6 @@
                     {
                         "name": "US: Pyromancy Flame - Cornyx",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
                     }
                 ]
             },
@@ -2296,13 +2205,6 @@
                         "name": "FS: Force - Irina for Tome of Carim",
                         "item_count": 1
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
-                    }
                 ]
             },
             {
@@ -2325,13 +2227,6 @@
                     {
                         "name": "FS: Blessed Weapon - Irina for Tome of Lothric",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
                     }
                 ]
             },
@@ -2385,13 +2280,6 @@
                         "name": "FS: Farron Flashsword - Orbeck",
                         "item_count": 1
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
-                    }
                 ]
             },
             {
@@ -2403,13 +2291,6 @@
                     {
                         "name": "FS: Pestilent Mist - Orbeck for any scroll",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
                     }
                 ]
             },
@@ -2430,13 +2311,6 @@
                         "name": "FS: Farron Hail - Orbeck for Sage's Scroll",
                         "item_count": 1
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
-                    }
                 ]
             },
             {
@@ -2455,13 +2329,6 @@
                     {
                         "name": "FS: Soul Spear - Orbeck for Logan's Scroll",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
                     }
                 ]
             },
@@ -2485,13 +2352,6 @@
                     {
                         "name": "FS: Crystal Magic Weapon - Orbeck for Crystal Scroll",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
                     }
                 ]
             },
@@ -2524,13 +2384,6 @@
                         "name": "FS: Repair - Orbeck for Golden Scroll",
                         "item_count": 1
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
-                    }
                 ]
             },
             {
@@ -2542,13 +2395,6 @@
                     {
                         "name": "FS: Clandestine Coat - shop with Orbeck's Ashes",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
                     }
                 ]
             },
@@ -2562,13 +2408,6 @@
                         "name": "FS: Young Dragon Ring - Orbeck for one scroll and buying three spells",
                         "item_count": 1
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
-                    }
                 ]
             },
             {
@@ -2581,13 +2420,6 @@
                         "name": "FS: Slumbering Dragoncrest Ring - Orbeck for buying four specific spells",
                         "item_count": 1
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
-                    }
                 ]
             },
             {
@@ -2599,13 +2431,6 @@
                     {
                         "name": "FS: Rusted Gold Coin - don't forgive Patches",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
                     }
                 ]
             },
@@ -2629,13 +2454,6 @@
                             "ga,misc"
                         ]
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
-                    }
                 ]
             },
             {
@@ -2658,13 +2476,6 @@
                             "misc"
                         ]
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
-                    }
                 ]
             },
             {
@@ -2676,13 +2487,6 @@
                     {
                         "name": "FS: Hawkwood's Shield - gravestone after Hawkwood leaves",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
                     }
                 ]
             },
@@ -2696,13 +2500,6 @@
                         "name": "FS: Farron Ring - Hawkwood",
                         "item_count": 1
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
-                    }
                 ]
             },
             {
@@ -2714,13 +2511,6 @@
                     {
                         "name": "US: Heavy Gem - Hawkwood",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
                     }
                 ]
             },
@@ -2744,13 +2534,6 @@
                             "ring"
                         ]
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
-                    }
                 ]
             },
             {
@@ -2763,13 +2546,6 @@
                         "name": "FS: Sunset Shield - by grave after killing Hodrick with Sirris",
                         "item_count": 1
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
-                    }
                 ]
             },
             {
@@ -2781,13 +2557,6 @@
                     {
                         "name": "FS: Sunless Talisman - Sirris, kill GA boss",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
                     }
                 ]
             },
@@ -2884,13 +2653,6 @@
                         "name": "FS: Ember - Greirat from US",
                         "item_count": 1
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
-                    }
                 ]
             },
             {
@@ -2930,13 +2692,6 @@
                             "weaponUpgrade"
                         ]
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
-                    }
                 ]
             },
             {
@@ -2951,13 +2706,6 @@
                     {
                         "name": "FS: Ember - shop for Greirat's Ashes",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
                     }
                 ]
             },
@@ -3008,13 +2756,6 @@
                         "name": "FS: Fire Whip - Karla for Quelana Tome",
                         "item_count": 1
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
-                    }
                 ]
             },
             {
@@ -3034,13 +2775,6 @@
                         "name": "FS: Black Fire Orb - Karla for Grave Warden Tome",
                         "item_count": 1
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
-                    }
                 ]
             },
             {
@@ -3059,13 +2793,6 @@
                     {
                         "name": "FS: Deep Protection - Karla for Deep Braille Tome",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
                     }
                 ]
             },
@@ -3089,13 +2816,6 @@
                     {
                         "name": "FS: Dead Again - Karla for Londor Tome",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
                     }
                 ]
             },
@@ -3123,13 +2843,6 @@
                     {
                         "name": "FS: Karla's Trousers - kill Karla",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
                     }
                 ]
             },
@@ -3468,13 +3181,6 @@
                         "visibility_rules": [
                             "weaponUpgrade"
                         ]
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FS",
-                        "x": -1,
-                        "y": -1
                     }
                 ]
             }
@@ -4579,13 +4285,6 @@
                     {
                         "name": "US: Tower Key - kill Irina",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "US",
-                        "x": -1,
-                        "y": -1
                     }
                 ]
             },
@@ -5751,13 +5450,6 @@
                         "name": "US: Partizan - hanging corpse above Cliff Underside",
                         "item_count": 1
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "US",
-                        "x": 474,
-                        "y": 429
-                    }
                 ]
             },
             {
@@ -5788,13 +5480,6 @@
                     {
                         "name": "US: Red and White Round Shield - chasm, hanging corpse",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "US",
-                        "x": 1374,
-                        "y": 464
                     }
                 ]
             },
@@ -5864,13 +5549,6 @@
                     {
                         "name": "US: Kukri - hanging corpse above burning tree",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "US",
-                        "x": 583,
-                        "y": 544
                     }
                 ]
             },
@@ -6036,13 +5714,6 @@
                         "name": "US: Mound-makers - Hodrick",
                         "item_count": 1
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "US",
-                        "x": 1013,
-                        "y": 216
-                    }
                 ]
             },
             {
@@ -6092,13 +5763,6 @@
                     {
                         "name": "US: Siegbr\u00e4u - Siegward",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "US",
-                        "x": 1544,
-                        "y": 296
                     }
                 ]
             }
@@ -6174,13 +5838,6 @@
                         "visibility_rules": [
                             "progression,armor"
                         ]
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "RS",
-                        "x": 803,
-                        "y": 248
                     }
                 ]
             },
@@ -6521,13 +6178,6 @@
                     {
                         "name": "RS: Twin Dragon Greatshield - woods by Crucifixion Woods bonfire",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "RS",
-                        "x": 660,
-                        "y": 319
                     }
                 ]
             },
@@ -6976,13 +6626,6 @@
                         "name": "RS: Blue Sentinels - Horace",
                         "item_count": 1
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "RS",
-                        "x": 705,
-                        "y": 439
-                    }
                 ]
             },
             {
@@ -7073,13 +6716,6 @@
                         "name": "CD: Black Eye Orb - Rosaria from Leonhard's quest",
                         "item_count": 1
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "CD",
-                        "x": -1,
-                        "y": -1
-                    }
                 ]
             },
             {
@@ -7091,13 +6727,6 @@
                     {
                         "name": "CD: Winged Spear - kill Patches",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "CD",
-                        "x": -1,
-                        "y": -1
                     }
                 ]
             },
@@ -8186,13 +7815,6 @@
                             "progression,armor"
                         ]
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "CD",
-                        "x": -1,
-                        "y": -1
-                    }
                 ]
             },
             {
@@ -8377,13 +7999,6 @@
                             "shield"
                         ]
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "CD",
-                        "x": 1462,
-                        "y": 1053
-                    }
                 ]
             },
             {
@@ -8408,13 +8023,6 @@
                         "name": "CD: Leggings of Thorns - Rosaria's Bed Chamber after killing Kirk",
                         "item_count": 1
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "CD",
-                        "x": 896,
-                        "y": 1242
-                    }
                 ]
             },
             {
@@ -8426,13 +8034,6 @@
                     {
                         "name": "CD: Rusted Coin - don't forgive Patches",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "CD",
-                        "x": -1,
-                        "y": -1
                     }
                 ]
             },
@@ -8580,13 +8181,6 @@
                     {
                         "name": "FK: Manikin Claws - Londor Pale Shade drop",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "FK",
-                        "x": -1,
-                        "y": -1
                     }
                 ]
             },
@@ -10927,13 +10521,6 @@
                         "name": "SL: White Hair Talisman - ruins main lower, in lava",
                         "item_count": 1
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "SL",
-                        "x": 1114,
-                        "y": 611
-                    }
                 ]
             },
             {
@@ -10945,13 +10532,6 @@
                     {
                         "name": "SL: Toxic Mist - ruins main lower, in lava",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "SL",
-                        "x": 1113,
-                        "y": 548
                     }
                 ]
             },
@@ -11041,13 +10621,6 @@
                         "name": "SL: Ember - ruins basement, in lava",
                         "item_count": 1
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "SL",
-                        "x": 1720,
-                        "y": 330
-                    }
                 ]
             },
             {
@@ -11059,13 +10632,6 @@
                     {
                         "name": "SL: Sacred Flame - ruins basement, in lava",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "SL",
-                        "x": 1739,
-                        "y": 282
                     }
                 ]
             },
@@ -11302,13 +10868,6 @@
                         "visibility_rules": [
                             "armor"
                         ]
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "US",
-                        "x": -1,
-                        "y": -1
                     }
                 ]
             }
@@ -12494,13 +12053,6 @@
                             "spell"
                         ]
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "IBV",
-                        "x": 937,
-                        "y": 1247
-                    }
                 ]
             },
             {
@@ -12513,13 +12065,6 @@
                         "name": "IBV: Ring of the Evil Eye - Anri",
                         "item_count": 1
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "IBV",
-                        "x": -1,
-                        "y": -1
-                    }
                 ]
             },
             {
@@ -12531,13 +12076,6 @@
                     {
                         "name": "IBV: Dragonslayer's Axe - Creighton drop",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "IBV",
-                        "x": -1,
-                        "y": -1
                     }
                 ]
             },
@@ -12562,13 +12100,6 @@
                     {
                         "name": "IBV: Mirrah Chain Leggings - bridge after killing Creighton",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "IBV",
-                        "x": -1,
-                        "y": -1
                     }
                 ]
             }
@@ -12755,13 +12286,6 @@
                         "name": "AL: Aldrich's Ruby - dark cathedral, miniboss",
                         "item_count": 1
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "AL",
-                        "x": 613,
-                        "y": 491
-                    }
                 ]
             },
             {
@@ -12791,13 +12315,6 @@
                             "progression,bossSoul"
                         ]
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "AL",
-                        "x": -1,
-                        "y": -1
-                    }
                 ]
             },
             {
@@ -12821,13 +12338,6 @@
                     {
                         "name": "US: Sunset Leggings - pit of hollows after killing Hodrick with Sirris",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "US",
-                        "x": -1,
-                        "y": -1
                     }
                 ]
             },
@@ -13312,13 +12822,6 @@
                         "name": "AL: Blade of the Darkmoon - Yorshka with Darkmoon Loyalty",
                         "item_count": 1
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "IBV",
-                        "x": 1945,
-                        "y": 869
-                    }
                 ]
             },
             {
@@ -13392,13 +12895,6 @@
                         "name": "AL: Chameleon - tomb after marrying Anri",
                         "item_count": 1
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "IBV",
-                        "x": -1,
-                        "y": -1
-                    }
                 ]
             },
             {
@@ -13411,13 +12907,6 @@
                         "name": "AL: Anri's Straight Sword - Anri quest",
                         "item_count": 1
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "IBV",
-                        "x": -1,
-                        "y": -1
-                    }
                 ]
             },
             {
@@ -13429,13 +12918,6 @@
                     {
                         "name": "AL: Yorshka's Chime - kill Yorshka",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "IBV",
-                        "x": -1,
-                        "y": -1
                     }
                 ]
             },
@@ -13478,13 +12960,6 @@
                     {
                         "name": "ID: Titanite Slab - Siegward",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "ID",
-                        "x": -1,
-                        "y": -1
                     }
                 ]
             },
@@ -14346,13 +13821,6 @@
                         "name": "ID: Alva Leggings - B3 near, by Karla's cell, after killing Alva",
                         "item_count": 1
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "ID",
-                        "x": 711,
-                        "y": 952
-                    }
                 ]
             },
             {
@@ -14364,13 +13832,6 @@
                     {
                         "name": "ID: Murakumo - Alva drop",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "IBV",
-                        "x": 2157,
-                        "y": 462
                     }
                 ]
             }
@@ -15002,13 +14463,6 @@
                         "name": "PC: Siegbr\u00e4u - Siegward after killing boss",
                         "item_count": 1
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "PC",
-                        "x": -1,
-                        "y": -1
-                    }
                 ]
             },
             {
@@ -15021,13 +14475,6 @@
                         "name": "PC: Storm Ruler - Siegward",
                         "item_count": 1
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "PC",
-                        "x": -1,
-                        "y": -1
-                    }
                 ]
             },
             {
@@ -15039,13 +14486,6 @@
                     {
                         "name": "PC: Pierce Shield - Siegward",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "PC",
-                        "x": -1,
-                        "y": -1
                     }
                 ]
             }
@@ -16997,13 +16437,6 @@
                         "name": "LC: Twinkling Titanite - dark room mid, out door opposite wyvern, lizard",
                         "item_count": 1
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "LC",
-                        "x": 1589,
-                        "y": 363
-                    }
                 ]
             },
             {
@@ -17015,13 +16448,6 @@
                     {
                         "name": "LC: Twinkling Titanite - moat, right path, lizard",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "LC",
-                        "x": 1410,
-                        "y": 436
                     }
                 ]
             },
@@ -20831,13 +20257,6 @@
                         "name": "DH: Siegbr\u00e4u - Lapp",
                         "item_count": 1
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "DH",
-                        "x": 1248,
-                        "y": 469
-                    }
                 ]
             },
             {
@@ -21978,13 +21397,6 @@
                         "name": "RC: Ledo's Great Hammer - streets high, opposite building, NPC drop",
                         "item_count": 1
                     }
-                ],
-                "map_locations": [
-                    {
-                        "map": "RC",
-                        "x": 1168,
-                        "y": 235
-                    }
                 ]
             },
             {
@@ -21996,13 +21408,6 @@
                     {
                         "name": "RC: Wolf Ring+3 - street gardens, NPC drop",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "RC",
-                        "x": 856,
-                        "y": 81
                     }
                 ]
             },
@@ -23651,13 +23056,6 @@
                     {
                         "name": "RC: Siegbr\u00e4u - Lapp",
                         "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "RC",
-                        "x": 520,
-                        "y": 510
                     }
                 ]
             },
