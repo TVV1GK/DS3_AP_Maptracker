@@ -23,8 +23,7 @@
 						"item_margin": "3,3",
 						"item_size": "192,24",
 						"rows": [
-							[ "everywhere", 		"unique"],
-							[ "prominent", 			"healingUpgrade" ],
+							[ "prominent", 			"healingUpgrade"],
 							[ "progression", 		"misc" ],
 							[ "bossReward", 		"hidden" ],
 							[ "minibossReward", 	"weapon" ],
@@ -32,9 +31,10 @@
 							[ "hostileNPCReward", 	"armor" ],
 							[ "friendlyNPCReward", 	"ring" ],
 							[ "smallCrystalLizard", "spell" ],
-							[ "weaponUpgrade", 		"missable_dis" ],
-							[ "smallSoul", 			"ng+" ],
-							[ "bossSoul", "_" ]
+							[ "weaponUpgrade", 		"ng+" ],
+							[ "smallSoul", 			"_" ],
+							[ "bossSoul", 			"_" ],
+							[ "unique", 			"_" ]
 						]
 					},
 					{

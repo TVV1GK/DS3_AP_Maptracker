@@ -8,13 +8,6 @@
     // Item Locations
     {
         "type": "toggle",
-        "name": "Everywhere",
-        "codes": "everywhere",
-        "initial_active_state": true,
-        "img": "images/settings/setting_everywhere.png"
-    },
-    {
-        "type": "toggle",
         "name": "Prominent",
         "codes": "prominent",
         "initial_active_state": true,
@@ -152,15 +145,6 @@
         "codes": "spell",
         "initial_active_state": true,
         "img": "images/settings/setting_spell.png"
-    },
-    {
-        "type": "toggle",
-        "name": "missable_location_behavior\nis NOT do_not_randomize",
-        "codes": "missable_dis", // change layouts/settings.json ; scripts/logic.lua
-        "initial_active_state": false,
-        "img": "images/settings/setting_missable_true.png",
-        "disabled_img": "images/settings/setting_missable_false.png",
-        "disabled_img_mods": "none"
     },
     {
         "type": "toggle",
