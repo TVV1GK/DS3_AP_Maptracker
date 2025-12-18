@@ -1371,7 +1371,7 @@
             {
                 "name": "FS: Shop after killing Leonhard",
                 "visibility_rules": [
-                    "al,missable,hidden,friendlyNPCReward,armor"
+                    "al,missable,friendlyNPCReward,hidden,armor"
                 ],
                 "sections": [
                     {
@@ -1493,7 +1493,7 @@
             {
                 "name": "FS: Shop after killing LC entry boss + UG boss",
                 "visibility_rules": [
-                    "armor,bossReward"
+                    "bossReward,armor"
                 ],
                 "sections": [
                     {
@@ -1599,7 +1599,7 @@
                     "key_grandArchives,@LC/LC: Dragonslayer Armour - boss/LC: Soul of Dragonslayer Armour"
                 ],
                 "visibility_rules": [
-                    "hidden,hostileNPCReward,armor,ga"
+                    "ga,hostileNPCReward,hidden,armor"
                 ],
                 "sections": [
                     {
@@ -1638,7 +1638,7 @@
             {
                 "name": "FS: Shop after killing GA boss + AP boss",
                 "visibility_rules": [
-                    "armor,bossReward"
+                    "bossReward,armor"
                 ],
                 "sections": [
                     {
@@ -1733,7 +1733,7 @@
             {
                 "name": "FS: Sunless Set - shop, Sirris quest, kill GA boss",
                 "visibility_rules": [
-                    "missable,friendlyNPCReward,armor,ga"
+                    "ga,missable,friendlyNPCReward,armor"
                 ],
                 "sections": [
                     {
@@ -1856,7 +1856,7 @@
             {
                 "name": "FS: Yoel or Yuria shop",
                 "visibility_rules": [
-                    "missable,us,friendlyNPCReward"
+                    "us,missable,friendlyNPCReward"
                 ],
                 "sections": [
                     {
@@ -1960,7 +1960,7 @@
             {
                 "name": "FS: Pale Shade Set - Yoel's room, kill Londor Pale Shade twice",
                 "visibility_rules": [
-                    "missable,ibv,hostileNPCReward,armor"
+                    "ibv,missable,hostileNPCReward,armor"
                 ],
                 "sections": [
                     {
@@ -2017,7 +2017,7 @@
             {
                 "name": "FS: Black Set - shop after killing Yuria",
                 "visibility_rules": [
-                    "missable,friendlyNPCReward,kff,armor"
+                    "kff,missable,friendlyNPCReward,armor"
                 ],
                 "sections": [
                     {
@@ -2085,7 +2085,7 @@
                     "pyro_greatSwamp"
                 ],
                 "visibility_rules": [
-                    "missable,us,friendlyNPCReward,spell"
+                    "us,missable,friendlyNPCReward,spell"
                 ],
                 "sections": [
                     {
@@ -2119,7 +2119,7 @@
                     "pyro_carthus"
                 ],
                 "visibility_rules": [
-                    "missable,us,friendlyNPCReward,spell"
+                    "us,missable,friendlyNPCReward,spell"
                 ],
                 "sections": [
                     {
@@ -2149,7 +2149,7 @@
                     "pyro_izalith"
                 ],
                 "visibility_rules": [
-                    "missable,us,friendlyNPCReward,spell"
+                    "us,missable,friendlyNPCReward,spell"
                 ],
                 "sections": [
                     {
@@ -2194,7 +2194,7 @@
                     "pyro_greatSwamp,pyro_carthus,pyro_izalith,@FS/FS: Cornyx's shop/FS: Fireball - Cornyx"
                 ],
                 "visibility_rules": [
-                    "friendlyNPCReward,us,armor"
+                    "us,friendlyNPCReward,armor"
                 ],
                 "sections": [
                     {
@@ -2281,7 +2281,7 @@
                     "braille_carim"
                 ],
                 "visibility_rules": [
-                    "missable,us,friendlyNPCReward,spell"
+                    "us,missable,friendlyNPCReward,spell"
                 ],
                 "sections": [
                     {
@@ -2311,7 +2311,7 @@
                     "braille_lothric"
                 ],
                 "visibility_rules": [
-                    "missable,us,friendlyNPCReward,spell"
+                    "us,missable,friendlyNPCReward,spell"
                 ],
                 "sections": [
                     {
@@ -2338,7 +2338,7 @@
             {
                 "name": "FS: Orbeck",
                 "visibility_rules": [
-                    "missable,friendlyNPCReward,spell,rs"
+                    "rs,missable,friendlyNPCReward,spell"
                 ],
                 "sections": [
                     {
@@ -2419,7 +2419,7 @@
                     "scroll_sage"
                 ],
                 "visibility_rules": [
-                    "missable,friendlyNPCReward,spell,rs"
+                    "rs,missable,friendlyNPCReward,spell"
                 ],
                 "sections": [
                     {
@@ -2445,7 +2445,7 @@
                     "scroll_logan"
                 ],
                 "visibility_rules": [
-                    "missable,friendlyNPCReward,spell,rs"
+                    "rs,missable,friendlyNPCReward,spell"
                 ],
                 "sections": [
                     {
@@ -2471,7 +2471,7 @@
                     "scroll_crystal"
                 ],
                 "visibility_rules": [
-                    "missable,friendlyNPCReward,spell,rs"
+                    "rs,missable,friendlyNPCReward,spell"
                 ],
                 "sections": [
                     {
@@ -2501,7 +2501,7 @@
                     "scroll_golden"
                 ],
                 "visibility_rules": [
-                    "missable,friendlyNPCReward,spell,rs"
+                    "rs,missable,friendlyNPCReward,spell"
                 ],
                 "sections": [
                     {
@@ -2641,7 +2641,7 @@
             {
                 "name": "CD: Patches",
                 "visibility_rules": [
-                    "missable,cd,friendlyNPCReward"
+                    "cd,missable,friendlyNPCReward"
                 ],
                 "sections": [
                     {
@@ -2727,7 +2727,7 @@
             {
                 "name": "FS: Mail Breaker - Sirris for killing Creighton",
                 "visibility_rules": [
-                    "missable,ibv,hostileNPCReward,friendlyNPCReward"
+                    "ibv,missable,hostileNPCReward,friendlyNPCReward"
                 ],
                 "sections": [
                     {
@@ -6135,7 +6135,7 @@
             {
                 "name": "RS: Exile Greatsword - NPC drop by Farron Keep",
                 "visibility_rules": [
-                    "weapon,hostileNPCReward"
+                    "hostileNPCReward,weapon"
                 ],
                 "sections": [
                     {
@@ -8142,7 +8142,7 @@
             {
                 "name": "CD: Archdeacon Set - boss room after killing boss",
                 "visibility_rules": [
-                    "hidden,armor,bossReward"
+                    "bossReward,hidden,armor"
                 ],
                 "sections": [
                     {
@@ -8470,7 +8470,7 @@
             {
                 "name": "CD: Twinkling Titanites - path, lizards",
                 "visibility_rules": [
-                    "weaponUpgrade,smallCrystalLizard"
+                    "smallCrystalLizard,weaponUpgrade"
                 ],
                 "sections": [
                     {
@@ -9483,7 +9483,7 @@
             {
                 "name": "FK: Antiquated Set - hidden cave",
                 "visibility_rules": [
-                    "armor,hidden"
+                    "hidden,armor"
                 ],
                 "sections": [
                     {
@@ -9722,7 +9722,7 @@
                     "key_pathOfTheDragon,key_doll,@CC/CC: High Lord Wolnir - boss/CC: Soul of High Lord Wolnir"
                 ],
                 "visibility_rules": [
-                    "hostileNPCReward,armor,hidden"
+                    "hostileNPCReward,hidden,armor"
                 ],
                 "sections": [
                     {
@@ -11272,7 +11272,7 @@
             {
                 "name": "US: By Cornyx's cage after Cuculus quest",
                 "visibility_rules": [
-                    "missable,friendlyNPCReward,bossReward"
+                    "missable,bossReward,friendlyNPCReward"
                 ],
                 "sections": [
                     {
@@ -12872,7 +12872,7 @@
             {
                 "name": "AL: Brass Set - tomb",
                 "visibility_rules": [
-                    "armor,hidden"
+                    "hidden,armor"
                 ],
                 "sections": [
                     {
@@ -13179,7 +13179,7 @@
             {
                 "name": "AL: Painting Guardian Set - prison tower, rafters",
                 "visibility_rules": [
-                    "armor,hidden"
+                    "hidden,armor"
                 ],
                 "sections": [
                     {
@@ -13343,7 +13343,7 @@
             {
                 "name": "AL: Twinkling Titanites - lizards after light cathedral",
                 "visibility_rules": [
-                    "weaponUpgrade,smallCrystalLizard"
+                    "smallCrystalLizard,weaponUpgrade"
                 ],
                 "sections": [
                     {
@@ -15497,7 +15497,7 @@
                     "key_pathOfTheDragon,key_doll,@CC/CC: High Lord Wolnir - boss/CC: Soul of High Lord Wolnir"
                 ],
                 "visibility_rules": [
-                    "hidden,hostileNPCReward,armor"
+                    "hostileNPCReward,hidden,armor"
                 ],
                 "sections": [
                     {
@@ -22413,7 +22413,7 @@
             {
                 "name": "RC: Black Witch Set - streets garden",
                 "visibility_rules": [
-                    "armor,hostileNPCReward"
+                    "hostileNPCReward,armor"
                 ],
                 "sections": [
                     {
@@ -23532,7 +23532,7 @@
             {
                 "name": "RC: Grave, lizard past first drop",
                 "visibility_rules": [
-                    "weaponUpgrade,smallCrystalLizard"
+                    "smallCrystalLizard,weaponUpgrade"
                 ],
                 "sections": [
                     {
