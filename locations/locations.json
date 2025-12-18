@@ -6515,7 +6515,7 @@
             {
                 "name": "RS: Twin Dragon Greatshield - woods by Crucifixion Woods bonfire",
                 "visibility_rules": [
-                    "shield"
+                    "missable,shield"
                 ],
                 "sections": [
                     {
@@ -6988,7 +6988,7 @@
             {
                 "name": "RS: Crystal Gem - stronghold, lizard",
                 "visibility_rules": [
-                    "weaponUpgrade"
+                    "smallCrystalLizard,weaponUpgrade"
                 ],
                 "sections": [
                     {
@@ -12748,7 +12748,7 @@
             {
                 "name": "AL: Aldrich's Ruby - dark cathedral, miniboss",
                 "visibility_rules": [
-                    "minibossReward,ring"
+                    "missable,minibossReward,ring"
                 ],
                 "sections": [
                     {
