@@ -1786,7 +1786,7 @@
                         ],
                         "item_count": 1,
                         "visibility_rules": [
-                            "pwa,bossReward,armor"
+                            "pwa,dlc,bossReward,armor"
                         ]
                     },
                     {
@@ -1796,7 +1796,7 @@
                         ],
                         "item_count": 1,
                         "visibility_rules": [
-                            "pwa,bossReward,armor"
+                            "pwa,dlc,bossReward,armor"
                         ]
                     },
                     {
@@ -1806,7 +1806,7 @@
                         ],
                         "item_count": 1,
                         "visibility_rules": [
-                            "pwa,bossReward,armor"
+                            "pwa,dlc,bossReward,armor"
                         ]
                     }
                 ],
@@ -18620,7 +18620,7 @@
             "@RS/RS: Crystal Sage - boss/RS: Soul of a Crystal Sage"
         ],
         "visibility_rules": [
-            "pwa"
+            "pwa,dlc"
         ],
         "children": [
             {
@@ -19753,7 +19753,7 @@
             "key_contraption,@RS/RS: Crystal Sage - boss/RS: Soul of a Crystal Sage"
         ],
         "visibility_rules": [
-            "pwa"
+            "pwa,dlc"
         ],
         "children": [
             {
@@ -20215,7 +20215,7 @@
             "@FS/KFF: Soul of Cinder - boss/KFF: Soul of the Lords"
         ],
         "visibility_rules": [
-            "dh"
+            "dh,dlc"
         ],
         "children": [
             {
@@ -21293,7 +21293,7 @@
             "key_envoyBanner,@DH/DH: Demon Prince - boss/DH: Soul of the Demon Prince"
         ],
         "visibility_rules": [
-            "rc"
+            "rc,dlc"
         ],
         "children": [
             {
