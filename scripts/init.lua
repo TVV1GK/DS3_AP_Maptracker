@@ -9,8 +9,6 @@ IS_ITEMS_ONLY = variant:find("itemsonly")
 print("-- Dark Souls III Tracker --")
 
 ScriptHost:LoadScript("scripts/utils.lua")
-ScriptHost:LoadScript("scripts/logic.lua")
-initAddWatchForCodes()
 
 Tracker:AddItems("items/items.json")
 
