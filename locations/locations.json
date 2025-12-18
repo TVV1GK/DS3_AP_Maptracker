@@ -5780,13 +5780,13 @@
                 ]
             },
             {
-                "name": "US: Red and White Shield - chasm, hanging corpse",
+                "name": "US: Red and White Round Shield - chasm, hanging corpse",
                 "visibility_rules": [
                     "missable,shield"
                 ],
                 "sections": [
                     {
-                        "name": "US: Red and White Shield - chasm, hanging corpse",
+                        "name": "US: Red and White Round Shield - chasm, hanging corpse",
                         "item_count": 1
                     }
                 ],
