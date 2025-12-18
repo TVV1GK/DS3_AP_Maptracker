@@ -28,9 +28,7 @@ The auto-tracker isn't able to get `exclude_locations` and `excluded_location_be
 - The auto-tracker can only and will set automatically `enable_ngp` and `enable_dlc`. These groups have red asterisks next to them.
 - Grayed: OFF / Bright: ON -> ON means that locations with this trait can be displayed.
 - A location will be displayed on the map if its every trait is ON:
-    - `Everywhere` is ON if anything else is ON (because it's a trait of every location),
-    - `DLC / enable_dlc` is ON if any DLC map is ON,
-    - i.e. `FS: Skull Ring - kill Ludleth` will be on the map if `Everywhere`, `Friendly NPC Rewards`, `Hidden`, `Rings` and `Firelink Shrine` is ON at the same time.
+    - i.e. `FS: Skull Ring - kill Ludleth` will be displayed on the map if `Friendly NPC Rewards`, `Hidden`, `Rings` and `Firelink Shrine` is ON at the same time.
 - Missable locations are NOT implemented!
     - Every location that can have a progression/key item is implemented!
 
