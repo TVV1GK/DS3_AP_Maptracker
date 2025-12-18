@@ -17,8 +17,8 @@ jobs:
         id: check_release
         run: |
           commit_msg=$(git log -1 --pretty=%B)
-          if [[ $commit_msg =~ ^Release\ [0-9]+\.[0-9]+\.[0-9]+ ]]; then
-            version=$(echo "$commit_msg" | grep -oP '(?<=Release\ )\d+\.\d+\.\d+')
+          if [[ $commit_msg =~ ^Release\ v?[0-9]+\.[0-9]+\.[0-9]+ ]]; then
+            version=$(echo "$commit_msg" | grep -oP '(?<=Release\ )v?\K\d+\.\d+\.\d+')
             echo "is_release=true" >> $GITHUB_OUTPUT
             echo "version=$version" >> $GITHUB_OUTPUT
           else
@@ -43,7 +43,7 @@ jobs:
         if: steps.check_release.outputs.is_release == 'true'
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: v${{ steps.check_release.outputs.version }}
-          name: DS3 AP Map Tracker v${{ steps.check_release.outputs.version }}
+          tag_name: ${{ steps.check_release.outputs.version }}
+          name: DS3 AP Map Tracker ${{ steps.check_release.outputs.version }}
           files: ${{ env.BUNDLE_PATH }}
           generate_release_notes: true
