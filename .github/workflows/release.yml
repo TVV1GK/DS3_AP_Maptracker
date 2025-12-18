@@ -1,0 +1,49 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check if commit message is Release
+        id: check_release
+        run: |
+          commit_msg=$(git log -1 --pretty=%B)
+          if [[ $commit_msg =~ ^Release\ [0-9]+\.[0-9]+\.[0-9]+ ]]; then
+            version=$(echo "$commit_msg" | grep -oP '(?<=Release\ )\d+\.\d+\.\d+')
+            echo "is_release=true" >> $GITHUB_OUTPUT
+            echo "version=$version" >> $GITHUB_OUTPUT
+          else
+            echo "is_release=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Remove unnecessary files
+        if: steps.check_release.outputs.is_release == 'true'
+        run: |
+          rm -rf api
+          rm -f .luarc.json
+
+      - name: Create bundle
+        if: steps.check_release.outputs.is_release == 'true'
+        run: |
+          version="${{ steps.check_release.outputs.version }}"
+          bundle_name="ds3_tvv1gk.zip"
+          zip -r "$bundle_name" . -x ".git/*" ".gitignore" ".github/*"
+          echo "BUNDLE_PATH=$bundle_name" >> $GITHUB_ENV
+
+      - name: Create GitHub Release
+        if: steps.check_release.outputs.is_release == 'true'
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: v${{ steps.check_release.outputs.version }}
+          name: DS3 AP Map Tracker v${{ steps.check_release.outputs.version }}
+          files: ${{ env.BUNDLE_PATH }}
+          generate_release_notes: true
