@@ -73,7 +73,7 @@
         "type": "toggle",
         "name": "Small Souls",
         "codes": "smallSoul",
-        "initial_active_state": true,
+        "initial_active_state": false,
         "img": "images/settings/setting_smallSoul.png"
     },
     {
@@ -326,4 +326,5 @@
         "initial_active_state": true,
         "img": "images/settings/setting_rc.png"
     }
+
 ]
