@@ -4,8 +4,8 @@ ScriptHost:LoadScript("scripts/location_mapping.lua")
 local CUR_INDEX = -1
 local SLOT_DATA = nil
 
-    if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
 local function onClear(slot_data)
+    if ENABLE_DEBUG_LOG then
         print(string.format("called onClear, slot_data:\n%s", DumpTable(slot_data)))
     end
     SLOT_DATA = slot_data

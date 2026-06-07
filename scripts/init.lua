@@ -1,5 +1,4 @@
-ENABLE_DEBUG_LOG = true -- use --console flag for debugging when running poptracker from cmd
-AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP = true
+ENABLE_DEBUG_LOG = true
 
 -- get current variant
 local variant = Tracker.ActiveVariantUID
