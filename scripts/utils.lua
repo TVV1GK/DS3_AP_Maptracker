@@ -1,5 +1,5 @@
--- from https://stackoverflow.com/questions/9168058/how-to-dump-a-table-to-console
--- dumps a table in a readable string
+-- From https://stackoverflow.com/questions/9168058/how-to-dump-a-table-to-console
+-- Dumps a table in a readable string
 
 function DumpTable(o, depth)
     if depth == nil then

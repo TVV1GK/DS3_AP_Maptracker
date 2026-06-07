@@ -11,7 +11,7 @@ local function onClear(slot_data)
     SLOT_DATA = slot_data
     CUR_INDEX = -1
 
-    -- reset locations
+    -- Reset locations
     for _, v in pairs(LOCATION_MAPPING) do
         if v[1] then
             local obj = Tracker:FindObjectForCode(v[1])
@@ -25,7 +25,7 @@ local function onClear(slot_data)
         end
     end
 
-    -- reset items
+    -- Reset items
     for _, v in pairs(ITEM_MAPPING) do
         if v[1] and v[2] then
             local obj = Tracker:FindObjectForCode(v[1])
@@ -62,7 +62,7 @@ local function onClear(slot_data)
     end
 end
 
--- called when an item gets collected
+-- Called when an item gets collected
 local function onItem(index, item_id, item_name, player_number)
     if index <= CUR_INDEX then
         return
@@ -94,7 +94,7 @@ local function onItem(index, item_id, item_name, player_number)
     end
 end
 
---called when a location gets cleared
+-- Called when a location gets cleared
 local function onLocation(location_id, location_name)
     local v = LOCATION_MAPPING[location_id]
     if not v[1] then
@@ -111,8 +111,7 @@ local function onLocation(location_id, location_name)
     end
 end
 
--- add AP callbacks
--- un-/comment as needed
+-- Add AP callbacks
 Archipelago:AddClearHandler("clear handler", onClear)
 Archipelago:AddItemHandler("item handler", onItem)
 Archipelago:AddLocationHandler("location handler", onLocation)
