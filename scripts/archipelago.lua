@@ -1,14 +1,12 @@
 ScriptHost:LoadScript("scripts/item_mapping.lua")
 ScriptHost:LoadScript("scripts/location_mapping.lua")
 
-CUR_INDEX = -1
-SLOT_DATA = nil
-LOCAL_ITEMS = {}
-GLOBAL_ITEMS = {}
+local CUR_INDEX = -1
+local SLOT_DATA = nil
 
-function onClear(slot_data)
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-        print(string.format("called onClear, slot_data:\n%s", dump_table(slot_data)))
+local function onClear(slot_data)
+        print(string.format("called onClear, slot_data:\n%s", DumpTable(slot_data)))
     end
     SLOT_DATA = slot_data
     CUR_INDEX = -1
@@ -44,9 +42,6 @@ function onClear(slot_data)
         end
     end
 
-    LOCAL_ITEMS = {}
-    GLOBAL_ITEMS = {}
-
     if SLOT_DATA == nil then
         return
     end
@@ -68,7 +63,7 @@ function onClear(slot_data)
 end
 
 -- called when an item gets collected
-function onItem(index, item_id, item_name, player_number)
+local function onItem(index, item_id, item_name, player_number)
     if index <= CUR_INDEX then
         return
     end
@@ -97,30 +92,10 @@ function onItem(index, item_id, item_name, player_number)
             obj.AcquiredCount = obj.AcquiredCount + obj.Increment
         end
     end
-
-    --[[
-    -- track local items via snes interface
-    if player_number == Archipelago.PlayerNumber then
-        if LOCAL_ITEMS[ v[1] ] then
-            LOCAL_ITEMS[ v[1] ] = LOCAL_ITEMS[ v[1] ] + 1
-        else
-            LOCAL_ITEMS[ v[1] ] = 1
-        end
-    else
-        if GLOBAL_ITEMS[ v[1] ] then
-            GLOBAL_ITEMS[ v[1] ] = GLOBAL_ITEMS[ v[1] ] + 1
-        else
-            GLOBAL_ITEMS[ v[1] ] = 1
-        end
-    end
-    if PopVersion < "0.20.1" or AutoTracker:GetConnectionState("SNES") == 3 then
-        -- add snes interface functions here for local item tracking
-    end
-    ]]
 end
 
 --called when a location gets cleared
-function onLocation(location_id, location_name)
+local function onLocation(location_id, location_name)
     local v = LOCATION_MAPPING[location_id]
     if not v[1] then
         return
