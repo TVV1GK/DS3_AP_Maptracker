@@ -28,8 +28,10 @@ jobs:
       - name: Remove unnecessary files
         if: steps.check_release.outputs.is_release == 'true'
         run: |
+          shopt -s globstar
           rm -rf api
           rm -f .luarc.json
+          rm -f **/*.xcf
 
       - name: Create bundle
         if: steps.check_release.outputs.is_release == 'true'
