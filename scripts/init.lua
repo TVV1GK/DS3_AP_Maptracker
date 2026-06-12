@@ -8,7 +8,6 @@ LOG_LEVELS = {
 
 --- PopTracker's debug output setting.
 DEBUG = false
--- {"errors"}
 
 --- Pack's own logging level.
 --- @type log_level
