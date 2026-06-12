@@ -2,7 +2,7 @@
 
 This is a Dark Souls III AP Map Tracker for [PopTracker](https://github.com/black-sliver/PopTracker). Designed around [fswap's from-software-archipelago-clients (v4.0.X)](https://github.com/fswap/from-software-archipelago-clients), setup for auto-tracking as well for [Archipelago 0.6.X](https://archipelago.gg/).
 
-> #### ⚠️ Warning ⚠️
+> ## ⚠️ Warning ⚠️
 > If you generated a room on [archipelago.gg](https://archipelago.gg/), or you want to use this tracker pack with [nex3's Dark-Souls-III-Archipelago-client (v3.0.13)](https://github.com/nex3/Dark-Souls-III-Archipelago-client), you should [download the v1.0.6 version](https://github.com/TVV1GK/DS3_AP_Maptracker/releases/v1.0.6), but keep in mind that it won't be updated anymore.
 
 *Archipelago will be referred to as AP from now on.*
