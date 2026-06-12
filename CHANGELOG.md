@@ -28,4 +28,5 @@
 - Added 3 new Location Keys: `Storm Ruler`, `Chameleon` and `Twinkling Dragon Torso Stone`
 - [only works when connected to AP] Added all remaining progression items to the tracker, although the these are not displayed and cannot be modified by the user
 - Added soft logic for killing NPCs, so users are notified not to kill them immediately
+- Added a soft logic pack variant (should only be used with connection to AP server)
 - Changed the text on `FS` map from `Shop after killing` to `Shop after ...`

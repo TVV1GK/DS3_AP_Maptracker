@@ -13,7 +13,13 @@
 				"aphintgame"
 			]
 		},
-		"var_itemsonly": {
+		"var_softlogic": {
+			"display_name": "AP Map Tracker (full soft logic)",
+			"flags": [
+				"ap",
+				"aphintgame"
+			]
+		},
 			"display_name": "Items Only",
 			"flags": [
 				"ap"
