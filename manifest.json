@@ -1,15 +1,22 @@
 ﻿{
-	"name": "Dark Souls III AP Map Tracker (for v3.0.13)",
+	"name": "Dark Souls III AP Map Tracker",
 	"game_name": "Dark Souls III",
-	"package_version": "1.0.5",
+	"package_version": "2.0.0",
 	"package_uid": "ds3_tvv1gk",
 	"platform": "PC",
 	"author": "TVV1GK",
 	"variants": {
-		"standard": {
-			"display_name": "AP Map Tracker",
+		"var_standard-3.0": {
+			"display_name": "AP Map Tracker (3.0.X)",
 			"flags": [
 				"ap"
+			]
+		},
+		"var_standard-4.0": {
+			"display_name": "AP Map Tracker (4.0.X)",
+			"flags": [
+				"ap",
+				"aphintgame"
 			]
 		},
 		"var_itemsonly": {
@@ -20,5 +27,6 @@
 		}
 	},
 	"versions_url": "https://raw.githubusercontent.com/TVV1GK/DS3_AP_Maptracker/master/versions.json",
-	"min_poptracker_version": "0.27.0"
+	"min_poptracker_version": "0.27.0",
+	"target_poptracker_version": "0.35.0"
 }

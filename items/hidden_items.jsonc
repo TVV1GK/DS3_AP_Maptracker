@@ -1,0 +1,259 @@
+// These locations are only for Archipelago, because they cannot be toggled manually in PopTracker
+//
+// If you modify this file, modify HIDDEN_ITEM_CODES accordingly in hidden_item_codes.lua
+// If you modify any item section (except Options), modify ITEM_MAPPING accordingly in item_mapping.lua
+[
+    // Quest Progression items
+    {
+        "type": "toggle",
+        "name": "Loretta's Bone",
+        "codes": "misc_lorettasBone",
+        "img": "images/items/misc_lorettasBone.png"
+    },
+    {
+        "type": "toggle",
+        "name": "Pale Tongue",
+        "codes": "misc_paleTongue"
+    },
+    {
+        "type": "toggle",
+        "name": "Black Eye Orb",
+        "codes": "misc_blackEyeOrb"
+    },
+  /*{   // This item is not hidden
+        "type": "toggle",
+        "name": "Twinkling Dragon Torso Stone",
+        "codes": "misc_twinklingDragonTorsoStone"
+    },*/
+
+    // Transpose items
+    {
+        "type": "toggle",
+        "name": "Soul of Boreal Valley Vordt",
+        "codes": "transpose_vordt"
+    },
+    {
+        "type": "toggle",
+        "name": "Soul of Rosaria",
+        "codes": "transpose_rosaria"
+    },
+    {
+        "type": "toggle",
+        "name": "Soul of Aldrich",
+        "codes": "transpose_aldrich"
+    },
+    {
+        "type": "toggle",
+        "name": "Soul of the Rotted Greatwood",
+        "codes": "transpose_greatwood"
+    },
+    {
+        "type": "toggle",
+        "name": "Soul of a Crystal Sage",
+        "codes": "transpose_sage"
+    },
+    {
+        "type": "toggle",
+        "name": "Soul of the Deacons of the Deep",
+        "codes": "transpose_deacons"
+    },
+    {
+        "type": "toggle",
+        "name": "Soul of a Stray Demon",
+        "codes": "transpose_strayDemon"
+    },
+    {
+        "type": "toggle",
+        "name": "Soul of the Blood of the Wolf",
+        "codes": "transpose_abyssWatchers"
+    },
+    {
+        "type": "toggle",
+        "name": "Soul of High Lord Wolnir",
+        "codes": "transpose_wolnir"
+    },
+    {
+        "type": "toggle",
+        "name": "Soul of a Demon",
+        "codes": "transpose_fireDemon"
+    },
+    {
+        "type": "toggle",
+        "name": "Soul of the Old Demon King",
+        "codes": "transpose_oldDemonKing"
+    },
+    {
+        "type": "toggle",
+        "name": "Soul of Pontiff Sulyvahn",
+        "codes": "transpose_pontiff"
+    },
+    {
+        "type": "toggle",
+        "name": "Soul of Yhorm the Giant",
+        "codes": "transpose_yhorm"
+    },
+    {
+        "type": "toggle",
+        "name": "Soul of the Dancer",
+        "codes": "transpose_dancer"
+    },
+    {
+        "type": "toggle",
+        "name": "Soul of Dragonslayer Armour",
+        "codes": "transpose_dragonslayer"
+    },
+    {
+        "type": "toggle",
+        "name": "Soul of Consumed Oceiros",
+        "codes": "transpose_oceiros"
+    },
+    {
+        "type": "toggle",
+        "name": "Soul of the Twin Princes",
+        "codes": "transpose_princes"
+    },
+    {
+        "type": "toggle",
+        "name": "Soul of Champion Gundyr",
+        "codes": "transpose_champion"
+    },
+    {
+        "type": "toggle",
+        "name": "Soul of the Nameless King",
+        "codes": "transpose_nameless"
+    },
+    {
+        "type": "toggle",
+        "name": "Soul of the Lords",
+        "codes": "transpose_cinder"
+    },
+    {
+        "type": "toggle",
+        "name": "Soul of Sister Friede",
+        "codes": "transpose_friede"
+    },
+    {
+        "type": "toggle",
+        "name": "Soul of the Demon Prince",
+        "codes": "transpose_demonPrince"
+    },
+    {
+        "type": "toggle",
+        "name": "Soul of Darkeater Midir",
+        "codes": "transpose_midir"
+    },
+    {
+        "type": "toggle",
+        "name": "Soul of Slave Knight Gael",
+        "codes": "transpose_gael"
+    },
+
+    // Crow trade items
+  /*{   // This item is already present
+        "type": "toggle",
+        "name": "Loretta's Bone",
+        "codes": "misc_lorettasBone",
+        "img": "images/items/misc_lorettasBone.png"
+    },*/
+    {
+        "type": "toggle",
+        "name": "Coiled Sword Fragment",
+        "codes": "misc_coiledSwordFragment"
+    },
+    {
+        "type": "toggle",
+        "name": "Seed of a Giant Tree",
+        "codes": "misc_seedOfAGiantTree"
+    },
+    {
+        "type": "toggle",
+        "name": "Siegbr\u00e4u",
+        "codes": "misc_siegbrau"
+    },
+    {
+        "type": "toggle",
+        "name": "Xanthous Crown",
+        "codes": "misc_xanthousCrown"
+    },
+    {
+        "type": "toggle",
+        "name": "Mendicant's Staff",
+        "codes": "misc_mendicantsStaff"
+    },
+    {
+        "type": "toggle",
+        "name": "Blacksmith Hammer",
+        "codes": "misc_blacksmithHammer"
+    },
+    {
+        "type": "toggle",
+        "name": "Large Leather Shield",
+        "codes": "misc_largeLeatherShield"
+    },
+    {
+        "type": "toggle",
+        "name": "Moaning Shield",
+        "codes": "misc_moaningShield"
+    },
+    {
+        "type": "toggle",
+        "name": "Eleonora",
+        "codes": "misc_eleonora"
+    },
+
+    // Early items [SOFT LOGIC]
+    {
+        "type": "toggle",
+        "name": "Pyromancy Flame",
+        "codes": "misc_pyromancyFlame"
+    },
+  /*{   // This item is not hidden
+        "type": "toggle",
+        "name": "Transposing Kiln",
+        "codes": "misc_transposingKiln",
+        "img": "images/items/misc_transposingKiln.png"
+    },*/
+
+    // Options
+    {
+        "type": "toggle",
+        "name": "Is Goal Not KFF Boss Only?",
+        "codes": "ap_goalNotKffBossOnly"
+    },
+    {
+        "type": "toggle",
+        "name": "Is Pyromancy Flame Randomized?",
+        "codes": "ap_pyromancyFlameRandomized"
+    },
+    {
+        "type": "toggle",
+        "name": "Is Transposing Kiln Randomized?",
+        "codes": "ap_transposingKilnRandomized"
+    },
+    {
+        "type": "progressive",
+        "name": "Late Basin of Vows",
+        "codes": "ap_lateBasinOfVows",
+        "stages": [
+            {
+                "name": "After Small Lothric Banner"
+            },
+            {
+                "name": "After Small Doll"
+            }
+        ]
+    },
+    {
+        "type": "progressive",
+        "name": "Late DLC",
+        "codes": "ap_lateDlc",
+        "stages": [
+            {
+                "name": "After Small Doll"
+            },
+            {
+                "name": "After Basin"
+            }
+        ]
+    }
+]

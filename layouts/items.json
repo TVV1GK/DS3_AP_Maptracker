@@ -12,19 +12,22 @@
                 "rows": [
                     [
                         "key_coiledSword",
-                        "key_lothricBanner",
+                        "key_smallLothricBanner",
                         "key_basinOfVows",
-                        "key_doll",
-                        "key_pathOfTheDragon"                        
+                        "key_smallDoll",
+                        "key_pathOfTheDragon",
+                        "key_smallEnvoyBanner"
                     ],
                     [
-                        "key_envoyBanner",
+                        "misc_stormRuler",
+                        "misc_chameleon",
+                        "misc_twinklingDragonTorsoStone",
                         "key_tower",
                         "key_cell",
-                        "key_liftChamber",
-                        "key_grave"                        
+                        "key_liftChamber"
                     ],
                     [
+                        "key_grave",
                         "key_jailbreaker",
                         "key_jailersRing",
                         "key_oldCell",
@@ -63,7 +66,7 @@
                 "item_size": 33,
                 "rows": [
                     [
-                        "transposingKiln",
+                        "misc_transposingKiln",
                         "ashes_mortician",
                         "ashes_dreamchaser",
                         "ashes_paladin",
@@ -81,7 +84,7 @@
                     ],
                     [
                         "braille_carim",
-                        "braille_londor",
+                        "braille_lothric",
                         "scroll_sage",
                         "scroll_golden",
                         "pyro_carthus",
@@ -89,9 +92,9 @@
                     ],
                     [
                         "braille_deep",
-                        "braille_lothric",
+                        "braille_londor",
                         "scroll_logan",
-                        "scroll_crystal",                        
+                        "scroll_crystal",
                         "pyro_quelana",
                         "pyro_graveWarden"
                     ]

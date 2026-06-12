@@ -21,7 +21,7 @@
                         },
                         {
                             "type": "group",
-                            "header": "Shop keys",
+                            "header": "Shop Keys",
                             "dock": "left",
                             "content": {
                                 "type": "layout",

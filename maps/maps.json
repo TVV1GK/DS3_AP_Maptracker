@@ -7,8 +7,8 @@
   },
   {
     "name": "FS",
-    "location_size": 29,
-    "location_border_thickness": 4,
+    "location_size": 26,
+    "location_border_thickness": 3,
     "img": "images/maps/FS.jpg"
   },
   {
