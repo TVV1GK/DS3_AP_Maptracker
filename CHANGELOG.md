@@ -21,7 +21,7 @@
 - Update initial state for `Small Souls` to reflect the default settings for AP
 - ⚠️ The tracker pack for DS3 AP Client v3.0.X won't be updated further ⚠️
 ## v2.0.0
-- Updated to work with the new [DS3 AP client and world (4.0.X)](https://github.com/fswap/from-software-archipelago-clients)
+- Updated to work with the new [DS3 AP client and world (4.0.X)](https://github.com/fswap/from-software-archipelago-clients) and discontinued support for the old client and world (3.0.X)
 - Recreated the access rules to match exactly the new AP world (even the missable locations)
 - [only works when connected to AP] Yhorm is now tracked, meaning that locations behind him are shown as unreachable until `Storm Ruler` is obtained
 - Added 3 new visibility groups: `Drops`, `Shops` and `missable_location_behavior`
