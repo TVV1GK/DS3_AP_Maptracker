@@ -1,4 +1,6 @@
 # Changelog
+## v1.0.0
+- Initial release of DS3 AP Maptracker
 ### v1.0.1
 - Updated some location visibilities
 ### v1.0.2
@@ -15,3 +17,6 @@
 - Removed Everywhere and missable_location_behavior settings
 - Removed DLC setting automatically turning on
 - Update initial state for settings to reflect the default settings for AP
+### v1.0.6
+- Update initial state for `Small Souls` to reflect the default settings for AP
+- ⚠️ The tracker pack for DS3 AP Client v3.0.X won't be updated further ⚠️
