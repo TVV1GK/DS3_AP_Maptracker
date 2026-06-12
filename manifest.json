@@ -6,20 +6,21 @@
 	"platform": "PC",
 	"author": "TVV1GK",
 	"variants": {
-		"standard": {
+		"var_0_standard": {
 			"display_name": "AP Map Tracker",
 			"flags": [
 				"ap",
 				"aphintgame"
 			]
 		},
-		"var_softlogic": {
+		"var_1_softlogic": {
 			"display_name": "AP Map Tracker (full soft logic)",
 			"flags": [
 				"ap",
 				"aphintgame"
 			]
 		},
+		"var_2_itemsonly": {
 			"display_name": "Items Only",
 			"flags": [
 				"ap"

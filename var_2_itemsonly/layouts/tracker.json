@@ -1,0 +1,36 @@
+{
+    "tracker_horizontal": {
+        "type": "container",
+        "background": "#000000",
+        "content": {
+            "type": "dock",
+            "dropshadow": true,
+            "content": [
+                {
+                    "type": "dock",
+                    "dock": "bottom",
+                    "content": [
+                        {
+                            "type": "group",
+                            "header": "Location Keys",
+                            "dock": "left",
+                            "content": {
+                                "type": "layout",
+                                "key": "location_keys_grid"
+                            }
+                        },
+                        {
+                            "type": "group",
+                            "header": "Shop Keys",
+                            "dock": "left",
+                            "content": {
+                                "type": "layout",
+                                "key": "shop_keys_grid"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
