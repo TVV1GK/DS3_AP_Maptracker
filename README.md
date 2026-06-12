@@ -9,7 +9,7 @@ This is a Dark Souls III AP Map Tracker for [PopTracker](https://github.com/blac
 1. If you haven't already, download [PopTracker](https://github.com/black-sliver/PopTracker/releases/latest).
     - If you have Windows, download the `poptracker_[version]_win64.zip` file.
 2. Extract the downloaded file.
-3. Download `ds3_tvv1gk.zip` from the [Releases](https://github.com/TVV1GK/DS3_AP_Maptracker/releases/latest) section.
+3. Download `ds3_tvv1gk.zip` from the [Releases](https://github.com/TVV1GK/DS3_AP_Maptracker/releases/v1.0.6) section.
 4. Move `ds3_tvv1gk.zip` file into `/poptracker/packs/`.
 5. You're all set!
 
