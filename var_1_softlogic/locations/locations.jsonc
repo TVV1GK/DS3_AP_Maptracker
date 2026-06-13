@@ -116,9 +116,9 @@
             },
             {
                 "name": "CA: Coiled Sword - boss drop",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|4000800"
+                        "[$IsYhormNotHereOrBeatable|4000800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -3033,9 +3033,9 @@
         "children": [
             {
                 "name": "HWL: Soul of Boreal Valley Vordt",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3000800"
+                        "[$IsYhormNotHereOrBeatable|3000800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -3053,7 +3053,7 @@
                     [
                         "key_basinOfVows",
                         "[$IsBasinOfVowsLate]",
-                        "$IsYhormNotHereOrBeatable|3000899"
+                        "[$IsYhormNotHereOrBeatable|3000899]"
                     ]
                 ],
                 "visibility_rules": [
@@ -4114,9 +4114,9 @@
         "children": [
             {
                 "name": "US: Soul of the Rotted Greatwood",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3100800"
+                        "[$IsYhormNotHereOrBeatable|3100800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -4130,9 +4130,9 @@
             },
             {
                 "name": "US: Transposing Kiln - boss drop",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3100800"
+                        "[$IsYhormNotHereOrBeatable|3100800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -4437,9 +4437,9 @@
             },
             {
                 "name": "US: Wargod Wooden Shield - Pit of Hollows",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3100800"
+                        "[$IsYhormNotHereOrBeatable|3100800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -6590,9 +6590,9 @@
         "children": [
             {
                 "name": "RS: Soul of a Crystal Sage",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3300850"
+                        "[$IsYhormNotHereOrBeatable|3300850]"
                     ]
                 ],
                 "visibility_rules": [
@@ -7923,9 +7923,9 @@
             },
             {
                 "name": "FS: Sage's Big Hat - shop after killing RS boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3300850"
+                        "[$IsYhormNotHereOrBeatable|3300850]"
                     ]
                 ],
                 "visibility_rules": [
@@ -8341,9 +8341,9 @@
             },
             {
                 "name": "CD: Small Doll - boss drop",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3500800"
+                        "[$IsYhormNotHereOrBeatable|3500800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -8357,9 +8357,9 @@
             },
             {
                 "name": "CD: Soul of the Deacons of the Deep",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3500800"
+                        "[$IsYhormNotHereOrBeatable|3500800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -9417,9 +9417,9 @@
             },
             {
                 "name": "CD: Archdeacon White Crown - boss room after killing boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3500800"
+                        "[$IsYhormNotHereOrBeatable|3500800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -9433,9 +9433,9 @@
             },
             {
                 "name": "CD: Archdeacon Holy Garb - boss room after killing boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3500800"
+                        "[$IsYhormNotHereOrBeatable|3500800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -9449,9 +9449,9 @@
             },
             {
                 "name": "CD: Archdeacon Skirt - boss room after killing boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3500800"
+                        "[$IsYhormNotHereOrBeatable|3500800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -10051,7 +10051,7 @@
                 "access_rules": [ // SOFT LOGIC
                     [
                         "[$HasAnyScroll]",
-                        "$IsYhormNotHereOrBeatable|3300801"
+                        "[$IsYhormNotHereOrBeatable|3300801]"
                     ]
                 ],
                 "visibility_rules": [
@@ -10068,7 +10068,7 @@
                 "access_rules": [ // SOFT LOGIC
                     [
                         "[$HasAnyScroll]",
-                        "$IsYhormNotHereOrBeatable|3300801"
+                        "[$IsYhormNotHereOrBeatable|3300801]"
                     ]
                 ],
                 "visibility_rules": [
@@ -11204,10 +11204,10 @@
                 "access_rules": [ // SOFT LOGIC
                     [
                         "[$HasAnyScroll]",
-                        "$IsYhormNotHereOrBeatable|3100800",
-                        "$IsYhormNotHereOrBeatable|3300850",
-                        "$IsYhormNotHereOrBeatable|3500800",
-                        "$IsYhormNotHereOrBeatable|3300801"
+                        "[$IsYhormNotHereOrBeatable|3100800]",
+                        "[$IsYhormNotHereOrBeatable|3300850]",
+                        "[$IsYhormNotHereOrBeatable|3500800]",
+                        "[$IsYhormNotHereOrBeatable|3300801]"
                     ]
                 ],
                 "visibility_rules": [
@@ -11242,7 +11242,7 @@
                 "access_rules": [ // SOFT LOGIC
                     [
                         "[$HasAnyScroll]",
-                        "$IsYhormNotHereOrBeatable|3300801"
+                        "[$IsYhormNotHereOrBeatable|3300801]"
                     ]
                 ],
                 "visibility_rules": [
@@ -11259,7 +11259,7 @@
                 "access_rules": [ // SOFT LOGIC
                     [
                         "[$HasAnyScroll]",
-                        "$IsYhormNotHereOrBeatable|3300801"
+                        "[$IsYhormNotHereOrBeatable|3300801]"
                     ]
                 ],
                 "visibility_rules": [
@@ -11276,7 +11276,7 @@
                 "access_rules": [ // SOFT LOGIC
                     [
                         "[$HasAnyScroll]",
-                        "$IsYhormNotHereOrBeatable|3300801"
+                        "[$IsYhormNotHereOrBeatable|3300801]"
                     ]
                 ],
                 "visibility_rules": [
@@ -11293,7 +11293,7 @@
                 "access_rules": [ // SOFT LOGIC
                     [
                         "[$HasAnyScroll]",
-                        "$IsYhormNotHereOrBeatable|3300801"
+                        "[$IsYhormNotHereOrBeatable|3300801]"
                     ]
                 ],
                 "visibility_rules": [
@@ -11310,7 +11310,7 @@
                 "access_rules": [ // SOFT LOGIC
                     [
                         "[$HasAnyScroll]",
-                        "$IsYhormNotHereOrBeatable|3300801"
+                        "[$IsYhormNotHereOrBeatable|3300801]"
                     ]
                 ],
                 "visibility_rules": [
@@ -11543,9 +11543,9 @@
         "children": [
             {
                 "name": "CC: Soul of High Lord Wolnir",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3800800"
+                        "[$IsYhormNotHereOrBeatable|3800800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -12175,9 +12175,9 @@
             },
             {
                 "name": "CC: Homeward Bone - Irithyll bridge",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3800800"
+                        "[$IsYhormNotHereOrBeatable|3800800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -12198,9 +12198,9 @@
             },
             {
                 "name": "CC: Pontiff's Right Eye - Irithyll bridge, miniboss drop",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3800800"
+                        "[$IsYhormNotHereOrBeatable|3800800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -12221,9 +12221,9 @@
             },
             {
                 "name": "FS: Wolnir's Crown - shop after killing CC boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3800800"
+                        "[$IsYhormNotHereOrBeatable|3800800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -12283,9 +12283,9 @@
         "children": [
             {
                 "name": "SL: Soul of the Old Demon King",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3800830"
+                        "[$IsYhormNotHereOrBeatable|3800830]"
                     ]
                 ],
                 "visibility_rules": [
@@ -13203,7 +13203,7 @@
                     [
                         "[@US/US: Soul of the Rotted Greatwood/US: Soul of the Rotted Greatwood]",
                         "[ashes_dreamchaser]",
-                        "$IsYhormNotHereOrBeatable|3700850"
+                        "[$IsYhormNotHereOrBeatable|3700850]"
                     ]
                 ],
                 "visibility_rules": [
@@ -15645,9 +15645,9 @@
         "children": [
             {
                 "name": "PC: Soul of Yhorm the Giant",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3900800"
+                        "[$IsYhormNotHereOrBeatable|3900800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -15661,9 +15661,9 @@
             },
             {
                 "name": "PC: Cinders of a Lord - Yhorm the Giant",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3900800"
+                        "[$IsYhormNotHereOrBeatable|3900800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -16234,11 +16234,11 @@
             },
             {
                 "name": "PC: Siegbr\u00e4u - Siegward after killing boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
                         "@ID/ID: Titanite Slab - Siegward/ID: Titanite Slab - Siegward",
                         "@PC/PC: Soul of Yhorm the Giant/PC: Soul of Yhorm the Giant",
-                        "$IsYhormNotHereOrBeatable|3900800"
+                        "[$IsYhormNotHereOrBeatable|3900800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -16365,9 +16365,9 @@
         "children": [
             {
                 "name": "AL: Soul of Aldrich",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3700800"
+                        "[$IsYhormNotHereOrBeatable|3700800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -16381,9 +16381,9 @@
             },
             {
                 "name": "AL: Cinders of a Lord - Aldrich",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3700800"
+                        "[$IsYhormNotHereOrBeatable|3700800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -16956,9 +16956,9 @@
             },
             {
                 "name": "AL: Sun Princess Ring - dark cathedral, after boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3700800"
+                        "[$IsYhormNotHereOrBeatable|3700800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -17130,11 +17130,11 @@
             },
             {
                 "name": "FS: Sunset Shield - by grave after killing Hodrick with Sirris",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
                         "@US/US: Soul of the Rotted Greatwood/US: Soul of the Rotted Greatwood",
                         "@AL/AL: Soul of Aldrich/AL: Soul of Aldrich",
-                        "$IsYhormNotHereOrBeatable|3100800"
+                        "[$IsYhormNotHereOrBeatable|3100800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -17148,11 +17148,11 @@
             },
             {
                 "name": "US: Sunset Helm - Pit of Hollows after killing Hodrick with Sirris",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
                         "@US/US: Soul of the Rotted Greatwood/US: Soul of the Rotted Greatwood",
                         "@AL/AL: Soul of Aldrich/AL: Soul of Aldrich",
-                        "$IsYhormNotHereOrBeatable|3100800"
+                        "[$IsYhormNotHereOrBeatable|3100800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -17166,11 +17166,11 @@
             },
             {
                 "name": "US: Sunset Armor - pit of hollows after killing Hodrick with Sirris",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
                         "@US/US: Soul of the Rotted Greatwood/US: Soul of the Rotted Greatwood",
                         "@AL/AL: Soul of Aldrich/AL: Soul of Aldrich",
-                        "$IsYhormNotHereOrBeatable|3100800"
+                        "[$IsYhormNotHereOrBeatable|3100800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -17184,11 +17184,11 @@
             },
             {
                 "name": "US: Sunset Gauntlets - pit of hollows after killing Hodrick with Sirris",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
                         "@US/US: Soul of the Rotted Greatwood/US: Soul of the Rotted Greatwood",
                         "@AL/AL: Soul of Aldrich/AL: Soul of Aldrich",
-                        "$IsYhormNotHereOrBeatable|3100800"
+                        "[$IsYhormNotHereOrBeatable|3100800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -17202,11 +17202,11 @@
             },
             {
                 "name": "US: Sunset Leggings - pit of hollows after killing Hodrick with Sirris",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
                         "@US/US: Soul of the Rotted Greatwood/US: Soul of the Rotted Greatwood",
                         "@AL/AL: Soul of Aldrich/AL: Soul of Aldrich",
-                        "$IsYhormNotHereOrBeatable|3100800"
+                        "[$IsYhormNotHereOrBeatable|3100800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -17300,7 +17300,7 @@
                 "access_rules": [ // SOFT LOGIC
                     [
                         "[misc_blackEyeOrb]",
-                        "$IsYhormNotHereOrBeatable|3700800"
+                        "[$IsYhormNotHereOrBeatable|3700800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -17317,7 +17317,7 @@
                 "access_rules": [ // SOFT LOGIC
                     [
                         "[misc_blackEyeOrb]",
-                        "$IsYhormNotHereOrBeatable|3700800"
+                        "[$IsYhormNotHereOrBeatable|3700800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -17334,7 +17334,7 @@
                 "access_rules": [ // SOFT LOGIC
                     [
                         "[misc_blackEyeOrb]",
-                        "$IsYhormNotHereOrBeatable|3700800"
+                        "[$IsYhormNotHereOrBeatable|3700800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -17348,9 +17348,9 @@
             },
             {
                 "name": "FS: Smough's Helm - shop after killing AL boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3700800"
+                        "[$IsYhormNotHereOrBeatable|3700800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -17364,9 +17364,9 @@
             },
             {
                 "name": "FS: Smough's Armor - shop after killing AL boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3700800"
+                        "[$IsYhormNotHereOrBeatable|3700800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -17380,9 +17380,9 @@
             },
             {
                 "name": "FS: Smough's Gauntlets - shop after killing AL boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3700800"
+                        "[$IsYhormNotHereOrBeatable|3700800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -17396,9 +17396,9 @@
             },
             {
                 "name": "FS: Smough's Leggings - shop after killing AL boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3700800"
+                        "[$IsYhormNotHereOrBeatable|3700800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -17755,9 +17755,9 @@
         "children": [
             {
                 "name": "LC: Soul of Dragonslayer Armour",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3010800"
+                        "[$IsYhormNotHereOrBeatable|3010800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -18833,9 +18833,9 @@
             },
             {
                 "name": "LC: Titanite Chunk - down stairs after boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3010800"
+                        "[$IsYhormNotHereOrBeatable|3010800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -18890,9 +18890,9 @@
             },
             {
                 "name": "FS: Dancer's Crown - shop after killing LC entry boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3000899"
+                        "[$IsYhormNotHereOrBeatable|3000899]"
                     ]
                 ],
                 "visibility_rules": [
@@ -18906,9 +18906,9 @@
             },
             {
                 "name": "FS: Dancer's Armor - shop after killing LC entry boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3000899"
+                        "[$IsYhormNotHereOrBeatable|3000899]"
                     ]
                 ],
                 "visibility_rules": [
@@ -18922,9 +18922,9 @@
             },
             {
                 "name": "FS: Dancer's Gauntlets - shop after killing LC entry boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3000899"
+                        "[$IsYhormNotHereOrBeatable|3000899]"
                     ]
                 ],
                 "visibility_rules": [
@@ -18938,9 +18938,9 @@
             },
             {
                 "name": "FS: Dancer's Leggings - shop after killing LC entry boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3000899"
+                        "[$IsYhormNotHereOrBeatable|3000899]"
                     ]
                 ],
                 "visibility_rules": [
@@ -18954,9 +18954,9 @@
             },
             {
                 "name": "FS: Morne's Helm - shop after killing Eygon or LC boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3010800"
+                        "[$IsYhormNotHereOrBeatable|3010800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -18970,9 +18970,9 @@
             },
             {
                 "name": "FS: Morne's Armor - shop after killing Eygon or LC boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3010800"
+                        "[$IsYhormNotHereOrBeatable|3010800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -18986,9 +18986,9 @@
             },
             {
                 "name": "FS: Morne's Gauntlets - shop after killing Eygon or LC boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3010800"
+                        "[$IsYhormNotHereOrBeatable|3010800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -19002,9 +19002,9 @@
             },
             {
                 "name": "FS: Morne's Leggings - shop after killing Eygon or LC boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3010800"
+                        "[$IsYhormNotHereOrBeatable|3010800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -19246,9 +19246,9 @@
         "children": [
             {
                 "name": "CKG: Soul of Consumed Oceiros",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3000830"
+                        "[$IsYhormNotHereOrBeatable|3000830]"
                     ]
                 ],
                 "visibility_rules": [
@@ -19615,9 +19615,9 @@
             },
             {
                 "name": "CKG: Titanite Scale - tomb, chest #1",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3000830"
+                        "[$IsYhormNotHereOrBeatable|3000830]"
                     ]
                 ],
                 "visibility_rules": [
@@ -19638,9 +19638,9 @@
             },
             {
                 "name": "CKG: Titanite Scale - tomb, chest #2",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3000830"
+                        "[$IsYhormNotHereOrBeatable|3000830]"
                     ]
                 ],
                 "visibility_rules": [
@@ -19679,10 +19679,10 @@
             },
             {
                 "name": "CKG: Drakeblood Helm - tomb, after killing AP mausoleum NPC",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
                         "@AP2",
-                        "$IsYhormNotHereOrBeatable|3000830"
+                        "[$IsYhormNotHereOrBeatable|3000830]"
                     ]
                 ],
                 "visibility_rules": [
@@ -19696,10 +19696,10 @@
             },
             {
                 "name": "CKG: Drakeblood Armor - tomb, after killing AP mausoleum NPC",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
                         "@AP2",
-                        "$IsYhormNotHereOrBeatable|3000830"
+                        "[$IsYhormNotHereOrBeatable|3000830]"
                     ]
                 ],
                 "visibility_rules": [
@@ -19713,10 +19713,10 @@
             },
             {
                 "name": "CKG: Drakeblood Gauntlets - tomb, after killing AP mausoleum NPC",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
                         "@AP2",
-                        "$IsYhormNotHereOrBeatable|3000830"
+                        "[$IsYhormNotHereOrBeatable|3000830]"
                     ]
                 ],
                 "visibility_rules": [
@@ -19730,10 +19730,10 @@
             },
             {
                 "name": "CKG: Drakeblood Leggings - tomb, after killing AP mausoleum NPC",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
                         "@AP2",
-                        "$IsYhormNotHereOrBeatable|3000830"
+                        "[$IsYhormNotHereOrBeatable|3000830]"
                     ]
                 ],
                 "visibility_rules": [
@@ -19859,10 +19859,10 @@
             },
             {
                 "name": "GA: Soul of the Twin Princes",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3410830",
-                        "$IsYhormNotHereOrBeatable|3410832"
+                        "[$IsYhormNotHereOrBeatable|3410830]",
+                        "[$IsYhormNotHereOrBeatable|3410832]"
                     ]
                 ],
                 "visibility_rules": [
@@ -19876,10 +19876,10 @@
             },
             {
                 "name": "GA: Cinders of a Lord - Lothric Prince",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3410830",
-                        "$IsYhormNotHereOrBeatable|3410832"
+                        "[$IsYhormNotHereOrBeatable|3410830]",
+                        "[$IsYhormNotHereOrBeatable|3410832]"
                     ]
                 ],
                 "visibility_rules": [
@@ -20987,10 +20987,10 @@
             },
             {
                 "name": "FS: Lorian's Helm - shop after killing GA boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3410830",
-                        "$IsYhormNotHereOrBeatable|3410832"
+                        "[$IsYhormNotHereOrBeatable|3410830]",
+                        "[$IsYhormNotHereOrBeatable|3410832]"
                     ]
                 ],
                 "visibility_rules": [
@@ -21004,10 +21004,10 @@
             },
             {
                 "name": "FS: Lorian's Armor - shop after killing GA boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3410830",
-                        "$IsYhormNotHereOrBeatable|3410832"
+                        "[$IsYhormNotHereOrBeatable|3410830]",
+                        "[$IsYhormNotHereOrBeatable|3410832]"
                     ]
                 ],
                 "visibility_rules": [
@@ -21021,10 +21021,10 @@
             },
             {
                 "name": "FS: Lorian's Gauntlets - shop after killing GA boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3410830",
-                        "$IsYhormNotHereOrBeatable|3410832"
+                        "[$IsYhormNotHereOrBeatable|3410830]",
+                        "[$IsYhormNotHereOrBeatable|3410832]"
                     ]
                 ],
                 "visibility_rules": [
@@ -21038,10 +21038,10 @@
             },
             {
                 "name": "FS: Lorian's Leggings - shop after killing GA boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3410830",
-                        "$IsYhormNotHereOrBeatable|3410832"
+                        "[$IsYhormNotHereOrBeatable|3410830]",
+                        "[$IsYhormNotHereOrBeatable|3410832]"
                     ]
                 ],
                 "visibility_rules": [
@@ -21055,11 +21055,11 @@
             },
             {
                 "name": "FS: Sunless Talisman - Sirris, kill GA boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
                         "@US/US: Soul of the Rotted Greatwood/US: Soul of the Rotted Greatwood",
                         "ashes_dreamchaser",
-                        "$IsYhormNotHereOrBeatable|3100800"
+                        "[$IsYhormNotHereOrBeatable|3100800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -21073,11 +21073,11 @@
             },
             {
                 "name": "FS: Sunless Veil - shop, Sirris quest, kill GA boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
                         "@US/US: Soul of the Rotted Greatwood/US: Soul of the Rotted Greatwood",
                         "ashes_dreamchaser",
-                        "$IsYhormNotHereOrBeatable|3100800"
+                        "[$IsYhormNotHereOrBeatable|3100800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -21091,11 +21091,11 @@
             },
             {
                 "name": "FS: Sunless Armor - shop, Sirris quest, kill GA boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
                         "@US/US: Soul of the Rotted Greatwood/US: Soul of the Rotted Greatwood",
                         "ashes_dreamchaser",
-                        "$IsYhormNotHereOrBeatable|3100800"
+                        "[$IsYhormNotHereOrBeatable|3100800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -21109,11 +21109,11 @@
             },
             {
                 "name": "FS: Sunless Gauntlets - shop, Sirris quest, kill GA boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
                         "@US/US: Soul of the Rotted Greatwood/US: Soul of the Rotted Greatwood",
                         "ashes_dreamchaser",
-                        "$IsYhormNotHereOrBeatable|3100800"
+                        "[$IsYhormNotHereOrBeatable|3100800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -21127,11 +21127,11 @@
             },
             {
                 "name": "FS: Sunless Leggings - shop, Sirris quest, kill GA boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
                         "@US/US: Soul of the Rotted Greatwood/US: Soul of the Rotted Greatwood",
                         "ashes_dreamchaser",
-                        "$IsYhormNotHereOrBeatable|3100800"
+                        "[$IsYhormNotHereOrBeatable|3100800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -21451,9 +21451,9 @@
         "children": [
             {
                 "name": "UG: Soul of Champion Gundyr",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|4000830"
+                        "[$IsYhormNotHereOrBeatable|4000830]"
                     ]
                 ],
                 "visibility_rules": [
@@ -21467,9 +21467,9 @@
             },
             {
                 "name": "UG: Priestess Ring - shop",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|4000830"
+                        "[$IsYhormNotHereOrBeatable|4000830]"
                     ]
                 ],
                 "visibility_rules": [
@@ -21609,9 +21609,9 @@
             },
             {
                 "name": "UG: Eyes of a Fire Keeper - shrine, Irina's room",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|4000830"
+                        "[$IsYhormNotHereOrBeatable|4000830]"
                     ]
                 ],
                 "visibility_rules": [
@@ -21632,9 +21632,9 @@
             },
             {
                 "name": "UG: Soul of a Crestfallen Knight - environs, above shrine entrance",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|4000830"
+                        "[$IsYhormNotHereOrBeatable|4000830]"
                     ]
                 ],
                 "visibility_rules": [
@@ -21655,9 +21655,9 @@
             },
             {
                 "name": "UG: Blacksmith Hammer - shrine, Andre's room",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|4000830"
+                        "[$IsYhormNotHereOrBeatable|4000830]"
                     ]
                 ],
                 "visibility_rules": [
@@ -21678,9 +21678,9 @@
             },
             {
                 "name": "UG: Chaos Blade - environs, left of shrine",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|4000830"
+                        "[$IsYhormNotHereOrBeatable|4000830]"
                     ]
                 ],
                 "visibility_rules": [
@@ -21705,7 +21705,7 @@
                     [
                         "[$HasAnyScroll]",
                         "@FK/FK: Cinders of a Lord - Abyss Watcher/FK: Cinders of a Lord - Abyss Watcher",
-                        "$IsYhormNotHereOrBeatable|4000830"
+                        "[$IsYhormNotHereOrBeatable|4000830]"
                     ]
                 ],
                 "visibility_rules": [
@@ -21726,9 +21726,9 @@
             },
             {
                 "name": "UG: Coiled Sword Fragment - shrine, dead bonfire",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|4000830"
+                        "[$IsYhormNotHereOrBeatable|4000830]"
                     ]
                 ],
                 "visibility_rules": [
@@ -21749,9 +21749,9 @@
             },
             {
                 "name": "UG: Life Ring+3 - shrine, behind big throne",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|4000830"
+                        "[$IsYhormNotHereOrBeatable|4000830]"
                     ]
                 ],
                 "visibility_rules": [
@@ -21772,9 +21772,9 @@
             },
             {
                 "name": "UG: Ring of Steel Protection+1 - environs, behind bell tower",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|4000830"
+                        "[$IsYhormNotHereOrBeatable|4000830]"
                     ]
                 ],
                 "visibility_rules": [
@@ -21798,7 +21798,7 @@
                 "access_rules": [ // SOFT LOGIC
                     [
                         "[@FK/FK: Soul of the Blood of the Wolf/FK: Soul of the Blood of the Wolf]",
-                        "$IsYhormNotHereOrBeatable|4000830"
+                        "[$IsYhormNotHereOrBeatable|4000830]"
                     ]
                 ],
                 "visibility_rules": [
@@ -21812,9 +21812,9 @@
             },
             {
                 "name": "UG: Ember - shop",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|4000830"
+                        "[$IsYhormNotHereOrBeatable|4000830]"
                     ]
                 ],
                 "visibility_rules": [
@@ -21832,7 +21832,7 @@
                     [
                         "[$HasAnyScroll]",
                         "@FK/FK: Cinders of a Lord - Abyss Watcher/FK: Cinders of a Lord - Abyss Watcher",
-                        "$IsYhormNotHereOrBeatable|4000830"
+                        "[$IsYhormNotHereOrBeatable|4000830]"
                     ]
                 ],
                 "visibility_rules": [
@@ -21850,7 +21850,7 @@
                     [
                         "[$HasAnyScroll]",
                         "@FK/FK: Cinders of a Lord - Abyss Watcher/FK: Cinders of a Lord - Abyss Watcher",
-                        "$IsYhormNotHereOrBeatable|4000830"
+                        "[$IsYhormNotHereOrBeatable|4000830]"
                     ]
                 ],
                 "visibility_rules": [
@@ -21868,7 +21868,7 @@
                     [
                         "[$HasAnyScroll]",
                         "@FK/FK: Cinders of a Lord - Abyss Watcher/FK: Cinders of a Lord - Abyss Watcher",
-                        "$IsYhormNotHereOrBeatable|4000830"
+                        "[$IsYhormNotHereOrBeatable|4000830]"
                     ]
                 ],
                 "visibility_rules": [
@@ -21886,7 +21886,7 @@
                     [
                         "[$HasAnyScroll]",
                         "@FK/FK: Cinders of a Lord - Abyss Watcher/FK: Cinders of a Lord - Abyss Watcher",
-                        "$IsYhormNotHereOrBeatable|4000830"
+                        "[$IsYhormNotHereOrBeatable|4000830]"
                     ]
                 ],
                 "visibility_rules": [
@@ -21900,9 +21900,9 @@
             },
             {
                 "name": "FS: Gundyr's Helm - shop after killing UG boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|4000830"
+                        "[$IsYhormNotHereOrBeatable|4000830]"
                     ]
                 ],
                 "visibility_rules": [
@@ -21916,9 +21916,9 @@
             },
             {
                 "name": "FS: Gundyr's Armor - shop after killing UG boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|4000830"
+                        "[$IsYhormNotHereOrBeatable|4000830]"
                     ]
                 ],
                 "visibility_rules": [
@@ -21932,9 +21932,9 @@
             },
             {
                 "name": "FS: Gundyr's Gauntlets - shop after killing UG boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|4000830"
+                        "[$IsYhormNotHereOrBeatable|4000830]"
                     ]
                 ],
                 "visibility_rules": [
@@ -21948,9 +21948,9 @@
             },
             {
                 "name": "FS: Gundyr's Leggings - shop after killing UG boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|4000830"
+                        "[$IsYhormNotHereOrBeatable|4000830]"
                     ]
                 ],
                 "visibility_rules": [
@@ -22043,9 +22043,9 @@
         "children": [
             {
                 "name": "AP: Dragon Head Stone - fort, boss drop",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3200800"
+                        "[$IsYhormNotHereOrBeatable|3200800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -22466,10 +22466,10 @@
         "children": [
             {
                 "name": "AP: Soul of the Nameless King",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3200800",
-                        "$IsYhormNotHereOrBeatable|3200851"
+                        "[$IsYhormNotHereOrBeatable|3200800]",
+                        "[$IsYhormNotHereOrBeatable|3200851]"
                     ]
                 ],
                 "visibility_rules": [
@@ -22767,10 +22767,10 @@
             },
             {
                 "name": "AP: Dragonslayer Helm - plaza",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3200800",
-                        "$IsYhormNotHereOrBeatable|3200851"
+                        "[$IsYhormNotHereOrBeatable|3200800]",
+                        "[$IsYhormNotHereOrBeatable|3200851]"
                     ]
                 ],
                 "visibility_rules": [
@@ -22784,10 +22784,10 @@
             },
             {
                 "name": "AP: Dragonslayer Armor - plaza",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3200800",
-                        "$IsYhormNotHereOrBeatable|3200851"
+                        "[$IsYhormNotHereOrBeatable|3200800]",
+                        "[$IsYhormNotHereOrBeatable|3200851]"
                     ]
                 ],
                 "visibility_rules": [
@@ -22801,10 +22801,10 @@
             },
             {
                 "name": "AP: Dragonslayer Gauntlets - plaza",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3200800",
-                        "$IsYhormNotHereOrBeatable|3200851"
+                        "[$IsYhormNotHereOrBeatable|3200800]",
+                        "[$IsYhormNotHereOrBeatable|3200851]"
                     ]
                 ],
                 "visibility_rules": [
@@ -22818,10 +22818,10 @@
             },
             {
                 "name": "AP: Dragonslayer Leggings - plaza",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3200800",
-                        "$IsYhormNotHereOrBeatable|3200851"
+                        "[$IsYhormNotHereOrBeatable|3200800]",
+                        "[$IsYhormNotHereOrBeatable|3200851]"
                     ]
                 ],
                 "visibility_rules": [
@@ -22871,10 +22871,10 @@
             },
             {
                 "name": "AP: Titanite Slab - plaza",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3200800",
-                        "$IsYhormNotHereOrBeatable|3200851"
+                        "[$IsYhormNotHereOrBeatable|3200800]",
+                        "[$IsYhormNotHereOrBeatable|3200851]"
                     ]
                 ],
                 "visibility_rules": [
@@ -22913,10 +22913,10 @@
             },
             {
                 "name": "AP: Covetous Gold Serpent Ring+2 - plaza",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3200800",
-                        "$IsYhormNotHereOrBeatable|3200851"
+                        "[$IsYhormNotHereOrBeatable|3200800]",
+                        "[$IsYhormNotHereOrBeatable|3200851]"
                     ]
                 ],
                 "visibility_rules": [
@@ -23084,10 +23084,10 @@
             },
             {
                 "name": "FS: Golden Crown - shop after killing AP boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3200800",
-                        "$IsYhormNotHereOrBeatable|3200851"
+                        "[$IsYhormNotHereOrBeatable|3200800]",
+                        "[$IsYhormNotHereOrBeatable|3200851]"
                     ]
                 ],
                 "visibility_rules": [
@@ -23101,10 +23101,10 @@
             },
             {
                 "name": "FS: Dragonscale Armor - shop after killing AP boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3200800",
-                        "$IsYhormNotHereOrBeatable|3200851"
+                        "[$IsYhormNotHereOrBeatable|3200800]",
+                        "[$IsYhormNotHereOrBeatable|3200851]"
                     ]
                 ],
                 "visibility_rules": [
@@ -23118,10 +23118,10 @@
             },
             {
                 "name": "FS: Golden Bracelets - shop after killing AP boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3200800",
-                        "$IsYhormNotHereOrBeatable|3200851"
+                        "[$IsYhormNotHereOrBeatable|3200800]",
+                        "[$IsYhormNotHereOrBeatable|3200851]"
                     ]
                 ],
                 "visibility_rules": [
@@ -23135,10 +23135,10 @@
             },
             {
                 "name": "FS: Dragonscale Waistcloth - shop after killing AP boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|3200800",
-                        "$IsYhormNotHereOrBeatable|3200851"
+                        "[$IsYhormNotHereOrBeatable|3200800]",
+                        "[$IsYhormNotHereOrBeatable|3200851]"
                     ]
                 ],
                 "visibility_rules": [
@@ -23272,9 +23272,9 @@
         "children": [
             {
                 "name": "KFF: Soul of the Lords",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|4100800"
+                        "[$IsYhormNotHereOrBeatable|4100800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -23299,9 +23299,9 @@
             },
             {
                 "name": "FS: Firelink Helm - shop after beating KFF boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|4100800"
+                        "[$IsYhormNotHereOrBeatable|4100800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -23315,9 +23315,9 @@
             },
             {
                 "name": "FS: Firelink Armor - shop after beating KFF boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|4100800"
+                        "[$IsYhormNotHereOrBeatable|4100800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -23331,9 +23331,9 @@
             },
             {
                 "name": "FS: Firelink Gauntlets - shop after beating KFF boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|4100800"
+                        "[$IsYhormNotHereOrBeatable|4100800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -23347,9 +23347,9 @@
             },
             {
                 "name": "FS: Firelink Leggings - shop after beating KFF boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|4100800"
+                        "[$IsYhormNotHereOrBeatable|4100800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -23363,9 +23363,9 @@
             },
             {
                 "name": "FS: Billed Mask - shop after killing Yuria",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|4100800"
+                        "[$IsYhormNotHereOrBeatable|4100800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -23379,9 +23379,9 @@
             },
             {
                 "name": "FS: Black Dress - shop after killing Yuria",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|4100800"
+                        "[$IsYhormNotHereOrBeatable|4100800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -23395,9 +23395,9 @@
             },
             {
                 "name": "FS: Black Gauntlets - shop after killing Yuria",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|4100800"
+                        "[$IsYhormNotHereOrBeatable|4100800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -23411,9 +23411,9 @@
             },
             {
                 "name": "FS: Black Leggings - shop after killing Yuria",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|4100800"
+                        "[$IsYhormNotHereOrBeatable|4100800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -23475,9 +23475,9 @@
         "children": [
             {
                 "name": "PW1: Valorheart - boss drop",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|4500860"
+                        "[$IsYhormNotHereOrBeatable|4500860]"
                     ]
                 ],
                 "visibility_rules": [
@@ -24639,10 +24639,10 @@
         "children": [
             {
                 "name": "PW2: Soul of Sister Friede",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|4500801",
-                        "$IsYhormNotHereOrBeatable|4500800"
+                        "[$IsYhormNotHereOrBeatable|4500801]",
+                        "[$IsYhormNotHereOrBeatable|4500800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -24656,9 +24656,9 @@
             },
             {
                 "name": "PW2: Titanite Slab - boss drop",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|4500801"
+                        "[$IsYhormNotHereOrBeatable|4500801]"
                     ]
                 ],
                 "visibility_rules": [
@@ -25062,10 +25062,10 @@
             },
             {
                 "name": "PW1: Titanite Slab - Corvian",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|4500801",
-                        "$IsYhormNotHereOrBeatable|4500800"
+                        "[$IsYhormNotHereOrBeatable|4500801]",
+                        "[$IsYhormNotHereOrBeatable|4500800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -25086,10 +25086,10 @@
             },
             {
                 "name": "FS: Ordained Hood - shop after killing PW2 boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|4500801",
-                        "$IsYhormNotHereOrBeatable|4500800"
+                        "[$IsYhormNotHereOrBeatable|4500801]",
+                        "[$IsYhormNotHereOrBeatable|4500800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -25103,10 +25103,10 @@
             },
             {
                 "name": "FS: Ordained Dress - shop after killing PW2 boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|4500801",
-                        "$IsYhormNotHereOrBeatable|4500800"
+                        "[$IsYhormNotHereOrBeatable|4500801]",
+                        "[$IsYhormNotHereOrBeatable|4500800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -25120,10 +25120,10 @@
             },
             {
                 "name": "FS: Ordained Trousers - shop after killing PW2 boss",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|4500801",
-                        "$IsYhormNotHereOrBeatable|4500800"
+                        "[$IsYhormNotHereOrBeatable|4500801]",
+                        "[$IsYhormNotHereOrBeatable|4500800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -25220,9 +25220,9 @@
         "children": [
             {
                 "name": "DH: Soul of the Demon Prince",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|5000801"
+                        "[$IsYhormNotHereOrBeatable|5000801]"
                     ]
                 ],
                 "visibility_rules": [
@@ -26122,9 +26122,9 @@
             },
             {
                 "name": "DH: Small Envoy Banner - boss drop",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|5000801"
+                        "[$IsYhormNotHereOrBeatable|5000801]"
                     ]
                 ],
                 "visibility_rules": [
@@ -26324,9 +26324,9 @@
         "children": [
             {
                 "name": "RC: Titanite Slab - mid boss drop",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|5100800"
+                        "[$IsYhormNotHereOrBeatable|5100800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -26340,9 +26340,9 @@
             },
             {
                 "name": "RC: Filianore's Spear Ornament - mid boss drop",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|5100800"
+                        "[$IsYhormNotHereOrBeatable|5100800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -26356,9 +26356,9 @@
             },
             {
                 "name": "RC: Soul of Darkeater Midir",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|5100850"
+                        "[$IsYhormNotHereOrBeatable|5100850]"
                     ]
                 ],
                 "visibility_rules": [
@@ -26391,7 +26391,7 @@
                 "name": "RC: Titanite Slab - ashes, NPC drop",
                 "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|5100800",
+                        "[$IsYhormNotHereOrBeatable|5100800]",
                         "[$IsYhormNotHereOrBeatable|5110801]",
                         "[$IsYhormNotHereOrBeatable|5110800]"
                     ]
@@ -26409,7 +26409,7 @@
                 "name": "RC: Crucifix of the Mad King - ashes, NPC drop",
                 "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|5100800",
+                        "[$IsYhormNotHereOrBeatable|5100800]",
                         "[$IsYhormNotHereOrBeatable|5110801]",
                         "[$IsYhormNotHereOrBeatable|5110800]"
                     ]
@@ -26763,7 +26763,7 @@
                 "name": "RC: Shira's Crown - Shira's room after killing ashes NPC",
                 "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|5100800",
+                        "[$IsYhormNotHereOrBeatable|5100800]",
                         "[$IsYhormNotHereOrBeatable|5110801]",
                         "[$IsYhormNotHereOrBeatable|5110800]"
                     ]
@@ -26781,7 +26781,7 @@
                 "name": "RC: Shira's Armor - Shira's room after killing ashes NPC",
                 "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|5100800",
+                        "[$IsYhormNotHereOrBeatable|5100800]",
                         "[$IsYhormNotHereOrBeatable|5110801]",
                         "[$IsYhormNotHereOrBeatable|5110800]"
                     ]
@@ -26799,7 +26799,7 @@
                 "name": "RC: Shira's Gloves - Shira's room after killing ashes NPC",
                 "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|5100800",
+                        "[$IsYhormNotHereOrBeatable|5100800]",
                         "[$IsYhormNotHereOrBeatable|5110801]",
                         "[$IsYhormNotHereOrBeatable|5110800]"
                     ]
@@ -26817,7 +26817,7 @@
                 "name": "RC: Shira's Trousers - Shira's room after killing ashes NPC",
                 "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|5100800",
+                        "[$IsYhormNotHereOrBeatable|5100800]",
                         "[$IsYhormNotHereOrBeatable|5110801]",
                         "[$IsYhormNotHereOrBeatable|5110800]"
                     ]
@@ -27963,9 +27963,9 @@
             },
             {
                 "name": "RC: Spears of the Church - hidden boss drop",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|5100850"
+                        "[$IsYhormNotHereOrBeatable|5100850]"
                     ]
                 ],
                 "visibility_rules": [
@@ -28091,10 +28091,10 @@
             },
             {
                 "name": "RC: Soul of Slave Knight Gael",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|5110801",
-                        "$IsYhormNotHereOrBeatable|5110800"
+                        "[$IsYhormNotHereOrBeatable|5110801]",
+                        "[$IsYhormNotHereOrBeatable|5110800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -28108,10 +28108,10 @@
             },
             {
                 "name": "RC: Blood of the Dark Soul - end boss drop",
-                "access_rules": [
+                "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|5110801",
-                        "$IsYhormNotHereOrBeatable|5110800"
+                        "[$IsYhormNotHereOrBeatable|5110801]",
+                        "[$IsYhormNotHereOrBeatable|5110800]"
                     ]
                 ],
                 "visibility_rules": [
@@ -28127,7 +28127,7 @@
                 "name": "RC: Titanite Slab - ashes, mob drop",
                 "access_rules": [ // SOFT LOGIC
                     [
-                        "$IsYhormNotHereOrBeatable|5100800",
+                        "[$IsYhormNotHereOrBeatable|5100800]",
                         "[$IsYhormNotHereOrBeatable|5110801]",
                         "[$IsYhormNotHereOrBeatable|5110800]"
                     ]
