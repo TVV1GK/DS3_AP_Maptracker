@@ -91,6 +91,29 @@ function OnlyIfRandom(is_randomized_code, has_item_code)
     return not is_randomized_obj.Active or has_item_obj.Active
 end
 
+--- Gets the accessibility level for a given rule if the current pack variant is the softlogic one.
+--- @param rule string The rule to check, if the current pack variant is the softlogic variant.
+--- @param ... string If the rule is a function, the arguments to pass to the function.
+--- @return accessibilityLevel accessibility_level If the current pack variant is not the softlogic variant, returns AccessibilityLevel.Normal. Otherwise, returns the accessibility level based on the rule.
+function ApplyRuleOnlyIfSoftVariant(rule, ...)
+    if not IS_SOFT_VARIANT then
+        if LOG_LEVEL <= LOG_LEVELS.DEBUG then
+            print(string.format("> DEBUG: [ApplyRuleOnlyIfSoftVariant] Pack is not the softlogic variant, returning '%s'", tostring(ACCESSIBILITY_LEVELS_AS_STRINGS[AccessibilityLevel.Normal])))
+        end
+        return AccessibilityLevel.Normal
+    end
+
+    local accessibility_level = ConvertRulesToAccessibilityLevels(rule, ...)
+    if LOG_LEVEL <= LOG_LEVELS.DEBUG then
+        if #{...} > 0 then
+            print(string.format("> DEBUG: [ApplyRuleOnlyIfSoftVariant] Pack is the softlogic variant, returning accessibility level '%s' based on rule '%s|%s'", tostring(ACCESSIBILITY_LEVELS_AS_STRINGS[accessibility_level]), rule, table.concat({...}, "|")))
+        else
+            print(string.format("> DEBUG: [ApplyRuleOnlyIfSoftVariant] Pack is the softlogic variant, returning accessibility level '%s' based on rule '%s'", tostring(ACCESSIBILITY_LEVELS_AS_STRINGS[accessibility_level]), rule))
+        end
+    end
+    return accessibility_level
+end
+
 --- Checks if the Basin of Vows is 'logically' late (based on the AP world logic).
 --- (This can only be determined if user has connected their tracker to AP, otherwise it will default to true.)
 --- <- This is actually not entirely true, because currently DS3's AP world's slot_data doesn't send the late_basin_of_vows option,

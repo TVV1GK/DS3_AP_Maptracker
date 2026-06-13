@@ -3050,7 +3050,7 @@
                 "access_rules": [ // SOFT LOGIC
                     [
                         "key_basinOfVows",
-                     // "[$IsBasinOfVowsLate]",
+                        "[^$ApplyRuleOnlyIfSoftVariant|$IsBasinOfVowsLate]",
                         "[$IsYhormNotHereOrBeatable|3000899]"
                     ]
                 ],
@@ -3067,7 +3067,7 @@
                 "name": "HWL: Basin of Vows - Emma",
                 "access_rules": [ // SOFT LOGIC
                     [
-                     // "[key_smallDoll]"
+                       "[^$ApplyRuleOnlyIfSoftVariant|key_smallDoll]"
                     ]
                 ],
                 "visibility_rules": [
@@ -6580,9 +6580,9 @@
         "name": "RS",
         "access_rules": [ // SOFT LOGIC
             [
-                "@US"
-             // "[$OnlyIfRandom|ap_pyromancyFlameRandomized|misc_pyromancyFlame]",
-             // "[$OnlyIfRandom|ap_transposingKilnRandomized|misc_transposingKiln]"
+                "@US",
+                "[^$ApplyRuleOnlyIfSoftVariant|$OnlyIfRandom|ap_pyromancyFlameRandomized|misc_pyromancyFlame]",
+                "[^$ApplyRuleOnlyIfSoftVariant|$OnlyIfRandom|ap_transposingKilnRandomized|misc_transposingKiln]"
             ]
         ],
         "children": [
@@ -10048,7 +10048,7 @@
                 "name": "FK: Soul of the Blood of the Wolf",
                 "access_rules": [ // SOFT LOGIC
                     [
-                     // "[$HasAnyScroll]",
+                        "[^$ApplyRuleOnlyIfSoftVariant|$HasAnyScroll]",
                         "[$IsYhormNotHereOrBeatable|3300801]"
                     ]
                 ],
@@ -10065,7 +10065,7 @@
                 "name": "FK: Cinders of a Lord - Abyss Watcher",
                 "access_rules": [ // SOFT LOGIC
                     [
-                     // "[$HasAnyScroll]",
+                        "[^$ApplyRuleOnlyIfSoftVariant|$HasAnyScroll]",
                         "[$IsYhormNotHereOrBeatable|3300801]"
                     ]
                 ],
@@ -11201,7 +11201,7 @@
                 "name": "FS: Hawkwood's Shield - gravestone after Hawkwood leaves",
                 "access_rules": [ // SOFT LOGIC
                     [
-                     // "[$HasAnyScroll]",
+                        "[^$ApplyRuleOnlyIfSoftVariant|$HasAnyScroll]",
                         "[$IsYhormNotHereOrBeatable|3100800]",
                         "[$IsYhormNotHereOrBeatable|3300850]",
                         "[$IsYhormNotHereOrBeatable|3500800]",
@@ -11239,7 +11239,7 @@
                 "name": "FS: Farron Ring - Hawkwood",
                 "access_rules": [ // SOFT LOGIC
                     [
-                     // "[$HasAnyScroll]",
+                        "[^$ApplyRuleOnlyIfSoftVariant|$HasAnyScroll]",
                         "[$IsYhormNotHereOrBeatable|3300801]"
                     ]
                 ],
@@ -11256,7 +11256,7 @@
                 "name": "FS: Undead Legion Helm - shop after killing FK boss",
                 "access_rules": [ // SOFT LOGIC
                     [
-                     // "[$HasAnyScroll]",
+                        "[^$ApplyRuleOnlyIfSoftVariant|$HasAnyScroll]",
                         "[$IsYhormNotHereOrBeatable|3300801]"
                     ]
                 ],
@@ -11273,7 +11273,7 @@
                 "name": "FS: Undead Legion Armor - shop after killing FK boss",
                 "access_rules": [ // SOFT LOGIC
                     [
-                     // "[$HasAnyScroll]",
+                        "[^$ApplyRuleOnlyIfSoftVariant|$HasAnyScroll]",
                         "[$IsYhormNotHereOrBeatable|3300801]"
                     ]
                 ],
@@ -11290,7 +11290,7 @@
                 "name": "FS: Undead Legion Gauntlet - shop after killing FK boss",
                 "access_rules": [ // SOFT LOGIC
                     [
-                     // "[$HasAnyScroll]",
+                        "[^$ApplyRuleOnlyIfSoftVariant|$HasAnyScroll]",
                         "[$IsYhormNotHereOrBeatable|3300801]"
                     ]
                 ],
@@ -11307,7 +11307,7 @@
                 "name": "FS: Undead Legion Leggings - shop after killing FK boss",
                 "access_rules": [ // SOFT LOGIC
                     [
-                     // "[$HasAnyScroll]",
+                        "[^$ApplyRuleOnlyIfSoftVariant|$HasAnyScroll]",
                         "[$IsYhormNotHereOrBeatable|3300801]"
                     ]
                 ],
@@ -13199,8 +13199,8 @@
                 "name": "IBV: Soul of Pontiff Sulyvahn",
                 "access_rules": [ // SOFT LOGIC
                     [
-                     // "[@US/US: Soul of the Rotted Greatwood/US: Soul of the Rotted Greatwood]",
-                     // "[ashes_dreamchaser]",
+                        "[^$ApplyRuleOnlyIfSoftVariant|@US/US: Soul of the Rotted Greatwood/US: Soul of the Rotted Greatwood]",
+                        "[^$ApplyRuleOnlyIfSoftVariant|ashes_dreamchaser]",
                         "[$IsYhormNotHereOrBeatable|3700850]"
                     ]
                 ],
@@ -17746,8 +17746,8 @@
         "access_rules": [ // SOFT LOGIC
             [
              // "@HWL", // STRONGER RULE EXISTS
-                "@HWL/HWL: Soul of the Dancer/HWL: Soul of the Dancer"
-             // "[$IsBasinOfVowsLate]"
+                "@HWL/HWL: Soul of the Dancer/HWL: Soul of the Dancer",
+                "[^$ApplyRuleOnlyIfSoftVariant|$IsBasinOfVowsLate]"
             ]
         ],
         "children": [
@@ -19236,9 +19236,9 @@
         "name": "CKG",
         "access_rules": [ // SOFT LOGIC
             [
-                "@LC"
-             // "[$OnlyIfRandom|ap_pyromancyFlameRandomized|misc_pyromancyFlame]",
-             // "[$OnlyIfRandom|ap_transposingKilnRandomized|misc_transposingKiln]"
+                "@LC",
+                "[^$ApplyRuleOnlyIfSoftVariant|$OnlyIfRandom|ap_pyromancyFlameRandomized|misc_pyromancyFlame]",
+                "[^$ApplyRuleOnlyIfSoftVariant|$OnlyIfRandom|ap_transposingKilnRandomized|misc_transposingKiln]"
             ]
         ],
         "children": [
@@ -19830,8 +19830,8 @@
         "access_rules": [ // SOFT LOGIC
             [
              // "@LC", // STRONGER RULE EXISTS
-             // "[$OnlyIfRandom|ap_pyromancyFlameRandomized|misc_pyromancyFlame]",
-             // "[$OnlyIfRandom|ap_transposingKilnRandomized|misc_transposingKiln]",
+                "[^$ApplyRuleOnlyIfSoftVariant|$OnlyIfRandom|ap_pyromancyFlameRandomized|misc_pyromancyFlame]",
+                "[^$ApplyRuleOnlyIfSoftVariant|$OnlyIfRandom|ap_transposingKilnRandomized|misc_transposingKiln]",
                 "key_grandArchives",
                 "@LC/LC: Soul of Dragonslayer Armour/LC: Soul of Dragonslayer Armour"
             ]
@@ -21701,7 +21701,7 @@
                 "name": "UG: Hornet Ring - environs, right of main path after killing FK boss",
                 "access_rules": [ // SOFT LOGIC
                     [
-                     // "[$HasAnyScroll]",
+                        "[^$ApplyRuleOnlyIfSoftVariant|$HasAnyScroll]",
                         "@FK/FK: Cinders of a Lord - Abyss Watcher/FK: Cinders of a Lord - Abyss Watcher",
                         "[$IsYhormNotHereOrBeatable|4000830]"
                     ]
@@ -21795,7 +21795,7 @@
                 "name": "FS: Ring of Sacrifice - Yuria shop",
                 "access_rules": [ // SOFT LOGIC
                     [
-                     // "[@FK/FK: Soul of the Blood of the Wolf/FK: Soul of the Blood of the Wolf]",
+                        "[^$ApplyRuleOnlyIfSoftVariant|@FK/FK: Soul of the Blood of the Wolf/FK: Soul of the Blood of the Wolf]",
                         "[$IsYhormNotHereOrBeatable|4000830]"
                     ]
                 ],
@@ -21828,7 +21828,7 @@
                 "name": "UG: Wolf Knight Helm - shop after killing FK boss",
                 "access_rules": [ // SOFT LOGIC
                     [
-                     // "[$HasAnyScroll]",
+                        "[^$ApplyRuleOnlyIfSoftVariant|$HasAnyScroll]",
                         "@FK/FK: Cinders of a Lord - Abyss Watcher/FK: Cinders of a Lord - Abyss Watcher",
                         "[$IsYhormNotHereOrBeatable|4000830]"
                     ]
@@ -21846,7 +21846,7 @@
                 "name": "UG: Wolf Knight Armor - shop after killing FK boss",
                 "access_rules": [ // SOFT LOGIC
                     [
-                     // "[$HasAnyScroll]",
+                        "[^$ApplyRuleOnlyIfSoftVariant|$HasAnyScroll]",
                         "@FK/FK: Cinders of a Lord - Abyss Watcher/FK: Cinders of a Lord - Abyss Watcher",
                         "[$IsYhormNotHereOrBeatable|4000830]"
                     ]
@@ -21864,7 +21864,7 @@
                 "name": "UG: Wolf Knight Gauntlets - shop after killing FK boss",
                 "access_rules": [ // SOFT LOGIC
                     [
-                     // "[$HasAnyScroll]",
+                        "[^$ApplyRuleOnlyIfSoftVariant|$HasAnyScroll]",
                         "@FK/FK: Cinders of a Lord - Abyss Watcher/FK: Cinders of a Lord - Abyss Watcher",
                         "[$IsYhormNotHereOrBeatable|4000830]"
                     ]
@@ -21882,7 +21882,7 @@
                 "name": "UG: Wolf Knight Leggings - shop after killing FK boss",
                 "access_rules": [ // SOFT LOGIC
                     [
-                     // "[$HasAnyScroll]",
+                        "[^$ApplyRuleOnlyIfSoftVariant|$HasAnyScroll]",
                         "@FK/FK: Cinders of a Lord - Abyss Watcher/FK: Cinders of a Lord - Abyss Watcher",
                         "[$IsYhormNotHereOrBeatable|4000830]"
                     ]
@@ -23263,8 +23263,8 @@
                 "cinders_abyssWatcher",
                 "cinders_yhormTheGiant",
                 "cinders_aldrich",
-                "cinders_lothricPrince"
-             // "[misc_transposingKiln]"
+                "cinders_lothricPrince",
+                "[^$ApplyRuleOnlyIfSoftVariant|misc_transposingKiln]"
             ]
         ],
         "children": [
@@ -23466,8 +23466,8 @@
         "name": "PW1",
         "access_rules": [ // SOFT LOGIC
             [
-                "@CD"
-             // "[$IsDlcLate]"
+                "@CD",
+                "[^$ApplyRuleOnlyIfSoftVariant|$IsDlcLate]"
             ]
         ],
         "children": [
@@ -24630,7 +24630,7 @@
         "access_rules": [ // SOFT LOGIC
             [
                 "@PW1",
-             // "[$HasAnyScroll]",
+                "[^$ApplyRuleOnlyIfSoftVariant|$HasAnyScroll]",
                 "key_contraption"
             ]
         ],

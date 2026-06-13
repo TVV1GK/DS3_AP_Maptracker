@@ -18,6 +18,10 @@ LOG_LEVEL = LOG_LEVELS.INFO
 --- @type boolean
 IS_ITEMS_ONLY = Tracker.ActiveVariantUID:find("itemsonly") ~= nil
 
+--- Whether the variant loaded in PopTracker is the "softlogic" variant.
+--- @type boolean
+IS_SOFT_VARIANT = Tracker.ActiveVariantUID:find("softlogic") ~= nil
+
 print("-- Dark Souls III Tracker --")
 
 ScriptHost:LoadScript("scripts/hidden_item_codes.lua")
