@@ -132,9 +132,6 @@ function SetAllHiddenItems(value)
         if hidden_item_obj then
             if hidden_item_obj.Type == "toggle" then
                 hidden_item_obj.Active = value
-                if LOG_LEVEL <= LOG_LEVELS.DEBUG then
-                    print(string.format("> DEBUG: [SetAllHiddenItems] Set hidden item '%s' to %s", item_code, tostring(value)))
-                end
             elseif hidden_item_obj.Type == "progressive" then
                 hidden_item_obj.CurrentStage = 0
                 hidden_item_obj.Active = false
