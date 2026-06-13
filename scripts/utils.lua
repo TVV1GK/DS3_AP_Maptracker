@@ -1,5 +1,9 @@
--- From https://stackoverflow.com/questions/9168058/how-to-dump-a-table-to-console
--- Dumps a table in a readable string
+--- From https://stackoverflow.com/questions/9168058/how-to-dump-a-table-to-console
+--- 
+--- Dumps a table in a readable string.
+--- @param o table The table to dump.
+--- @param depth? number The current depth of the table (used for indentation).
+--- @return string dumped_table The dumped table as a string.
 function DumpTable(o, depth)
     if depth == nil then
         depth = 0
@@ -20,7 +24,7 @@ function DumpTable(o, depth)
     end
 end
 
---- Gets the key of a table by its value. Returns nil if the value is not found.
+--- Gets the key of a table by its value.
 --- @param table table The table to search through.
 --- @param value any The value to find the key for.
 --- @return any? key The key corresponding to the value, or nil if not found.
@@ -33,7 +37,7 @@ function GetKeyByValue(table, value)
     return nil
 end
 
--- PopTracker supported types
+--- PopTracker supported types.
 --- @enum object_types
 OBJECT_TYPES = {
     JsonItem = "JsonItem",

@@ -1,3 +1,4 @@
+--- Pack's logging levels.
 --- @enum log_level
 LOG_LEVELS = {
     DEBUG = 1,
@@ -37,7 +38,7 @@ if not IS_ITEMS_ONLY then
     Tracker:AddLocations("locations/locations.jsonc")
 
     -- We need to reset the hidden items when starting PopTracker, otherwise
-    -- in some cases it would be impossible to change a location's state
+    -- in some cases it would be impossible to change a location's state.
     SetAllHiddenItems(true)
 end
 
