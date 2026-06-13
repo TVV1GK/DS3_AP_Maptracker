@@ -85,7 +85,7 @@ function OnlyIfRandom(is_randomized_code, has_item_code)
     end
 
     if LOG_LEVEL <= LOG_LEVELS.DEBUG then
-        print(string.format("> DEBUG: [OnlyIfRandom] Objects found, returning '%s'", tostring(not is_randomized_obj.Active or has_item_obj.Active)))
+        print(string.format("> DEBUG: [OnlyIfRandom] Objects '%s' and '%s' found, returning '%s'", is_randomized_code, has_item_code, tostring(not is_randomized_obj.Active or has_item_obj.Active)))
     end
 
     return not is_randomized_obj.Active or has_item_obj.Active
@@ -117,7 +117,7 @@ function IsBasinOfVowsLate()
     end
 
     if LOG_LEVEL <= LOG_LEVELS.DEBUG then
-        print(string.format("> DEBUG: [IsBasinOfVowsLate] Returning '%s'", tostring(stage_1_result and stage_2_result)))
+        print(string.format("> DEBUG: [IsBasinOfVowsLate] stage 1: '%s', stage 2: '%s', returning '%s'", tostring(stage_1_result), tostring(stage_2_result), tostring(stage_1_result and stage_2_result)))
     end
 
     return stage_1_result and stage_2_result
@@ -145,7 +145,7 @@ function IsDlcLate()
     end
 
     if LOG_LEVEL <= LOG_LEVELS.DEBUG then
-        print(string.format("> DEBUG: [IsDlcLate] Returning '%s'", tostring(stage_1_result and stage_2_result)))
+        print(string.format("> DEBUG: [IsDlcLate] stage 1: '%s' and stage 2: '%s', returning '%s'", tostring(stage_1_result), tostring(stage_2_result), tostring(stage_1_result and stage_2_result)))
     end
 
     return stage_1_result and stage_2_result
