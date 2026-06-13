@@ -37,6 +37,19 @@ function GetKeyByValue(table, value)
     return nil
 end
 
+--- Checks if a table contains a specific value.
+--- @param table table The table to search through.
+--- @param value number|string|boolean The value to check for.
+--- @return boolean true If the table contains the value.
+function DoesTableContainValue(table, value)
+    for _, v in pairs(table) do
+        if v == value then
+            return true
+        end
+    end
+    return false
+end
+
 --- PopTracker supported types.
 --- @enum object_types
 OBJECT_TYPES = {
