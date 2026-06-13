@@ -53,54 +53,64 @@ end
 --- PopTracker supported types.
 --- @enum object_types
 OBJECT_TYPES = {
-    JsonItem = "JsonItem",
-    LuaItem = "LuaItem",
-    LocationSection = "LocationSection",
-    Location = "Location",
+    JsonItem = 1,
+    LuaItem = 2,
+    LocationSection = 3,
+    Location = 4,
 }
 
---- Safely gets an object by its code and checks if it's of the expected type.
+--- OBJECT_TYPES converted to strings for debugging purposes.
+--- @type table<object_types, string>
+local object_types_as_strings = {
+    [OBJECT_TYPES.JsonItem] = "JsonItem",
+    [OBJECT_TYPES.LuaItem] = "LuaItem",
+    [OBJECT_TYPES.LocationSection] = "LocationSection",
+    [OBJECT_TYPES.Location] = "Location",
+}
+
+--- Gets an object by its code and checks if it is any of the expected types.
 --- @param code any The code of the object to find.
---- @param expected_type object_types The expected type of the object.
---- @return AnyObject? object The object if found and of the expected type, or nil otherwise.
-function GetObjTypeSafe(code, expected_type)
-    local obj = Tracker:FindObjectForCode(code)
-    if obj == nil then
-        if LOG_LEVEL <= LOG_LEVELS.ERROR then
-            print(string.format("> ERROR: [GetObjTypeSafe] Could not find object for code '%s' with expected type '%s'", code, expected_type))
-        end
-        return nil
+--- @param expected_types object_types|table<object_types> The expected type(s) of the object.
+--- @return AnyObject? object The object if found and is any of the expected types, or nil otherwise.
+function GetObjTypeSafe(code, expected_types)
+    if type(expected_types) ~= "table" then
+        expected_types = { expected_types }
     end
 
-    if obj.Type and obj.Type ~= "custom" then
-        if expected_type ~= OBJECT_TYPES.JsonItem then
-            if LOG_LEVEL <= LOG_LEVELS.ERROR then
-                print(string.format("> ERROR: [GetObjTypeSafe] Object with code '%s' is a JsonItem, but expected type was %s", code, expected_type))
+    local obj = Tracker:FindObjectForCode(code)
+    if obj ~= nil then
+        if obj.Type and obj.Type ~= "custom" then
+            if not DoesTableContainValue(expected_types, OBJECT_TYPES.JsonItem) then
+                obj = nil
             end
-            return nil
-        end
-    elseif obj.Type then
-        if expected_type ~= OBJECT_TYPES.LuaItem then
-            if LOG_LEVEL <= LOG_LEVELS.ERROR then
-                print(string.format("> ERROR: [GetObjTypeSafe] Object with code '%s' is a LuaItem, but expected type was %s", code, expected_type))
+        elseif obj.Type then
+            if not DoesTableContainValue(expected_types, OBJECT_TYPES.LuaItem) then
+                obj = nil
             end
-            return nil
-        end
-    elseif obj.FullID then
-        if expected_type ~= OBJECT_TYPES.LocationSection then
-            if LOG_LEVEL <= LOG_LEVELS.ERROR then
-                print(string.format("> ERROR: [GetObjTypeSafe] Object with code '%s' is a LocationSection, but expected type was %s", code, expected_type))
+        elseif obj.FullID then
+            if not DoesTableContainValue(expected_types, OBJECT_TYPES.LocationSection) then
+                obj = nil
             end
-            return nil
-        end
-    elseif obj.AccessibilityLevel then
-        if expected_type ~= OBJECT_TYPES.Location then
-            if LOG_LEVEL <= LOG_LEVELS.ERROR then
-                print(string.format("> ERROR: [GetObjTypeSafe] Object with code '%s' is a Location, but expected type was %s", code, expected_type))
+        elseif obj.AccessibilityLevel then
+            if not DoesTableContainValue(expected_types, OBJECT_TYPES.Location) then
+                obj = nil
             end
-            return nil
+        else
+            if LOG_LEVEL <= LOG_LEVELS.ERROR then
+                print(string.format("> ERROR: [GetObjTypeSafe] Unimplemented PopTracker type for object with code '%s'", code))
+            end
+            obj = nil
         end
     end
+
+    if obj == nil and LOG_LEVEL <= LOG_LEVELS.ERROR then
+        local expected_types_str = {}
+        for _, t in ipairs(expected_types) do
+            table.insert(expected_types_str, object_types_as_strings[t] or tostring(t))
+        end
+        print(string.format("> ERROR: [GetObjTypeSafe] Object for code '%s' is not of expected type(s): '%s'", code, table.concat(expected_types_str, ", ")))
+    end
+
     return obj
 end
 
