@@ -144,10 +144,6 @@ ACCESSIBILITY_LEVELS_AS_STRINGS = {
 --- @param ... string If the rule is a function, the arguments to pass to the function.
 --- @return accessibilityLevel accessibility_level The accessibility level based on the rule.
 function ConvertRulesToAccessibilityLevels(rule, ...)
-    if LOG_LEVEL <= LOG_LEVELS.DEBUG then
-        print(string.format("> DEBUG: [ConvertRulesToAccessibilityLevels] Checking accessibility level for rule '%s%s'", rule, table.concat({...}, "|")))
-    end
-
     -- Location or location section rule (@)
     if rule:sub(1, 1) == "@" then
         local obj = GetObjTypeSafe(rule, {OBJECT_TYPES.Location, OBJECT_TYPES.LocationSection})
@@ -163,7 +159,11 @@ function ConvertRulesToAccessibilityLevels(rule, ...)
         rule_version = 1
     elseif rule:sub(1, 1) == "^" then
         if LOG_LEVEL <= LOG_LEVELS.ERROR then
-            print(string.format("> ERROR: [ConvertRulesToAccessibilityLevels] Rule '%s%s' starts with '^' but not followed by '$'", rule, table.concat({...}, "|")))
+            if #{...} > 0 then
+                print(string.format("> ERROR: [ConvertRulesToAccessibilityLevels] Rule '%s|%s' starts with '^' but not followed by '$'", rule, table.concat({...}, "|")))
+            else
+                print(string.format("> ERROR: [ConvertRulesToAccessibilityLevels] Rule '%s' starts with '^' but not followed by '$'", rule))
+            end
         end
         return AccessibilityLevel.Normal
     elseif rule:sub(1, 1) == "$" then
@@ -179,7 +179,11 @@ function ConvertRulesToAccessibilityLevels(rule, ...)
             min_count = tonumber(count)
             if not min_count then
                 if LOG_LEVEL <= LOG_LEVELS.ERROR then
-                    print(string.format("> ERROR: [ConvertRulesToAccessibilityLevels] Rule '%s%s' has an invalid min_count value '%s'", rule, table.concat({...}, "|"), min_count))
+                    if #{...} > 0 then
+                        print(string.format("> ERROR: [ConvertRulesToAccessibilityLevels] Rule '%s|%s' has an invalid min_count value '%s'", rule, table.concat({...}, "|"), min_count))
+                    else
+                        print(string.format("> ERROR: [ConvertRulesToAccessibilityLevels] Rule '%s' has an invalid min_count value '%s'", rule, min_count))
+                    end
                 end
                 return AccessibilityLevel.Normal
             end
@@ -195,7 +199,11 @@ function ConvertRulesToAccessibilityLevels(rule, ...)
         local fn = _G[rule]
         if type(fn) ~= "function" then
             if LOG_LEVEL <= LOG_LEVELS.ERROR then
-                print(string.format("> ERROR: [ConvertRulesToAccessibilityLevels] Rule '%s%s' is not a valid function", rule, table.concat({...}, "|")))
+                if #{...} > 0 then
+                    print(string.format("> ERROR: [ConvertRulesToAccessibilityLevels] Rule '%s|%s' is not a valid function", rule, table.concat({...}, "|")))
+                else
+                    print(string.format("> ERROR: [ConvertRulesToAccessibilityLevels] Rule '%s' is not a valid function", rule))
+                end
             end
             return AccessibilityLevel.Normal
         end
@@ -220,7 +228,11 @@ function ConvertRulesToAccessibilityLevels(rule, ...)
             end
         end
         if LOG_LEVEL <= LOG_LEVELS.ERROR then
-            print(string.format("> ERROR: [ConvertRulesToAccessibilityLevels] Rule '%s%s' returned an invalid type '%s'", rule, table.concat({...}, "|"), type(result)))
+            if #{...} > 0 then
+                print(string.format("> ERROR: [ConvertRulesToAccessibilityLevels] Rule '%s|%s' returned an invalid type '%s'", rule, table.concat({...}, "|"), type(result)))
+            else
+                print(string.format("> ERROR: [ConvertRulesToAccessibilityLevels] Rule '%s' returned an invalid type '%s'", rule, type(result)))
+            end
         end
         return AccessibilityLevel.Normal
     end
