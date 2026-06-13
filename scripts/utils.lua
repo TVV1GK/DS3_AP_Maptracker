@@ -128,6 +128,116 @@ function GetObjTypeSafe(code, expected_types)
     return obj, returned_type
 end
 
+--- accessibilityLevel converted to strings for debugging purposes.
+--- @type table<accessibilityLevel, string>
+ACCESSIBILITY_LEVELS_AS_STRINGS = {
+    [AccessibilityLevel.None] = "None",
+    [AccessibilityLevel.Partial] = "Partial",
+    [AccessibilityLevel.Inspect] = "Inspect",
+    [AccessibilityLevel.SequenceBreak] = "SequenceBreak",
+    [AccessibilityLevel.Normal] = "Normal",
+    [AccessibilityLevel.Cleared] = "Cleared",
+}
+
+--- Gets the accessibility level for a given rule.
+--- @param rule string The rule to check.
+--- @param ... string If the rule is a function, the arguments to pass to the function.
+--- @return accessibilityLevel accessibility_level The accessibility level based on the rule.
+function ConvertRulesToAccessibilityLevels(rule, ...)
+    if LOG_LEVEL <= LOG_LEVELS.DEBUG then
+        print(string.format("> DEBUG: [ConvertRulesToAccessibilityLevels] Checking accessibility level for rule '%s%s'", rule, table.concat({...}, "|")))
+    end
+
+    -- Location or location section rule (@)
+    if rule:sub(1, 1) == "@" then
+        local obj = GetObjTypeSafe(rule, {OBJECT_TYPES.Location, OBJECT_TYPES.LocationSection})
+        if obj then
+            return obj.AccessibilityLevel
+        end
+        return AccessibilityLevel.Normal
+    end
+
+    local rule_version = -1 -- -1 = not a function, 0 = $, 1 = ^$
+    if rule:sub(1, 2) == "^$" then
+        rule = rule:sub(3)
+        rule_version = 1
+    elseif rule:sub(1, 1) == "^" then
+        if LOG_LEVEL <= LOG_LEVELS.ERROR then
+            print(string.format("> ERROR: [ConvertRulesToAccessibilityLevels] Rule '%s%s' starts with '^' but not followed by '$'", rule, table.concat({...}, "|")))
+        end
+        return AccessibilityLevel.Normal
+    elseif rule:sub(1, 1) == "$" then
+        rule_version = 0
+        rule = rule:sub(2)
+    end
+
+    local min_count
+    if rule_version ~= 1 then
+        local base_rule, count = rule:match("([^:]*):(.*)")
+        if base_rule and count then
+            rule = base_rule
+            min_count = tonumber(count)
+            if not min_count then
+                if LOG_LEVEL <= LOG_LEVELS.ERROR then
+                    print(string.format("> ERROR: [ConvertRulesToAccessibilityLevels] Rule '%s%s' has an invalid min_count value '%s'", rule, table.concat({...}, "|"), min_count))
+                end
+                return AccessibilityLevel.Normal
+            end
+        else
+            min_count = 1
+        end
+    else
+        min_count = 1
+    end
+
+    -- Function rule ($ or ^$)
+    if rule_version ~= -1 then
+        local fn = _G[rule]
+        if type(fn) ~= "function" then
+            if LOG_LEVEL <= LOG_LEVELS.ERROR then
+                print(string.format("> ERROR: [ConvertRulesToAccessibilityLevels] Rule '%s%s' is not a valid function", rule, table.concat({...}, "|")))
+            end
+            return AccessibilityLevel.Normal
+        end
+
+        local result = fn(table.unpack({...}))
+
+        if type(result) == "boolean" then
+            if (result and min_count < 2) or min_count < 1 then
+                return AccessibilityLevel.Normal
+            else
+                return AccessibilityLevel.None
+            end
+        elseif type(result) == "number" then
+            if rule_version == 1 then
+                return result
+            else
+                if result >= min_count then
+                    return AccessibilityLevel.Normal
+                else
+                    return AccessibilityLevel.None
+                end
+            end
+        end
+        if LOG_LEVEL <= LOG_LEVELS.ERROR then
+            print(string.format("> ERROR: [ConvertRulesToAccessibilityLevels] Rule '%s%s' returned an invalid type '%s'", rule, table.concat({...}, "|"), type(result)))
+        end
+        return AccessibilityLevel.Normal
+    end
+
+    -- Item rule
+    local item_obj = GetObjTypeSafe(rule, {OBJECT_TYPES.JsonItem, OBJECT_TYPES.LuaItem})
+    if item_obj then
+        local count = Tracker:ProviderCountForCode(rule)
+        if count >= min_count then
+            return AccessibilityLevel.Normal
+        else
+            return AccessibilityLevel.None
+        end
+    end
+    return AccessibilityLevel.Normal
+end
+
 --- Sets all hidden items to active or inactive based on the provided value. Only applies to items of type 'toggle', others are reset.
 --- @param value boolean Whether to set all hidden items to active (true) or inactive (false). Only applies to items of type 'toggle'.
 function SetAllHiddenItems(value)
