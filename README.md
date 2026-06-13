@@ -28,11 +28,12 @@ This is the default variant. You can use it without connection to the AP server,
 - Soft logic for locations requiring killing NPCs won't be applied, so all NPC tied locations will be shown as reachable.
 
 #### AP Map Tracker (all soft logic)
-This variant should only be used with connection to the AP server, because it tracks all progression items and your AP options, but not all of them are displayed and modifiable by the user.
+This variant should only be used with connection to the AP server, because it tracks all progression items and your 'soft logic AP options', but not all of them are displayed and modifiable by the user.
+
 Without connection to the AP server, the functionality of this variant is the same as [AP Map Tracker](#ap-map-tracker).
 
 > ##### ⚠️ Warning ⚠️
-> Currently, the AP server doesn't provide `late_basin_of_vows` and `late_dlc` options, so these options are set to `off` by default and can't be changed by the user.
+> Currently, the AP server doesn't provide `late_basin_of_vows` and `late_dlc` options, so these are set to `off` by default and can't be changed by the user.
 
 #### Items Only
 This can be used to track only progression items.
