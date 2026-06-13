@@ -51,8 +51,8 @@ local BOSS_LOCATION_IDS = {
 }
 
 --- The flag for the KFF boss, used for determining whether the goal is not KFF boss only.
---- @type string
-local KFF_BOSS_FLAG = "14100800"
+--- @type number
+local KFF_BOSS_FLAG = 14100800
 
 --- Index of the last processed item/location, used to ignore duplicate callbacks from AP.
 --- @type integer?
