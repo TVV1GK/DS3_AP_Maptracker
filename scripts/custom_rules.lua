@@ -11,9 +11,9 @@ function IsYhormNotHereOrBeatable(location_id)
     if not YHORM_LOCATION_ID or location_id ~= YHORM_LOCATION_ID then
         if LOG_LEVEL <= LOG_LEVELS.DEBUG then
             if not YHORM_LOCATION_ID then
-                print("> DEBUG: [IsYhormNotHereOrBeatable] Yhorm's location is unknown, returning true")
+                print("> DEBUG: [IsYhormNotHereOrBeatable] Yhorm's location is unknown, returning 'true'")
             else
-                print(string.format("> DEBUG: [IsYhormNotHereOrBeatable] Yhorm is not at location '%s', returning true", location_id))
+                print(string.format("> DEBUG: [IsYhormNotHereOrBeatable] Yhorm is not at location '%s', returning 'true'", location_id))
             end
         end
         return true
@@ -22,11 +22,11 @@ function IsYhormNotHereOrBeatable(location_id)
     local stormRuler_obj = GetObjTypeSafe("misc_stormRuler", OBJECT_TYPES.JsonItem)
     if LOG_LEVEL <= LOG_LEVELS.DEBUG then
         if not stormRuler_obj then
-            print("> DEBUG: [IsYhormNotHereOrBeatable] Yhorm's location is '%s', but we couldn't find the Storm Ruler, returning true", YHORM_LOCATION_ID)
+            print("> DEBUG: [IsYhormNotHereOrBeatable] Yhorm's location is '%s', but we couldn't find the Storm Ruler, returning 'true'", YHORM_LOCATION_ID)
         elseif stormRuler_obj.Active then
-            print("> DEBUG: [IsYhormNotHereOrBeatable] Yhorm's location is '%s', and the Storm Ruler is active, returning true", YHORM_LOCATION_ID)
+            print("> DEBUG: [IsYhormNotHereOrBeatable] Yhorm's location is '%s', and the Storm Ruler is active, returning 'true'", YHORM_LOCATION_ID)
         else
-            print("> DEBUG: [IsYhormNotHereOrBeatable] Yhorm's location is '%s', but the Storm Ruler is inactive, returning false", YHORM_LOCATION_ID)
+            print("> DEBUG: [IsYhormNotHereOrBeatable] Yhorm's location is '%s', but the Storm Ruler is inactive, returning 'false'", YHORM_LOCATION_ID)
         end
     end
 
@@ -49,14 +49,14 @@ function HasAnyScroll()
         local scroll_obj = GetObjTypeSafe(scroll_code, OBJECT_TYPES.JsonItem)
         if scroll_obj and scroll_obj.Active then
             if LOG_LEVEL <= LOG_LEVELS.DEBUG then
-                print(string.format("> DEBUG: [HasAnyScroll] Player has scroll item '%s', returning true", scroll_code))
+                print(string.format("> DEBUG: [HasAnyScroll] Player has scroll item '%s', returning 'true'", scroll_code))
             end
             return true
         end
     end
 
     if LOG_LEVEL <= LOG_LEVELS.DEBUG then
-        print("> DEBUG: [HasAnyScroll] Player does not have any scroll items, returning false")
+        print("> DEBUG: [HasAnyScroll] Player does not have any scroll items, returning 'false'")
     end
 
     return false
@@ -71,7 +71,7 @@ function OnlyIfRandom(is_randomized_code, has_item_code)
     local is_randomized_obj = GetObjTypeSafe(is_randomized_code, OBJECT_TYPES.JsonItem)
     if not is_randomized_obj then
         if LOG_LEVEL <= LOG_LEVELS.DEBUG then
-            print(string.format("> DEBUG: [OnlyIfRandom] Could not find randomization tracking item '%s', returning true", is_randomized_code))
+            print(string.format("> DEBUG: [OnlyIfRandom] Could not find randomization tracking item '%s', returning 'true'", is_randomized_code))
         end
         return true
     end
@@ -79,13 +79,13 @@ function OnlyIfRandom(is_randomized_code, has_item_code)
     local has_item_obj = GetObjTypeSafe(has_item_code, OBJECT_TYPES.JsonItem)
     if not has_item_obj then
         if LOG_LEVEL <= LOG_LEVELS.DEBUG then
-            print(string.format("> DEBUG: [OnlyIfRandom] Could not find item '%s', returning false", has_item_code))
+            print(string.format("> DEBUG: [OnlyIfRandom] Could not find item '%s', returning 'false'", has_item_code))
         end
         return false
     end
 
     if LOG_LEVEL <= LOG_LEVELS.DEBUG then
-        print(string.format("> DEBUG: [OnlyIfRandom] Objects found, returning %s", tostring(not is_randomized_obj.Active or has_item_obj.Active)))
+        print(string.format("> DEBUG: [OnlyIfRandom] Objects found, returning '%s'", tostring(not is_randomized_obj.Active or has_item_obj.Active)))
     end
 
     return not is_randomized_obj.Active or has_item_obj.Active
@@ -117,7 +117,7 @@ function IsBasinOfVowsLate()
     end
 
     if LOG_LEVEL <= LOG_LEVELS.DEBUG then
-        print(string.format("> DEBUG: [IsBasinOfVowsLate] Returning %s", tostring(stage_1_result and stage_2_result)))
+        print(string.format("> DEBUG: [IsBasinOfVowsLate] Returning '%s'", tostring(stage_1_result and stage_2_result)))
     end
 
     return stage_1_result and stage_2_result
@@ -145,7 +145,7 @@ function IsDlcLate()
     end
 
     if LOG_LEVEL <= LOG_LEVELS.DEBUG then
-        print(string.format("> DEBUG: [IsDlcLate] Returning %s", tostring(stage_1_result and stage_2_result)))
+        print(string.format("> DEBUG: [IsDlcLate] Returning '%s'", tostring(stage_1_result and stage_2_result)))
     end
 
     return stage_1_result and stage_2_result

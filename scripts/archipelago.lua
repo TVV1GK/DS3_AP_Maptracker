@@ -109,18 +109,18 @@ local function onClear(slot_data)
             if item_obj then
                 if item_obj.Type == "toggle" then
                     if LOG_LEVEL <= LOG_LEVELS.DEBUG then
-                        print(string.format("> DEBUG: [onClear] Resetting toggle item: '%s' ('%s')", item_obj.Name, item_code))
+                        print(string.format("> DEBUG: [onClear] Resetting toggle item: '%s'", item_code))
                     end
                     item_obj.Active = false
                 elseif item_obj.Type == "progressive" then
                     if LOG_LEVEL <= LOG_LEVELS.DEBUG then
-                        print(string.format("> DEBUG: [onClear] Resetting progressive item: '%s' ('%s')", item_obj.Name, item_code))
+                        print(string.format("> DEBUG: [onClear] Resetting progressive item: '%s'", item_code))
                     end
                     item_obj.CurrentStage = 0
                     item_obj.Active = false
                 else
                     if LOG_LEVEL <= LOG_LEVELS.ERROR then
-                        print(string.format("> ERROR: [onClear] Unrecognized item type '%s' for item: '%s' ('%s')", item_obj.Type, item_obj.Name, item_code))
+                        print(string.format("> ERROR: [onClear] Unrecognized item type '%s' for item: '%s'", item_obj.Type, item_code))
                     end
                 end
             end
@@ -368,24 +368,24 @@ local function onItem(index, item_id, item_name, player_number)
     if item_obj then
         if item_obj.Type == "toggle" then
             if LOG_LEVEL <= LOG_LEVELS.DEBUG then
-                print(string.format("> DEBUG: [onItem] Activating toggle item: '%s' ('%s')", item_obj.Name, item_code))
+                print(string.format("> DEBUG: [onItem] Activating toggle item: '%s' ('%s')", item_id, item_name))
             end
             item_obj.Active = true
         elseif item_obj.Type == "progressive" then
             if item_obj.Active then
                 if LOG_LEVEL <= LOG_LEVELS.DEBUG then
-                    print(string.format("> DEBUG: [onItem] Incrementing progressive item: '%s' ('%s')", item_obj.Name, item_code))
+                    print(string.format("> DEBUG: [onItem] Incrementing progressive item: '%s' ('%s')", item_id, item_name))
                 end
                 item_obj.CurrentStage = item_obj.CurrentStage + 1
             else
                 if LOG_LEVEL <= LOG_LEVELS.DEBUG then
-                    print(string.format("> DEBUG: [onItem] Activating progressive item: '%s' ('%s')", item_obj.Name, item_code))
+                    print(string.format("> DEBUG: [onItem] Activating progressive item: '%s' ('%s')", item_id, item_name))
                 end
                 item_obj.Active = true
             end
         else
             if LOG_LEVEL <= LOG_LEVELS.ERROR then
-                print(string.format("> ERROR: [onItem] Unrecognized item type '%s' for item: '%s' ('%s')", item_obj.Type, item_obj.Name, item_code))
+                print(string.format("> ERROR: [onItem] Unrecognized item type '%s' for item: '%s' ('%s')", item_obj.Type, item_id, item_name))
             end
         end
     end
@@ -453,7 +453,7 @@ local function onScout(location_id, location_name, item_id, item_name, item_play
                 local option_item_obj = GetObjTypeSafe(option_item_code, OBJECT_TYPES.JsonItem)
                 if option_item_obj then
                     if LOG_LEVEL <= LOG_LEVELS.DEBUG then
-                        print(string.format("> DEBUG: [onScout] Activating option item: '%s', ('%s')", option_item_obj.Name, option_item_code))
+                        print(string.format("> DEBUG: [onScout] Activating option item: '%s'", option_item_code))
                     end
                     option_item_obj.Active = true
                 else

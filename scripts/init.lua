@@ -7,11 +7,11 @@ LOG_LEVELS = {
 }
 
 --- PopTracker's debug output setting.
-DEBUG = false
+DEBUG =  {"errors"}
 
 --- Pack's own logging level.
 --- @type log_level
-LOG_LEVEL = LOG_LEVELS.INFO
+LOG_LEVEL = LOG_LEVELS.DEBUG
 
 --- Whether the variant loaded in PopTracker is an "itemsonly" variant.
 --- @type boolean

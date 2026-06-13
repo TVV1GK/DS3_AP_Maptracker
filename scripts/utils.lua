@@ -84,11 +84,6 @@ function GetObjTypeSafe(code, expected_type)
             return nil
         end
     end
-
-    if LOG_LEVEL <= LOG_LEVELS.DEBUG then
-        print(string.format("> DEBUG: [GetObjTypeSafe] Found object for code '%s' with expected type '%s', returning object", code, expected_type))
-    end
-
     return obj
 end
 
