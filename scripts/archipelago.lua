@@ -315,15 +315,11 @@ local function onClear(slot_data)
         local goalNotKffBossOnly_obj = GetObjTypeSafe("ap_goalNotKffBossOnly", OBJECT_TYPES.JsonItem)
         if goalNotKffBossOnly_obj then
             if type(goal_data) == "table" then
-                local goal_location_ids = {}
-                for _, location_id in pairs(goal_data) do
-                    table.insert(goal_location_ids, location_id)
-                end
                 if LOG_LEVEL <= LOG_LEVELS.DEBUG then
-                    print(string.format("> DEBUG: [onClear] Extracted goal location ids:\n%s", DumpTable(goal_location_ids)))
-                    print(string.format("> DEBUG: [onClear] Setting 'ap_goalNotKffBossOnly' active state to '%s'", tostring(#goal_location_ids > 1 or goal_location_ids[1] ~= KFF_BOSS_FLAG)))
+                    print(string.format("> DEBUG: [onClear] Extracted goal location ids:\n%s", DumpTable(goal_data)))
+                    print(string.format("> DEBUG: [onClear] Setting 'ap_goalNotKffBossOnly' active state to '%s'", tostring(#goal_data > 1 or goal_data[1] ~= KFF_BOSS_FLAG)))
                 end
-                goalNotKffBossOnly_obj.Active = #goal_location_ids > 1 or goal_location_ids[1] ~= KFF_BOSS_FLAG
+                goalNotKffBossOnly_obj.Active = #goal_data > 1 or goal_data[1] ~= KFF_BOSS_FLAG
             else
                 if LOG_LEVEL <= LOG_LEVELS.ERROR then
                     print(string.format("> ERROR: Unexpected type for slot_data.goal: '%s'", type(goal_data)))
