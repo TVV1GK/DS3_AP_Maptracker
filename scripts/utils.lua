@@ -72,28 +72,38 @@ local object_types_as_strings = {
 --- @param code any The code of the object to find.
 --- @param expected_types object_types|table<object_types> The expected type(s) of the object.
 --- @return AnyObject? object The object if found and is any of the expected types, or nil otherwise.
+--- @return object_types? returned_type The type of the returned object, or nil if not found.
 function GetObjTypeSafe(code, expected_types)
     if type(expected_types) ~= "table" then
         expected_types = { expected_types }
     end
 
     local obj = Tracker:FindObjectForCode(code)
+    local returned_type = nil
     if obj ~= nil then
         if obj.Type and obj.Type ~= "custom" then
             if not DoesTableContainValue(expected_types, OBJECT_TYPES.JsonItem) then
                 obj = nil
+            else
+                returned_type = OBJECT_TYPES.JsonItem
             end
         elseif obj.Type then
             if not DoesTableContainValue(expected_types, OBJECT_TYPES.LuaItem) then
                 obj = nil
+            else
+                returned_type = OBJECT_TYPES.LuaItem
             end
         elseif obj.FullID then
             if not DoesTableContainValue(expected_types, OBJECT_TYPES.LocationSection) then
                 obj = nil
+            else
+                returned_type = OBJECT_TYPES.LocationSection
             end
         elseif obj.AccessibilityLevel then
             if not DoesTableContainValue(expected_types, OBJECT_TYPES.Location) then
                 obj = nil
+            else
+                returned_type = OBJECT_TYPES.Location
             end
         else
             if LOG_LEVEL <= LOG_LEVELS.ERROR then
@@ -111,7 +121,7 @@ function GetObjTypeSafe(code, expected_types)
         print(string.format("> ERROR: [GetObjTypeSafe] Object for code '%s' is not of expected type(s): '%s'", code, table.concat(expected_types_str, ", ")))
     end
 
-    return obj
+    return obj, returned_type
 end
 
 --- Sets all hidden items to active or inactive based on the provided value. Only applies to items of type 'toggle', others are reset.
