@@ -153,15 +153,13 @@ local function onClear(slot_data)
         local location_id_to_scout = GetKeyByValue(LOCATION_MAPPING, location_section_to_scout)
         if location_id_to_scout then
             for _, location_list in pairs(all_ap_location_ids) do
-                for _, location_id in pairs(location_list) do
-                    if location_id == location_id_to_scout then
-                        if LOG_LEVEL <= LOG_LEVELS.DEBUG then
-                            print(string.format("> DEBUG: [onClear] Location section '%s' with id '%s' found in AP locations", location_section_to_scout, location_id_to_scout))
-                        end
-                        table.insert(list_of_scouted_location_ids, location_id_to_scout)
-                        is_location_section_found = true
-                        break
+                if DoesTableContainValue(location_list, location_id_to_scout) then
+                    if LOG_LEVEL <= LOG_LEVELS.DEBUG then
+                        print(string.format("> DEBUG: [onClear] Location section '%s' with id '%s' found in AP locations", location_section_to_scout, location_id_to_scout))
                     end
+                    table.insert(list_of_scouted_location_ids, location_id_to_scout)
+                    is_location_section_found = true
+                    break
                 end
                 if is_location_section_found then
                     break
