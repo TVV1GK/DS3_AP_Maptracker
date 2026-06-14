@@ -30,3 +30,8 @@
 - Added soft logic for killing NPCs, so users are notified not to kill them immediately
 - Added a soft logic pack variant (should only be used with connection to AP server)
 - Changed the text on `FS` map from `Shop after killing` to `Shop after ...`
+## v2.0.1
+- Changed Yhorm's blocking rule to be soft logic
+- Fixed the evaluation of the goal based on the options after connecting to AP server
+- Changed the default logging level to informational
+- Added a rule instead of having multiple locations.jsonc files
