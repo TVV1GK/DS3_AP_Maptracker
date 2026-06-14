@@ -1,6 +1,17 @@
 {
 	"versions": [
 		{
+			"package_version": "2.0.1",
+			"download_url": "https://github.com/TVV1GK/DS3_AP_Maptracker/releases/download/v2.0.1/ds3_tvv1gk.zip",
+			"sha256": "6fd56db9b0a5e4dd6f075dbcdefee541cc96e28477e0db6efc0ddf799ee81b77",
+			"changelog": [
+				"Changed Yhorm's blocking rule to be soft logic",
+				"Fixed the evaluation of the goal based on the options after connecting to AP server",
+				"Changed the default logging level to INFO",
+				"Added a rule instead of having multiple locations.jsonc files"
+			]
+		},
+		{
 			"package_version": "2.0.0",
 			"download_url": "https://github.com/TVV1GK/DS3_AP_Maptracker/releases/download/v2.0.0/ds3_tvv1gk.zip",
 			"sha256": "c1c7df611d3d774bff535185d14a555e3ccd8ee551defe2f6166e76f3d471a07",
