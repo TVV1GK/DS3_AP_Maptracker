@@ -3,7 +3,7 @@
 		{
 			"package_version": "2.0.1",
 			"download_url": "https://github.com/TVV1GK/DS3_AP_Maptracker/releases/download/v2.0.1/ds3_tvv1gk.zip",
-			"sha256": "6fd56db9b0a5e4dd6f075dbcdefee541cc96e28477e0db6efc0ddf799ee81b77",
+			"sha256": "6d1d4c597f2ef3c0aa23f2b6884ecb50c0d4c12e2efee7dca0b8375183efbff3",
 			"changelog": [
 				"Changed Yhorm's blocking rule to be soft logic",
 				"Fixed the evaluation of the goal based on the options after connecting to AP server",
