@@ -1,151 +1,178 @@
 // These locations are only for Archipelago, because they cannot be toggled manually in PopTracker
-//
-// If you modify this file, modify HIDDEN_ITEM_CODES accordingly in hidden_item_codes.lua
-// If you modify any item section (except Options), modify ITEM_MAPPING accordingly in item_mapping.lua
+
 [
     // Quest Progression items
     {
         "type": "toggle",
         "name": "Loretta's Bone",
         "codes": "misc_lorettasBone",
-        "img": "images/items/misc_lorettasBone.png"
+        "img": "images/items/misc_lorettasBone.png",
+        "ap_id": 100947
     },
     {
         "type": "toggle",
         "name": "Pale Tongue",
-        "codes": "misc_paleTongue"
+        "codes": "misc_paleTongue",
+        "ap_id": 100809
     },
     {
         "type": "toggle",
         "name": "Black Eye Orb",
-        "codes": "misc_blackEyeOrb"
+        "codes": "misc_blackEyeOrb",
+        "ap_id": 100709
     },
   /*{   // This item is not hidden
         "type": "toggle",
         "name": "Twinkling Dragon Torso Stone",
-        "codes": "misc_twinklingDragonTorsoStone"
+        "codes": "misc_twinklingDragonTorsoStone",
+        "img": "images/items/misc_twinklingDragonTorsoStone.png",
+        "ap_id": 100817
     },*/
 
     // Transpose items
     {
         "type": "toggle",
         "name": "Soul of Boreal Valley Vordt",
-        "codes": "transpose_vordt"
+        "codes": "transpose_vordt",
+        "ap_id": 100875
     },
     {
         "type": "toggle",
         "name": "Soul of Rosaria",
-        "codes": "transpose_rosaria"
+        "codes": "transpose_rosaria",
+        "ap_id": 100883
     },
     {
         "type": "toggle",
         "name": "Soul of Aldrich",
-        "codes": "transpose_aldrich"
+        "codes": "transpose_aldrich",
+        "ap_id": 100880
     },
     {
         "type": "toggle",
         "name": "Soul of the Rotted Greatwood",
-        "codes": "transpose_greatwood"
+        "codes": "transpose_greatwood",
+        "ap_id": 100882
     },
     {
         "type": "toggle",
         "name": "Soul of a Crystal Sage",
-        "codes": "transpose_sage"
+        "codes": "transpose_sage",
+        "ap_id": 100872
     },
     {
         "type": "toggle",
         "name": "Soul of the Deacons of the Deep",
-        "codes": "transpose_deacons"
+        "codes": "transpose_deacons",
+        "ap_id": 100884
     },
     {
         "type": "toggle",
         "name": "Soul of a Stray Demon",
-        "codes": "transpose_strayDemon"
+        "codes": "transpose_strayDemon",
+        "ap_id": 100889
     },
     {
         "type": "toggle",
         "name": "Soul of the Blood of the Wolf",
-        "codes": "transpose_abyssWatchers"
+        "codes": "transpose_abyssWatchers",
+        "ap_id": 100873
     },
     {
         "type": "toggle",
         "name": "Soul of High Lord Wolnir",
-        "codes": "transpose_wolnir"
+        "codes": "transpose_wolnir",
+        "ap_id": 100881
     },
     {
         "type": "toggle",
         "name": "Soul of a Demon",
-        "codes": "transpose_fireDemon"
+        "codes": "transpose_fireDemon",
+        "ap_id": 100888
     },
     {
         "type": "toggle",
         "name": "Soul of the Old Demon King",
-        "codes": "transpose_oldDemonKing"
+        "codes": "transpose_oldDemonKing",
+        "ap_id": 100876
     },
     {
         "type": "toggle",
         "name": "Soul of Pontiff Sulyvahn",
-        "codes": "transpose_pontiff"
+        "codes": "transpose_pontiff",
+        "ap_id": 100879
     },
     {
         "type": "toggle",
         "name": "Soul of Yhorm the Giant",
-        "codes": "transpose_yhorm"
+        "codes": "transpose_yhorm",
+        "ap_id": 100886
     },
     {
         "type": "toggle",
         "name": "Soul of the Dancer",
-        "codes": "transpose_dancer"
+        "codes": "transpose_dancer",
+        "ap_id": 100871
     },
     {
         "type": "toggle",
         "name": "Soul of Dragonslayer Armour",
-        "codes": "transpose_dragonslayer"
+        "codes": "transpose_dragonslayer",
+        "ap_id": 100877
     },
     {
         "type": "toggle",
         "name": "Soul of Consumed Oceiros",
-        "codes": "transpose_oceiros"
+        "codes": "transpose_oceiros",
+        "ap_id": 100874
     },
     {
         "type": "toggle",
         "name": "Soul of the Twin Princes",
-        "codes": "transpose_princes"
+        "codes": "transpose_princes",
+        "ap_id": 100885
     },
     {
         "type": "toggle",
         "name": "Soul of Champion Gundyr",
-        "codes": "transpose_champion"
+        "codes": "transpose_champion",
+        "ap_id": 100870
     },
     {
         "type": "toggle",
         "name": "Soul of the Nameless King",
-        "codes": "transpose_nameless"
+        "codes": "transpose_nameless",
+        "ap_id": 100878
     },
     {
         "type": "toggle",
         "name": "Soul of the Lords",
-        "codes": "transpose_cinder"
+        "codes": "transpose_cinder",
+        "ap_id": 100887
     },
     {
         "type": "toggle",
         "name": "Soul of Sister Friede",
-        "codes": "transpose_friede"
+        "codes": "transpose_friede",
+        "ap_id": 101186
     },
     {
         "type": "toggle",
         "name": "Soul of the Demon Prince",
-        "codes": "transpose_demonPrince"
+        "codes": "transpose_demonPrince",
+        "ap_id": 101188
     },
     {
         "type": "toggle",
         "name": "Soul of Darkeater Midir",
-        "codes": "transpose_midir"
+        "codes": "transpose_midir",
+        "ap_id": 101189
     },
     {
         "type": "toggle",
         "name": "Soul of Slave Knight Gael",
-        "codes": "transpose_gael"
+        "codes": "transpose_gael",
+        "ap_id": 101187
     },
 
     // Crow trade items
@@ -153,65 +180,77 @@
         "type": "toggle",
         "name": "Loretta's Bone",
         "codes": "misc_lorettasBone",
-        "img": "images/items/misc_lorettasBone.png"
+        "img": "images/items/misc_lorettasBone.png",
+        "ap_id": 100947
     },*/
     {
         "type": "toggle",
         "name": "Coiled Sword Fragment",
-        "codes": "misc_coiledSwordFragment"
+        "codes": "misc_coiledSwordFragment",
+        "ap_id": 100798
     },
     {
         "type": "toggle",
         "name": "Seed of a Giant Tree",
-        "codes": "misc_seedOfAGiantTree"
+        "codes": "misc_seedOfAGiantTree",
+        "ap_id": 100840
     },
     {
         "type": "toggle",
         "name": "Siegbr\u00e4u",
-        "codes": "misc_siegbrau"
+        "codes": "misc_siegbrau",
+        "ap_id": 100846
     },
     {
         "type": "toggle",
         "name": "Xanthous Crown",
-        "codes": "misc_xanthousCrown"
+        "codes": "misc_xanthousCrown",
+        "ap_id": 100312
     },
     {
         "type": "toggle",
         "name": "Mendicant's Staff",
-        "codes": "misc_mendicantsStaff"
+        "codes": "misc_mendicantsStaff",
+        "ap_id": 100178
     },
     {
         "type": "toggle",
         "name": "Blacksmith Hammer",
-        "codes": "misc_blacksmithHammer"
+        "codes": "misc_blacksmithHammer",
+        "ap_id": 100135
     },
     {
         "type": "toggle",
         "name": "Large Leather Shield",
-        "codes": "misc_largeLeatherShield"
+        "codes": "misc_largeLeatherShield",
+        "ap_id": 100226
     },
     {
         "type": "toggle",
         "name": "Moaning Shield",
-        "codes": "misc_moaningShield"
+        "codes": "misc_moaningShield",
+        "ap_id": 100273
     },
     {
         "type": "toggle",
         "name": "Eleonora",
-        "codes": "misc_eleonora"
+        "codes": "misc_eleonora",
+        "ap_id": 100117
     },
 
     // Early items [SOFT LOGIC]
     {
         "type": "toggle",
         "name": "Pyromancy Flame",
-        "codes": "misc_pyromancyFlame"
+        "codes": "misc_pyromancyFlame",
+        "ap_id": 100198
     },
   /*{   // This item is not hidden
         "type": "toggle",
         "name": "Transposing Kiln",
         "codes": "misc_transposingKiln",
-        "img": "images/items/misc_transposingKiln.png"
+        "img": "images/items/misc_transposingKiln.png",
+        "ap_id": 100962
     },*/
 
     // Options

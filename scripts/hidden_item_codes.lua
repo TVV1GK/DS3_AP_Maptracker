@@ -1,61 +1,22 @@
---- @diagnostic disable: assign-type-mismatch
+--- Creates a list of hidden item codes for the tracker's hidden items from JSON data.
+--- @return table<string> table A list of hidden item codes.
+local function loadhiddenItemCodeList()
+    print("Loading hidden item codes from \"scripts/hidden_item_codes.lua\"...")
 
---- List of item codes that are hidden.
---- Every code should be present in hidden_items.jsonc.
---- @type table
-HIDDEN_ITEM_CODES = {
-    -- Quest Progression items
-    "misc_lorettasBone",
-    "misc_paleTongue",
-    "misc_blackEyeOrb",
-    -- "misc_twinklingDragonTorsoStone", -- This item is not hidden
+    local hidden_item_codes = {}
+    local data, json = LoadJson("items/hidden_items.jsonc")
+    if data then
+        for _, item in ipairs(data) do
+            if item ~= json.null() then
+                if not DoesTableContainValue(hidden_item_codes, item.codes) then
+                    table.insert(hidden_item_codes, item.codes)
+                elseif LOG_LEVEL <= LOG_LEVELS.ERROR then
+                    print("> ERROR: [loadhiddenItemCodeList] Duplicate code '%s' found for hidden item", item.codes)
+                end
+            end
+        end
+    end
+    return hidden_item_codes
+end
 
-    -- Transpose items
-    "transpose_vordt",
-    "transpose_rosaria",
-    "transpose_aldrich",
-    "transpose_greatwood",
-    "transpose_sage",
-    "transpose_deacons",
-    "transpose_strayDemon",
-    "transpose_abyssWatchers",
-    "transpose_wolnir",
-    "transpose_fireDemon",
-    "transpose_oldDemonKing",
-    "transpose_pontiff",
-    "transpose_yhorm",
-    "transpose_dancer",
-    "transpose_dragonslayer",
-    "transpose_oceiros",
-    "transpose_princes",
-    "transpose_champion",
-    "transpose_nameless",
-    "transpose_cinder",
-    "transpose_friede",
-    "transpose_demonPrince",
-    "transpose_midir",
-    "transpose_gael",
-
-    -- Crow trade items
-    -- "misc_lorettasBone", -- This item is already present
-    "misc_coiledSwordFragment",
-    "misc_seedOfAGiantTree",
-    "misc_siegbrau",
-    "misc_xanthousCrown",
-    "misc_mendicantsStaff",
-    "misc_blacksmithHammer",
-    "misc_largeLeatherShield",
-    "misc_moaningShield",
-    "misc_eleonora",
-
-    -- Early items
-    "misc_pyromancyFlame",
-    -- "misc_transposingKiln", -- This item is not hidden
-
-    -- Options
-    "ap_goalNotKffBossOnly",
-    "ap_pyromancyFlameRandomized",
-    "ap_transposingKilnRandomized",
-    "ap_lateBasinOfVows",
-    "ap_lateDlc",
-}
+return loadhiddenItemCodeList()

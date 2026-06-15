@@ -1,58 +1,73 @@
-ScriptHost:LoadScript("scripts/item_mapping.lua")
-ScriptHost:LoadScript("scripts/location_mapping.lua")
+--- Item mappings for Archipelago integration.
+--- @type table<integer, string>
+local ITEM_MAPPING = require("item_mapping")
+
+--- Location mappings for Archipelago integration.
+--- @type table<integer, string>
+local LOCATION_MAPPING
 
 --- A table for determining whether a location is randomized.
---- @type table
-local SCOUTING_DETAILS = {
-    {
-        ["location_section"] = "@US/US: Pyromancy Flame - Cornyx/US: Pyromancy Flame - Cornyx",
-        ["item_code"] = "misc_pyromancyFlame",
-        ["option_item_code"] = "ap_pyromancyFlameRandomized"
-    },
-    {
-        ["location_section"] = "@US/US: Transposing Kiln - boss drop/US: Transposing Kiln - boss drop",
-        ["item_code"] = "misc_transposingKiln",
-        ["option_item_code"] = "ap_transposingKilnRandomized"
-    },
-}
+--- @type table<{ location_section: string, item_code: string, option_item_code: string }>
+local SCOUTING_DETAILS
 
 --- All boss location ids, used for validating the Yhorm's location.
---- @type table
-local BOSS_LOCATION_IDS = {
-    "4000800", -- Iudex Gundyr
-    "3000800", -- Vordt of the Boreal Valley
-    "3100800", -- Curse-rotted Greatwood
-    "3300850", -- Crystal Sage
-    "3500800", -- Deacons of the Deep
-    "3300801", -- Abyss Watchers
-    "3800800", -- High Lord Wolnir
-    "3700850", -- Pontiff Sulyvahn
-    "3800830", -- Old Demon King
-    "3900800", -- Yhorm the Giant
-    "3700800", -- Aldrich, Devourer of Gods
-    "3000899", -- Dancer of the Boreal Valley
-    "3010800", -- Dragonslayer Armour
-    "3000830", -- Consumed King Oceiros
-    "4000830", -- Champion Gundyr
-    "3200800", -- Ancient Wyvern
-    "3200850", -- King of the Storm
-    "3200851", -- Nameless King
-    "3410830", -- Lothric, Younger Prince
-    "3410832", -- Lorian, Elder Prince
-    "4500860", -- Champion's Gravetender and Gravetender Greatwolf
-    "4500801", -- Sister Friede
-    "4500800", -- Blackflame Friede
-    "5000801", -- Demon Prince
-    "5100800", -- Halflight, Spear of the Church
-    "5100850", -- Darkeater Midir
-    "5110801", -- Slave Knight Gael (Phase 1)
-    "5110800", -- Slave Knight Gael (Phase 2)
-    "4100800", -- Lords of Cinder
-}
+--- @type table<string>
+local BOSS_LOCATION_IDS
 
 --- The flag for the KFF boss, used for determining whether the goal is not KFF boss only.
 --- @type number
-local KFF_BOSS_FLAG = 14100800
+local KFF_BOSS_FLAG
+
+if not IS_ITEMS_ONLY then
+    LOCATION_MAPPING = require("location_mapping")
+
+    SCOUTING_DETAILS = {
+        {
+            ["location_section"] = "@US/US: Pyromancy Flame - Cornyx/US: Pyromancy Flame - Cornyx",
+            ["item_code"] = "misc_pyromancyFlame",
+            ["option_item_code"] = "ap_pyromancyFlameRandomized"
+        },
+        {
+            ["location_section"] = "@US/US: Transposing Kiln - boss drop/US: Transposing Kiln - boss drop",
+            ["item_code"] = "misc_transposingKiln",
+            ["option_item_code"] = "ap_transposingKilnRandomized"
+        },
+    }
+
+    BOSS_LOCATION_IDS = {
+        "4000800", -- Iudex Gundyr
+        "3000800", -- Vordt of the Boreal Valley
+        "3100800", -- Curse-rotted Greatwood
+        "3300850", -- Crystal Sage
+        "3500800", -- Deacons of the Deep
+        "3300801", -- Abyss Watchers
+        "3800800", -- High Lord Wolnir
+        "3700850", -- Pontiff Sulyvahn
+        "3800830", -- Old Demon King
+        "3900800", -- Yhorm the Giant
+        "3700800", -- Aldrich, Devourer of Gods
+        "3000899", -- Dancer of the Boreal Valley
+        "3010800", -- Dragonslayer Armour
+        "3000830", -- Consumed King Oceiros
+        "4000830", -- Champion Gundyr
+        "3200800", -- Ancient Wyvern
+        "3200850", -- King of the Storm
+        "3200851", -- Nameless King
+        "3410830", -- Lothric, Younger Prince
+        "3410832", -- Lorian, Elder Prince
+        "4500860", -- Champion's Gravetender and Gravetender Greatwolf
+        "4500801", -- Sister Friede
+        "4500800", -- Blackflame Friede
+        "5000801", -- Demon Prince
+        "5100800", -- Halflight, Spear of the Church
+        "5100850", -- Darkeater Midir
+        "5110801", -- Slave Knight Gael (Phase 1)
+        "5110800", -- Slave Knight Gael (Phase 2)
+        "4100800", -- Lords of Cinder
+    }
+
+    KFF_BOSS_FLAG = 14100800
+end
 
 --- Index of the last processed item/location, used to ignore duplicate callbacks from AP.
 --- @type integer?
@@ -67,7 +82,7 @@ local SLOT_DATA = nil
 local function onClear(slot_data)
     if slot_data == nil then
         if LOG_LEVEL <= LOG_LEVELS.WARNING then
-            print("> WARNING: [onClear] Received nil slot_data from AP")
+            print("> WARNING: [onClear] Successfully connected to server, received slot_data: nil")
         end
     elseif LOG_LEVEL <= LOG_LEVELS.INFO then
         print(string.format("> INFO: [onClear] Successfully connected to server, received slot_data:\n%s", DumpTable(slot_data)))
@@ -77,23 +92,25 @@ local function onClear(slot_data)
     YHORM_LOCATION_ID = nil
     CUR_INDEX = nil
 
-    -- Reset locations
-    if LOG_LEVEL <= LOG_LEVELS.INFO then
-        print(string.format("> INFO: [onClear] Resetting locations..."))
-    end
+    if not IS_ITEMS_ONLY then
+        -- Reset locations
+        if LOG_LEVEL <= LOG_LEVELS.INFO then
+            print(string.format("> INFO: [onClear] Resetting locations..."))
+        end
 
-    for _, location_section in pairs(LOCATION_MAPPING) do
-        if location_section then
-            local location_obj = GetObjTypeSafe(location_section, OBJECT_TYPES.LocationSection)
-            if location_obj then
-                if LOG_LEVEL <= LOG_LEVELS.DEBUG then
-                    print(string.format("> DEBUG: [onClear] Resetting location section: '%s'", location_section))
+        for _, location_section in pairs(LOCATION_MAPPING) do
+            if location_section then
+                local location_obj = GetObjTypeSafe(location_section, OBJECT_TYPES.LocationSection)
+                if location_obj then
+                    if LOG_LEVEL <= LOG_LEVELS.DEBUG then
+                        print(string.format("> DEBUG: [onClear] Resetting location section: '%s'", location_section))
+                    end
+                    location_obj.AvailableChestCount = location_obj.ChestCount
                 end
-                location_obj.AvailableChestCount = location_obj.ChestCount
-            end
-        else
-            if LOG_LEVEL <= LOG_LEVELS.WARNING then
-                print(string.format("> WARNING: [onClear] LOCATION_MAPPING has an empty value"))
+            else
+                if LOG_LEVEL <= LOG_LEVELS.WARNING then
+                    print(string.format("> WARNING: [onClear] LOCATION_MAPPING has an empty value"))
+                end
             end
         end
     end
@@ -131,13 +148,12 @@ local function onClear(slot_data)
         end
     end
 
-    -- Set all hidden items to false
-    SetAllHiddenItems(false)
-
-    -- Set settings
-    if SLOT_DATA == nil then
+    if SLOT_DATA == nil or IS_ITEMS_ONLY then
         return
     end
+
+    -- Set all hidden items to false
+    SetAllHiddenItems(false)
 
     -- Scout locations
     -- We need to scout certain locations AP to check if they are randomized.
@@ -385,91 +401,93 @@ local function onItem(index, item_id, item_name, player_number)
     end
 end
 
---- Called when a location gets cleared. Updates the corresponding location section based on the received location_id.
---- @param location_id integer The id of the cleared location.
---- @param location_name string The name of the cleared location.
-local function onLocation(location_id, location_name)
-    if LOG_LEVEL <= LOG_LEVELS.INFO then
-        print(string.format("> INFO: [onLocation] Received location event with id: '%s', name: '%s'", location_id, location_name))
-    end
+Archipelago:AddClearHandler("clear handler", onClear)
+Archipelago:AddItemHandler("item handler", onItem)
 
-    local location_section = LOCATION_MAPPING[location_id]
-    if not location_section then
-        if LOG_LEVEL <= LOG_LEVELS.ERROR then
-            print(string.format("> ERROR: [onLocation] No mapping found for location_id: '%s' ('%s')", location_id, location_name))
+if not IS_ITEMS_ONLY then
+    --- Called when a location gets cleared. Updates the corresponding location section based on the received location_id.
+    --- @param location_id integer The id of the cleared location.
+    --- @param location_name string The name of the cleared location.
+    local function onLocation(location_id, location_name)
+        if LOG_LEVEL <= LOG_LEVELS.INFO then
+            print(string.format("> INFO: [onLocation] Received location event with id: '%s', name: '%s'", location_id, location_name))
         end
-        return
-    end
 
-    local location_obj = GetObjTypeSafe(location_section, OBJECT_TYPES.LocationSection)
-    if location_obj then
-        location_obj.AvailableChestCount = location_obj.AvailableChestCount - 1
-        if LOG_LEVEL <= LOG_LEVELS.DEBUG then
-            if location_obj.AvailableChestCount <= 0 then
-                print(string.format("> DEBUG: [onLocation] Deactivating location section: '%s', ('%s')", location_section, location_id))
-            else
-                print(string.format("> DEBUG: [onLocation] Decrementing location section: '%s', ('%s'), available chest count: '%s'", location_section, location_id, location_obj.AvailableChestCount))
-            end
-        end
-    end
-end
-
---- Called when getting a scouted location. Updates the corresponding option item based on the received location_id and item_id.
---- @param location_id integer The id of the scouted location.
---- @param location_name string The name of the scouted location.
---- @param item_id integer The id of the item found at the scouted location.
---- @param item_name string The name of the item found at the scouted location.
---- @param item_player integer The id of the player who has the scouted item.
-local function onScout(location_id, location_name, item_id, item_name, item_player)
-    if LOG_LEVEL <= LOG_LEVELS.INFO then
-        print(string.format("> INFO: [onScout] Received scout event with id: '%s', name: '%s', item_id: '%s', item_name: '%s', item_player: '%s'", location_id, location_name, item_id, item_name, item_player))
-    end
-
-    local item_code = ITEM_MAPPING[item_id]
-    if not item_code then
-        if LOG_LEVEL <= LOG_LEVELS.DEBUG then
-            print(string.format("> DEBUG: [onScout] No mapping found for item_id: '%s' ('%s')", item_id, item_name))
-        end
-    end
-
-    local location_section = LOCATION_MAPPING[location_id]
-    if not location_section then
-        if LOG_LEVEL <= LOG_LEVELS.ERROR then
-            print(string.format("> ERROR: [onScout] No mapping found for location_id: '%s' ('%s')", location_id, location_name))
-        end
-        return
-    end
-
-    for _, scouting_detail in pairs(SCOUTING_DETAILS) do
-        if scouting_detail["location_section"] == location_section then
-            if not item_code or scouting_detail["item_code"] ~= item_code then
-                local option_item_code = scouting_detail["option_item_code"]
-                local option_item_obj = GetObjTypeSafe(option_item_code, OBJECT_TYPES.JsonItem)
-                if option_item_obj then
-                    if LOG_LEVEL <= LOG_LEVELS.DEBUG then
-                        print(string.format("> DEBUG: [onScout] Activating option item: '%s'", option_item_code))
-                    end
-                    option_item_obj.Active = true
-                else
-                    if LOG_LEVEL <= LOG_LEVELS.ERROR then
-                        print(string.format("> ERROR: [onScout] Location section found, but option item not found for scouting_detail:\n%s", DumpTable(scouting_detail)))
-                    end
-                end
-            else
-                if LOG_LEVEL <= LOG_LEVELS.DEBUG then
-                    print(string.format("> DEBUG: [onScout] Location section '%s' is not randomized", location_section))
-                end
+        local location_section = LOCATION_MAPPING[location_id]
+        if not location_section then
+            if LOG_LEVEL <= LOG_LEVELS.ERROR then
+                print(string.format("> ERROR: [onLocation] No mapping found for location_id: '%s' ('%s')", location_id, location_name))
             end
             return
         end
-    end
-    if LOG_LEVEL <= LOG_LEVELS.ERROR then
-        print(string.format("> ERROR: [onScout] No special handling for scouted location_id: '%s' ('%s')", location_id, location_name))
-    end
-end
 
--- Add AP callbacks
-Archipelago:AddClearHandler("clear handler", onClear)
-Archipelago:AddItemHandler("item handler", onItem)
-Archipelago:AddLocationHandler("location handler", onLocation)
-Archipelago:AddScoutHandler("scout handler", onScout)
+        local location_obj = GetObjTypeSafe(location_section, OBJECT_TYPES.LocationSection)
+        if location_obj then
+            location_obj.AvailableChestCount = location_obj.AvailableChestCount - 1
+            if LOG_LEVEL <= LOG_LEVELS.DEBUG then
+                if location_obj.AvailableChestCount <= 0 then
+                    print(string.format("> DEBUG: [onLocation] Deactivating location section: '%s', ('%s')", location_section, location_id))
+                else
+                    print(string.format("> DEBUG: [onLocation] Decrementing location section: '%s', ('%s'), available chest count: '%s'", location_section, location_id, location_obj.AvailableChestCount))
+                end
+            end
+        end
+    end
+
+    --- Called when getting a scouted location. Updates the corresponding option item based on the received location_id and item_id.
+    --- @param location_id integer The id of the scouted location.
+    --- @param location_name string The name of the scouted location.
+    --- @param item_id integer The id of the item found at the scouted location.
+    --- @param item_name string The name of the item found at the scouted location.
+    --- @param item_player integer The id of the player who has the scouted item.
+    local function onScout(location_id, location_name, item_id, item_name, item_player)
+        if LOG_LEVEL <= LOG_LEVELS.INFO then
+            print(string.format("> INFO: [onScout] Received scout event with id: '%s', name: '%s', item_id: '%s', item_name: '%s', item_player: '%s'", location_id, location_name, item_id, item_name, item_player))
+        end
+
+        local item_code = ITEM_MAPPING[item_id]
+        if not item_code then
+            if LOG_LEVEL <= LOG_LEVELS.DEBUG then
+                print(string.format("> DEBUG: [onScout] No mapping found for item_id: '%s' ('%s')", item_id, item_name))
+            end
+        end
+
+        local location_section = LOCATION_MAPPING[location_id]
+        if not location_section then
+            if LOG_LEVEL <= LOG_LEVELS.ERROR then
+                print(string.format("> ERROR: [onScout] No mapping found for location_id: '%s' ('%s')", location_id, location_name))
+            end
+            return
+        end
+
+        for _, scouting_detail in pairs(SCOUTING_DETAILS) do
+            if scouting_detail["location_section"] == location_section then
+                if not item_code or scouting_detail["item_code"] ~= item_code then
+                    local option_item_code = scouting_detail["option_item_code"]
+                    local option_item_obj = GetObjTypeSafe(option_item_code, OBJECT_TYPES.JsonItem)
+                    if option_item_obj then
+                        if LOG_LEVEL <= LOG_LEVELS.DEBUG then
+                            print(string.format("> DEBUG: [onScout] Activating option item: '%s'", option_item_code))
+                        end
+                        option_item_obj.Active = true
+                    else
+                        if LOG_LEVEL <= LOG_LEVELS.ERROR then
+                            print(string.format("> ERROR: [onScout] Location section found, but option item not found for scouting_detail:\n%s", DumpTable(scouting_detail)))
+                        end
+                    end
+                else
+                    if LOG_LEVEL <= LOG_LEVELS.DEBUG then
+                        print(string.format("> DEBUG: [onScout] Location section '%s' is not randomized", location_section))
+                    end
+                end
+                return
+            end
+        end
+        if LOG_LEVEL <= LOG_LEVELS.ERROR then
+            print(string.format("> ERROR: [onScout] No special handling for scouted location_id: '%s' ('%s')", location_id, location_name))
+        end
+    end
+
+    Archipelago:AddLocationHandler("location handler", onLocation)
+    Archipelago:AddScoutHandler("scout handler", onScout)
+end

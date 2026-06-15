@@ -1,95 +1,109 @@
-// If you modify any item section, modify ITEM_MAPPING accordingly in item_mapping.lua
 [
     // Keys
     {
         "type": "toggle",
         "name": "Coiled Sword",
         "codes": "key_coiledSword",
-        "img": "images/items/key_coiledSword.png"
+        "img": "images/items/key_coiledSword.png",
+        "ap_id": 100963
     },
     {
         "type": "toggle",
         "name": "Tower Key",
         "codes": "key_tower",
-        "img": "images/items/key_tower.png"
+        "img": "images/items/key_tower.png",
+        "ap_id": 100930
     },
     {
         "type": "toggle",
         "name": "Cell Key",
         "codes": "key_cell",
-        "img": "images/items/key_cell.png"
+        "img": "images/items/key_cell.png",
+        "ap_id": 100926
     },
     {
         "type": "toggle",
         "name": "Lift Chamber Key",
         "codes": "key_liftChamber",
-        "img": "images/items/key_liftChamber.png"
+        "img": "images/items/key_liftChamber.png",
+        "ap_id": 100921
     },
     {
         "type": "toggle",
         "name": "Small Lothric Banner",
         "codes": "key_smallLothricBanner",
-        "img": "images/items/key_smallLothricBanner.png"
+        "img": "images/items/key_smallLothricBanner.png",
+        "ap_id": 100931
     },
     {
         "type": "toggle",
         "name": "Grave Key",
         "codes": "key_grave",
-        "img": "images/items/key_grave.png"
+        "img": "images/items/key_grave.png",
+        "ap_id": 100925
     },
     {
         "type": "toggle",
         "name": "Small Doll",
         "codes": "key_smallDoll",
-        "img": "images/items/key_smallDoll.png"
+        "img": "images/items/key_smallDoll.png",
+        "ap_id": 100922
     },
     {
         "type": "toggle",
         "name": "Jailbreaker's Key",
         "codes": "key_jailbreaker",
-        "img": "images/items/key_jailbreaker.png"
+        "img": "images/items/key_jailbreaker.png",
+        "ap_id": 100923
     },
     {
         "type": "toggle",
         "name": "Old Cell Key",
         "codes": "key_oldCell",
-        "img": "images/items/key_oldCell.png"
+        "img": "images/items/key_oldCell.png",
+        "ap_id": 100928
     },
     {
         "type": "toggle",
         "name": "Jailer's Key Ring",
         "codes": "key_jailersRing",
-        "img": "images/items/key_jailersRing.png"
+        "img": "images/items/key_jailersRing.png",
+        "ap_id": 100924
     },
     {
         "type": "toggle",
         "name": "Basin of Vows",
         "codes": "key_basinOfVows",
-        "img": "images/items/key_basinOfVows.png"
+        "img": "images/items/key_basinOfVows.png",
+        "ap_id": 100946
     },
     {
         "type": "toggle",
         "name": "Grand Archives Key",
         "codes": "key_grandArchives",
-        "img": "images/items/key_grandArchives.png"
+        "img": "images/items/key_grandArchives.png",
+        "ap_id": 100929
     },
     {
         "type": "toggle",
         "name": "Path of the Dragon",
         "codes": "key_pathOfTheDragon",
-        "img": "images/items/key_pathOfTheDragon.png"
+        "img": "images/items/key_pathOfTheDragon.png",
+        "ap_id": 100979
     },
     {
         "type": "toggle",
         "name": "Contraption Key",
         "codes": "key_contraption",
-        "img": "images/items/key_contraption.png"
+        "img": "images/items/key_contraption.png",
+        "ap_id": 101192
     },
     {
         "type": "toggle",
         "name": "Small Envoy Banner",
         "codes": "key_smallEnvoyBanner",
-        "img": "images/items/key_smallEnvoyBanner.png"
+        "img": "images/items/key_smallEnvoyBanner.png",
+        "ap_id": 101193
     },
 
     // Cinders
@@ -97,25 +111,29 @@
         "type": "toggle",
         "name": "Cinders of a Lord - Abyss Watcher",
         "codes": "cinders_abyssWatcher",
-        "img": "images/items/cinders_abyssWatcher.png"
+        "img": "images/items/cinders_abyssWatcher.png",
+        "ap_id": 100950
     },
     {
         "type": "toggle",
         "name": "Cinders of a Lord - Aldrich",
         "codes": "cinders_aldrich",
-        "img": "images/items/cinders_aldrich.png"
+        "img": "images/items/cinders_aldrich.png",
+        "ap_id": 100951
     },
     {
         "type": "toggle",
         "name": "Cinders of a Lord - Yhorm the Giant",
         "codes": "cinders_yhormTheGiant",
-        "img": "images/items/cinders_yhormTheGiant.png"
+        "img": "images/items/cinders_yhormTheGiant.png",
+        "ap_id": 100952
     },
     {
         "type": "toggle",
         "name": "Cinders of a Lord - Lothric Prince",
         "codes": "cinders_lothricPrince",
-        "img": "images/items/cinders_lothricPrince.png"
+        "img": "images/items/cinders_lothricPrince.png",
+        "ap_id": 100953
     },
 
     // Ashes
@@ -123,115 +141,134 @@
         "type": "toggle",
         "name": "Greirat's Ashes",
         "codes": "ashes_greirat",
-        "img": "images/items/ashes_greirat.png"
+        "img": "images/items/ashes_greirat.png",
+        "ap_id": 100940
     },
     {
         "type": "toggle",
         "name": "Irina's Ashes",
         "codes": "ashes_irina",
-        "img": "images/items/ashes_irina.png"
+        "img": "images/items/ashes_irina.png",
+        "ap_id": 100944
     },
     {
         "type": "toggle",
         "name": "Yuria's Ashes",
         "codes": "ashes_yuria",
-        "img": "images/items/ashes_yuria.png"
+        "img": "images/items/ashes_yuria.png",
+        "ap_id": 100945
     },
     {
         "type": "toggle",
         "name": "Karla's Ashes",
         "codes": "ashes_karla",
-        "img": "images/items/ashes_karla.png"
+        "img": "images/items/ashes_karla.png",
+        "ap_id": 100943
     },
     {
         "type": "toggle",
         "name": "Cornyx's Ashes",
         "codes": "ashes_cornyx",
-        "img": "images/items/ashes_cornyx.png"
+        "img": "images/items/ashes_cornyx.png",
+        "ap_id": 100942
     },
     {
         "type": "toggle",
         "name": "Patches' Ashes",
         "codes": "ashes_patches",
-        "img": "images/items/ashes_patches.png"
+        "img": "images/items/ashes_patches.png",
+        "ap_id": 100976
     },
     {
         "type": "toggle",
         "name": "Hollow's Ashes",
         "codes": "ashes_hollow",
-        "img": "images/items/ashes_hollow.png"
+        "img": "images/items/ashes_hollow.png",
+        "ap_id": 100975
     },
     {
         "type": "toggle",
         "name": "Orbeck's Ashes",
         "codes": "ashes_orbeck",
-        "img": "images/items/ashes_orbeck.png"
+        "img": "images/items/ashes_orbeck.png",
+        "ap_id": 100941
     },
     {
         "type": "toggle",
         "name": "Old Woman's Ashes",
         "codes": "ashes_oldWoman",
-        "img": "images/items/ashes_oldWoman.png"
+        "img": "images/items/ashes_oldWoman.png",
+        "ap_id": 101194
     },
     {
         "type": "toggle",
         "name": "Mortician's Ashes",
         "codes": "ashes_mortician",
-        "img": "images/items/ashes_mortician.png"
+        "img": "images/items/ashes_mortician.png",
+        "ap_id": 100936
     },
     {
         "type": "toggle",
         "name": "Grave Warden's Ashes",
         "codes": "ashes_graveWarden",
-        "img": "images/items/ashes_graveWarden.png"
+        "img": "images/items/ashes_graveWarden.png",
+        "ap_id": 100939
     },
     {
         "type": "toggle",
         "name": "Paladin's Ashes",
         "codes": "ashes_paladin",
-        "img": "images/items/ashes_paladin.png"
+        "img": "images/items/ashes_paladin.png",
+        "ap_id": 100938
     },
     {
         "type": "toggle",
         "name": "Excrement-covered Ashes",
         "codes": "ashes_excrementCovered",
-        "img": "images/items/ashes_excrementCovered.png"
+        "img": "images/items/ashes_excrementCovered.png",
+        "ap_id": 100972
     },
     {
         "type": "toggle",
         "name": "Xanthous Ashes",
         "codes": "ashes_xanthous",
-        "img": "images/items/ashes_xanthous.png"
+        "img": "images/items/ashes_xanthous.png",
+        "ap_id": 100974
     },
     {
         "type": "toggle",
         "name": "Dreamchaser's Ashes",
         "codes": "ashes_dreamchaser",
-        "img": "images/items/ashes_dreamchaser.png"
+        "img": "images/items/ashes_dreamchaser.png",
+        "ap_id": 100937
     },
     {
         "type": "toggle",
         "name": "Prisoner Chief's Ashes",
         "codes": "ashes_prisonerChief",
-        "img": "images/items/ashes_prisonerChief.png"
+        "img": "images/items/ashes_prisonerChief.png",
+        "ap_id": 100973
     },
     {
         "type": "toggle",
         "name": "Dragon Chaser's Ashes",
         "codes": "ashes_dragonChaser",
-        "img": "images/items/ashes_dragonChaser.png"
+        "img": "images/items/ashes_dragonChaser.png",
+        "ap_id": 100977
     },
     {
         "type": "toggle",
         "name": "Easterner's Ashes",
         "codes": "ashes_easterner",
-        "img": "images/items/ashes_easterner.png"
+        "img": "images/items/ashes_easterner.png",
+        "ap_id": 100978
     },
     {
         "type": "toggle",
         "name": "Captain's Ashes",
         "codes": "ashes_captain",
-        "img": "images/items/ashes_captain.png"
+        "img": "images/items/ashes_captain.png",
+        "ap_id": 101191
     },
 
     // Miscellaneous
@@ -239,25 +276,29 @@
         "type": "toggle",
         "name": "Storm Ruler",
         "codes": "misc_stormRuler",
-        "img": "images/items/misc_stormRuler.png"
+        "img": "images/items/misc_stormRuler.png",
+        "ap_id": 100105
     },
     {
         "type": "toggle",
         "name": "Transposing Kiln",
         "codes": "misc_transposingKiln",
-        "img": "images/items/misc_transposingKiln.png"
+        "img": "images/items/misc_transposingKiln.png",
+        "ap_id": 100962
     },
     {
         "type": "toggle",
         "name": "Chameleon",
         "codes": "misc_chameleon",
-        "img": "images/items/misc_chameleon.png"
+        "img": "images/items/misc_chameleon.png",
+        "ap_id": 101002
     },
     {
         "type": "toggle",
         "name": "Twinkling Dragon Torso Stone",
         "codes": "misc_twinklingDragonTorsoStone",
-        "img": "images/items/misc_twinklingDragonTorsoStone.png"
+        "img": "images/items/misc_twinklingDragonTorsoStone.png",
+        "ap_id": 100817
     },
 
     // Braille Tomes
@@ -265,25 +306,29 @@
         "type": "toggle",
         "name": "Braille Divine Tome of Carim",
         "codes": "braille_carim",
-        "img": "images/items/braille_carim.png"
+        "img": "images/items/braille_carim.png",
+        "ap_id": 100948
     },
     {
         "type": "toggle",
         "name": "Braille Divine Tome of Londor",
         "codes": "braille_londor",
-        "img": "images/items/braille_londor.png"
+        "img": "images/items/braille_londor.png",
+        "ap_id": 100971
     },
     {
         "type": "toggle",
         "name": "Deep Braille Divine Tome",
         "codes": "braille_deep",
-        "img": "images/items/braille_deep.png"
+        "img": "images/items/braille_deep.png",
+        "ap_id": 100970
     },
     {
         "type": "toggle",
         "name": "Braille Divine Tome of Lothric",
         "codes": "braille_lothric",
-        "img": "images/items/braille_lothric.png"
+        "img": "images/items/braille_lothric.png",
+        "ap_id": 100949
     },
 
     // Pyromancy Tomes
@@ -291,31 +336,36 @@
         "type": "toggle",
         "name": "Great Swamp Pyromancy Tome",
         "codes": "pyro_greatSwamp",
-        "img": "images/items/pyro_greatSwamp.png"
+        "img": "images/items/pyro_greatSwamp.png",
+        "ap_id": 100954
     },
     {
         "type": "toggle",
         "name": "Carthus Pyromancy Tome",
         "codes": "pyro_carthus",
-        "img": "images/items/pyro_carthus.png"
+        "img": "images/items/pyro_carthus.png",
+        "ap_id": 100955
     },
     {
         "type": "toggle",
         "name": "Izalith Pyromancy Tome",
         "codes": "pyro_izalith",
-        "img": "images/items/pyro_izalith.png"
+        "img": "images/items/pyro_izalith.png",
+        "ap_id": 100956
     },
     {
         "type": "toggle",
         "name": "Quelana Pyromancy Tome",
         "codes": "pyro_quelana",
-        "img": "images/items/pyro_quelana.png"
+        "img": "images/items/pyro_quelana.png",
+        "ap_id": 100957
     },
     {
         "type": "toggle",
         "name": "Grave Warden Pyromancy Tome",
         "codes": "pyro_graveWarden",
-        "img": "images/items/pyro_graveWarden.png"
+        "img": "images/items/pyro_graveWarden.png",
+        "ap_id": 100958
     },
 
     // Scrolls
@@ -323,24 +373,28 @@
         "type": "toggle",
         "name": "Sage's Scroll",
         "codes": "scroll_sage",
-        "img": "images/items/scroll_sage.png"
+        "img": "images/items/scroll_sage.png",
+        "ap_id": 100959
     },
     {
         "type": "toggle",
         "name": "Golden Scroll",
         "codes": "scroll_golden",
-        "img": "images/items/scroll_golden.png"
+        "img": "images/items/scroll_golden.png",
+        "ap_id": 100966
     },
     {
         "type": "toggle",
         "name": "Logan's Scroll",
         "codes": "scroll_logan",
-        "img": "images/items/scroll_logan.png"
+        "img": "images/items/scroll_logan.png",
+        "ap_id": 100960
     },
     {
         "type": "toggle",
         "name": "Crystal Scroll",
         "codes": "scroll_crystal",
-        "img": "images/items/scroll_crystal.png"
+        "img": "images/items/scroll_crystal.png",
+        "ap_id": 100961
     }
 ]

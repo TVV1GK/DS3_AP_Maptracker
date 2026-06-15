@@ -34,13 +34,8 @@ function IsYhormNotHereOrBeatable(location_id)
 end
 
 --- All scroll item codes.
---- @type table
-local SCROLL_CODES = {
-    "scroll_sage",
-    "scroll_golden",
-    "scroll_logan",
-    "scroll_crystal",
-}
+--- @type table<string>
+local SCROLL_CODES = require("scroll_item_codes")
 
 --- Checks if the player has any of the scroll items.
 --- @return boolean true If the player has at least one scroll item.

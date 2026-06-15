@@ -18,23 +18,23 @@ LOG_LEVEL = LOG_LEVELS.INFO
 --- @type boolean
 IS_ITEMS_ONLY = Tracker.ActiveVariantUID:find("itemsonly") ~= nil
 
---- Whether the variant loaded in PopTracker is the "softlogic" variant.
---- @type boolean
-IS_SOFT_VARIANT = Tracker.ActiveVariantUID:find("softlogic") ~= nil
-
 print("-- Dark Souls III Tracker --")
 
-ScriptHost:LoadScript("scripts/hidden_item_codes.lua")
-ScriptHost:LoadScript("scripts/utils.lua")
-ScriptHost:LoadScript("scripts/custom_rules.lua")
+require("utils")
+require("archipelago")
 
 Tracker:AddItems("items/items.jsonc")
-
 Tracker:AddLayouts("layouts/items.json")
 Tracker:AddLayouts("layouts/tracker.json")
 Tracker:AddLayouts("layouts/broadcast.json")
 
 if not IS_ITEMS_ONLY then
+    --- Whether the variant loaded in PopTracker is the "softlogic" variant.
+    --- @type boolean
+    IS_SOFT_VARIANT = Tracker.ActiveVariantUID:find("softlogic") ~= nil
+
+    require("custom_rules")
+
     Tracker:AddItems("items/settings.jsonc")
     Tracker:AddItems("items/hidden_items.jsonc")
     Tracker:AddLayouts("layouts/settings.json")
@@ -45,5 +45,3 @@ if not IS_ITEMS_ONLY then
     -- in some cases it would be impossible to change a location's state.
     SetAllHiddenItems(true)
 end
-
-ScriptHost:LoadScript("scripts/archipelago.lua")
