@@ -19,7 +19,6 @@
 - Update initial state for settings to reflect the default settings for AP
 ### v1.0.6
 - Update initial state for `Small Souls` to reflect the default settings for AP
-- ⚠️ The tracker pack for DS3 AP Client v3.0.X won't be updated further ⚠️
 ## v2.0.0
 - Updated to work with the new [DS3 AP client and world (4.0.X)](https://github.com/fswap/from-software-archipelago-clients) and discontinued support for the old client and world (3.0.X)
 - Recreated the access rules to match exactly the new AP world (even the missable locations)
