@@ -2,4 +2,3 @@ todo.*
 .~lock.*
 *.old*
 /.vscode/
-/.generate/
