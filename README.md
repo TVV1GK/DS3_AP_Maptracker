@@ -22,6 +22,8 @@ To connect to the AP server for auto-tracking, click on the `AP` button at the t
 
 ## Pack Variants
 
+> Soft logic: A location rule that does not strictly require an item to access it, but that the randomizer does not expect the player to reach. For example, AP expects you to have the Transposing Kiln to go to the Kiln of the First Flame, but in reality this is not a requirement. This rule exists only because Ludleth dies after you place all 4 Cinders and rest at the bonfire, which locks you out of the transposing shop if you have not given him the Kiln beforehand.
+
 #### AP Map Tracker
 This is the default variant. You can use it without connection to the AP server, but the following won't be displayed as intended:
 - Yhorm's placement won't be tracked, so soft logic for locations blocked by him won't be applied and will show those locations as reachable.
